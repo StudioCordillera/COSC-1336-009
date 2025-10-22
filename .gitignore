@@ -1,0 +1,36 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env/
+.venv/
+venv/
+ENV/
+
+# VS Code settings (keep .vscode if you want workspace settings tracked selectively)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs / dumps
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+
+# Coverage / test artifacts
+htmlcov/
+.coverage*
+.pytest_cache/
