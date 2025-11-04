@@ -23,18 +23,18 @@ def projectEnd():
 
 # This function will get user entry for an integer
 def getIntData(prompt):
-        value = float(input(prompt))
+    value = float(input(prompt))
 
-        # Send to main hoursWorked
-        return value
+    # Send to main hoursWorked
+    return value
 
 
 # This function gets user entry for float
 def getFloatData(prompt):
-        value = float(input(prompt))
+    value = float(input(prompt))
 
-        # Send to main hoursWorked
-        return value
+    # Send to main hoursWorked
+    return value
 
 def main():
     # Display start of project
