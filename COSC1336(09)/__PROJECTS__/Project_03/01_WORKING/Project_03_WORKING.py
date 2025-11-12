@@ -8,6 +8,10 @@
 ## Project 3 Objectives | Input > Calc (Handling) > Summary  ##
 ###############################################################
 
+
+# TODO | 1: update objectives | 2: Add 10$ flat fee per month (add month handling list/func) | 3: Need to format to 2 decimal places when displaying summary
+# 2: "AllyBaba Bank charges a flat fee of $10 per month for maintaining a checking account."
+
 # This function will return an integer input from the user
 def getIntegerData(prompt):
     value = int(input(prompt))
@@ -48,7 +52,7 @@ def projectEnd():
     print('End of Project 3')
     print('-' * 50 + '\n')
 
-# Calculate Fees Function
+# Calculate Check Fees Function
 #  ------------------------------------------------------------------------
 def calculateFees(checks):
 
@@ -61,7 +65,7 @@ def calculateFees(checks):
         checkRange = 'less than 20'
 
         # Calc Fees
-        fees = checks * .1
+        fees = checks * 0.10
         
         # Debug
         # print('Debug: checks was less 20')
@@ -72,7 +76,7 @@ def calculateFees(checks):
         checkRange = 'between 20 - 39'
 
         # Calc Fees
-        fees = checks * .08
+        fees = checks * 0.08
 
         # Debug
         # print('Debug: checks was less than 40')
@@ -83,7 +87,7 @@ def calculateFees(checks):
         checkRange = 'between 40 - 59'
 
         # Calc Fees
-        fees = checks * .06
+        fees = checks * 0.06
 
         # Debug
         # print('Debug: checks was less than 60')
@@ -94,11 +98,11 @@ def calculateFees(checks):
         checkRange = '60 or more'
 
         # Calc Fees
-        fees = checks * .04
+        fees = checks * 0.04
 
         # Debug
         # print('Debug: checks was greater than or equal to 60')
-
+    
     return fees, checkRange
 
 # Handle Shenanigans (user enters negative integer) Function
@@ -108,15 +112,40 @@ def shenanigans():
 
     # Debug
     # print('Debug: Searching for shenanigans... ')
-
+    monthList = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
+    month = ''
     checks = 0 # For Debug error prevention
 
+
+    # Loop for Months Input
+    while (True):
+
+        try:
+            
+            # Prompt user for month
+            month = getStringData('\tEnter the month: ')
+
+        except ValueError:
+
+            # Inform user of proper format requirements when recieved wrong datatype
+            print('\tPlease enter a month in \'JAN\' style format!')
+
+        if (month.upper() in monthList):
+
+            
+        else:
+        
+            break
+
+
+
+    # Loop for checks Input
     while (True):
 
         # Debug
         # print('Debug: While loop initiated')
 
-        # Handle non-integer input data-types
+        # Handle non-integer input data-types for checks input
         try:
             
             # Debug
@@ -135,7 +164,7 @@ def shenanigans():
         # print('Debug: checks = ', checks)
 
         # Is checks a positive integer?
-        if (checks <= 0):
+        if (checks < 0):
 
             # Debug
             # print('Debug: Checks was not greater than equal to 0')
@@ -150,7 +179,7 @@ def shenanigans():
 
             break
 
-    return checks
+    return month, checks
 
 # Display Fees Summary
 #  ------------------------------------------------------------------------
@@ -178,14 +207,11 @@ def main():
     # Display SOPB
     projectStart()
 
-    # Prompt user for month
-    month = getStringData('\tEnter the month: ')
-
     # Debug
     # print('Debug: Month = ', month)
 
     # Get checks input then Handle Shenanigans
-    checks = shenanigans()
+    month, checks = shenanigans()
 
     # Debug
     # print('Debug: Checks = ', checks)

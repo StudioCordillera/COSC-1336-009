@@ -1,0 +1,154 @@
+########################################
+## Matthew Ochoa                   #####
+## October 29, 2025                #####
+#### Classwork N. 95               #####
+## --------------------------------#####
+## Project Objectives              #####
+##   Learning Lists                #####
+########################################################################
+
+# This function will display the start of project
+def projectStart():
+    print('\n', "-" * 60, '\n\n\tStart of Project'+ '\n\tWritten By Matthew Ochoa' + '\n\tLearning Lists' + '\n\n' + "-" * 60, '\n')
+
+# This fucntion will display the end of project
+def projectEnd():
+    print('\n' + '-' * 60, '\n\tEnd of project')
+
+########################################################################
+    
+
+# This function will get user entry for an integer
+def getIntegerData(prompt):
+
+    while (True):
+        try:
+            # Prompt/get integer value
+            value = int(input(prompt))
+        
+            # Send to main Integer data
+            return value
+        
+        except ValueError:
+            
+            # Inform of error
+            print('\t\tFucked Up')
+
+
+'''
+# This function will get user entry for an integer ####################
+def getInteger2Data(prompt):
+
+    while (True):
+        try:
+            # Prompt/get integer value
+            value = int(input(prompt))
+        
+            # Send to main Integer data
+            if (value <= 5 and value >= 1):
+                return value
+
+            else:
+                print('\tEnter a value between 1 and 5!')
+        
+        except ValueError:
+    
+            # Inform of error
+            print('\t\tFucked Up')
+'''
+
+
+# This function gets user entry for float
+def getFloatData(prompt):
+
+    while(True):
+        try:
+            
+            # Prompt/get float
+            value = float(input(prompt))
+        
+            # Send to main float value
+            return value
+        
+        except ValueError:
+
+            # Inform of error
+            print('\t\tEnter a float type datatype!')
+
+# This function gets user string input
+def getStringData(prompt):
+        value = input(prompt).strip(' ')
+
+        # Send to main string value
+        return value
+
+
+# This function gets user string input
+def getCharData(prompt):
+
+    while (True):
+        
+        value = input(prompt).upper()
+
+        if (value in ['B', 'C', 'X']):
+            
+            # Send to main string value
+            return value
+        
+        else:
+            
+            print('\tYou did not provide an acceptable answer')
+
+
+
+def listFunc(myList):
+
+    print('\tMy origional list: ', myList)
+
+    myList.append(-23)
+    print('\tMy new list: ', myList)
+
+    # use functionality of list
+    listLength = len(myList)
+    print('\tNumber of elements in list: ', listLength)
+
+    sumValue = sum(myList)
+    print('\tSum of elements: ', sumValue)
+
+    maxValue = max(myList)
+    print('\tMax value in list: ', maxValue)
+
+    minValue = min(myList)
+    print('\tMin value in list: ', minValue)
+
+    myList.sort()
+    print('\tSorted list: ', myList)
+
+    myList.reverse()
+    print('\tReversed Sorted List: ', myList)
+
+
+########################################################################
+
+
+
+def main():
+    
+    # Display start of project
+    projectStart()
+
+    # My List
+    myList = [23, 44, 100, 33, 129, 75, 44]
+
+    # Run List Function
+    listFunc(myList)
+
+
+    # Display end of project
+    projectEnd()
+ 
+main()
+
+# TRACE: 
+
+
