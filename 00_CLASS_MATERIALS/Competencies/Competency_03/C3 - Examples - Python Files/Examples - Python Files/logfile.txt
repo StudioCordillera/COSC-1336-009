@@ -1,0 +1,6 @@
+E:/classes/ACC Spring 2014/COSC 1336/reading file/append.py 1393428991.493818 1
+E:/classes/ACC Spring 2014/COSC 1336/reading file/append.py 1393429053.134048 2
+E:/classes/ACC Spring 2014/COSC 1336/reading file/append.py 1393429116.336769 3
+E:\classes\ACC Spring 2014\COSC 1336\reading file\append.py 1393524692.506327 7
+E:\classes\ACC Spring 2014\COSC 1336\Ex4 - Files\append.py 1393552975.568458 9
+D:\school\S17 ACC\Examples\08 ex files\x append.py 1495815108.597541 a
