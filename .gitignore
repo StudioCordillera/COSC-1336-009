@@ -34,3 +34,18 @@ Thumbs.db
 htmlcov/
 .coverage*
 .pytest_cache/
+
+# -------------------------------------------------
+# Large / binary teaching assets (optional ignores)
+# These patterns ignore future added bulky files to
+# reduce VS Code indexing overhead. Already tracked
+# binaries will remain unless removed manually.
+# Comment out any you still want to version.
+*.pptx
+*.pdf
+*.zip
+
+# If you prefer only specific classroom zips ignored,
+# replace the generic '*.zip' with a narrower pattern like:
+# 00_CLASS_MATERIALS/Competencies/*/*.zip
+# -------------------------------------------------
