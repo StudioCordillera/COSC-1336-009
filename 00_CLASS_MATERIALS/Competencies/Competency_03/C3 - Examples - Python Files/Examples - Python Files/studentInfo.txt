@@ -1,4 +1,0 @@
-Ally      Baba       100
-Sara      Tommy      75
-Hara      Sunnt      9
-Dora      Donall     -200
