@@ -1,0 +1,6 @@
+tup1 = ('physics', 'chemistry', 1997, 2000);
+tup2 = (1, 2, 3, 4, 5 );
+tup3 = "a", "b", "c", "d";
+
+tup1 = ();  # emplty tuple
+tup1 = (50,); # tuple containing a single value include a comma

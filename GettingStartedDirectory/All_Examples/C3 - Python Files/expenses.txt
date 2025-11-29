@@ -1,0 +1,3 @@
+AllyBaba  379.25
+SheMan  400.0
+HeMan  300.0

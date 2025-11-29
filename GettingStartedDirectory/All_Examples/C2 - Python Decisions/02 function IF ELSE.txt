@@ -1,0 +1,16 @@
+# Name      Donald Duck
+# Date      August 27, 2030
+# Program   Documentation
+# Class     COSC 1336 Programming Language 1
+# ----------------------------------------------------------------
+# Description
+# Basic If Statement
+
+x = 10
+y = 5
+
+if (x > y):
+   print("x is greater than y")
+   x = x -1
+else:
+   print("x is less than or equal to y")
