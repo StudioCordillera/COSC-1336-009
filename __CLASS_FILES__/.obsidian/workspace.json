@@ -1,0 +1,264 @@
+{
+  "main": {
+    "id": "0709ae95d023ea8d",
+    "type": "split",
+    "children": [
+      {
+        "id": "6e947543a6d76d46",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e18d0f2f43958c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KNOWLEDGE_BASE/SUB_ATOMIC_KNOWLEDGE_BASE/OFFICIAL_COLLECTION/LIST_OPERATIONS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "LIST_OPERATIONS"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b24dc0198e4ae48e",
+    "type": "split",
+    "children": [
+      {
+        "id": "9fb0c4ddf09fa9da",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ef16013c2eff9553",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "2a9f3bc41482ecbf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "exponential functions",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "9d85220f456b90c3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 359.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "a8f78a40db778f4e",
+    "type": "split",
+    "children": [
+      {
+        "id": "53468c3d89a7df73",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "254ff9dcbc2c73ea",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "System/PASTE_FOR_NEW_SESSIONS.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "byModifiedTime",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for PASTE_FOR_NEW_SESSIONS"
+            }
+          },
+          {
+            "id": "34d966fce4c229d3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "System/PASTE_FOR_NEW_SESSIONS.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from PASTE_FOR_NEW_SESSIONS"
+            }
+          },
+          {
+            "id": "12f2e9ff4b2d0dd2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "961aeb762b3caca6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "ba1d6336e33fdf9d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "0c1fc40574b23a2f",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Connections"
+            }
+          },
+          {
+            "id": "871afedf17858b85",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "templater-obsidian:Templater": false,
+      "smart-connections:Open: Smart Chat": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Smart Connections: Open random connection": true,
+      "obsidian-kanban:Create new board": false,
+      "obsidian-importer:Open Importer": false
+    }
+  },
+  "active": "6e18d0f2f43958c9",
+  "lastOpenFiles": [
+    "KNOWLEDGE_BASE/SUB_ATOMIC_KNOWLEDGE_BASE/OFFICIAL_COLLECTION/DICTIONARY_OPERATIONS.md",
+    "COSC-1336-009/COSC1336(09)/__PROJECTS__/Exam_01_Project/01_WORKING/TEMP.py",
+    "KNOWLEDGE_BASE/SUB_ATOMIC_KNOWLEDGE_BASE/OFFICIAL_COLLECTION/STRING_METHODS.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Examples/OOP_PART1.txt",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/EXAM2_ULTIMATE_STUDY_GUIDE.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/EXAM2_COMPREHENSIVE_STUDY_SHEET.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/Dictionary-Method-get.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/String-Method-isalpha-isdigit-isalnum.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/Dictionary-Method-keys-values-items.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/Dictionary-Update-Add-Modify.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/Dictionary-Access-Elements.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/Dictionary-Basics-Structure.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/String-Method-find-index.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/String-Method-strip-lstrip-rstrip.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/String-Method-replace.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/Lists-Copying.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/Lists-Function-max-min.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/Lists-Function-len.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/Lists-ValueError-Exception.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/Lists-IndexError-Exception.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/Lists-Method-pop.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/Lists-Method-extend.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/Lists-Method-count.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/Lists-Method-reverse.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/Lists-Method-remove.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/Lists-Method-sort.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Atomic/Lists-Method-insert.md",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Examples/DIRECTIVE.txt",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/directive.txt",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Converted/Slideshows/C8_PPT Slides_ Python OOP.pdf",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Converted/Slideshows/C7_PPT - Python OOP.pdf",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Converted/Slideshows/C6_PPT - Python Dictionaries - Sets.pdf",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Converted/Slideshows/C5_PPT - Python Strings.pdf",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Converted/Slideshows/C4_PPT - Python Lists - Tuples.pdf",
+    "COSC-1336-009/COSC1336(09)/EXAM2_SPRINT/Slides_Converted/Slideshows/C3_PPT - Python Files.pdf",
+    "COSC-1336-009/00_CLASS_MATERIALS/Competencies/C8_PPT Slides_ Python OOP/Slide_040.png",
+    "COSC-1336-009/00_CLASS_MATERIALS/Competencies/C8_PPT Slides_ Python OOP/Slide_039.png",
+    "COSC-1336-009/00_CLASS_MATERIALS/Competencies/C8_PPT Slides_ Python OOP/Slide_038.png",
+    "COSC-1336-009/00_CLASS_MATERIALS/Competencies/C8_PPT Slides_ Python OOP/Slide_037.png",
+    "COSC-1336-009/00_CLASS_MATERIALS/Competencies/C8_PPT Slides_ Python OOP/Slide_036.png",
+    "COSC-1336-009/00_CLASS_MATERIALS/Competencies/C8_PPT Slides_ Python OOP/Slide_035.png",
+    "COSC-1336-009/00_CLASS_MATERIALS/Competencies/C8_PPT Slides_ Python OOP/Slide_034.png",
+    "COSC-1336-009/00_CLASS_MATERIALS/Competencies/C8_PPT Slides_ Python OOP/Slide_033.png",
+    "COSC-1336-009/00_CLASS_MATERIALS/Competencies/C8_PPT Slides_ Python OOP/Slide_032.png",
+    "COSC-1336-009/00_CLASS_MATERIALS/Competencies/C8_PPT Slides_ Python OOP/Slide_031.png",
+    "Untitled 2.canvas",
+    "Untitled 1.canvas",
+    "Untitled.canvas"
+  ]
+}

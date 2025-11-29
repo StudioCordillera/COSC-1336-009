@@ -1,0 +1,11 @@
+{
+  "promptDelete": false,
+  "userIgnoreFilters": [
+    "COSC-1336-009/",
+    "*.py",
+    "*.pdf",
+    "__BOOK__/",
+    "__CLASS_DOCS__/"
+  ],
+  "alwaysUpdateLinks": true
+}

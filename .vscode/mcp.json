@@ -1,0 +1,16 @@
+{
+	"servers": {
+		"DESKTOP_COMMANDER": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"@wonderwhy-er/desktop-commander@latest"
+			]
+		},
+		"TAVILY_SEARCH": {
+			"url": "https://mcp.tavily.com/mcp/?tavilyApiKey=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",
+			"type": "http"
+		}
+	},
+	"inputs": []
+}

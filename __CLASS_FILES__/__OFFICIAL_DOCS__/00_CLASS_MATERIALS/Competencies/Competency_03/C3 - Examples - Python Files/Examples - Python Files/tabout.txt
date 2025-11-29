@@ -1,0 +1,12 @@
+1 times a is a
+2 times a is aa
+3 times a is aaa
+4 times a is aaaa
+5 times a is aaaaa
+6 times a is aaaaaa
+7 times a is aaaaaaa
+8 times a is aaaaaaaa
+9 times a is aaaaaaaaa
+10 times a is aaaaaaaaaa
+11 times a is aaaaaaaaaaa
+12 times a is aaaaaaaaaaaa

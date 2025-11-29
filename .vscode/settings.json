@@ -1,0 +1,10 @@
+{
+    "taipyStudio.gUI.elementsFilePaths": [],
+    "editor.inlineSuggest.enabled": false,
+    "python.terminal.executeInFileDir": true,
+    "python.defaultInterpreterPath": "python",
+    "code-runner.executorMap": {
+        "python": "cd $dir && python $fileName"
+    },
+    "code-runner.runInTerminal": true
+}
