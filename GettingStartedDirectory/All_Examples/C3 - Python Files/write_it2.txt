@@ -1,3 +1,0 @@
-Line 10
-This is line 20
-That makes this line 30

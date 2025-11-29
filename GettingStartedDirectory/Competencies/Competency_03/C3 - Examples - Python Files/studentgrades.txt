@@ -1,9 +1,0 @@
-AllyBaba 100
-Tommy 20
-Hilly 56
-Silly 85
-Dilly 98
-Molly 78
-Polly 48
-Gooly 74
-

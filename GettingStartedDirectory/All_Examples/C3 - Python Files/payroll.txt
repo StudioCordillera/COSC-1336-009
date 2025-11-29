@@ -1,3 +1,0 @@
-AllyBaba 10.25 37 Female
-SheMan 10.00 40 Female
-HeMan 10.00 30 Male
