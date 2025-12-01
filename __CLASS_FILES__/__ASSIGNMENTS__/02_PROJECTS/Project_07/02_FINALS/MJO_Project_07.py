@@ -157,7 +157,7 @@ def getCharData(prompt):
 ##                      START - MY CODE                      ##
 ###############################################################
 
-# Display Start of Program Boiler SOPB
+#   SOPB - Start of Program Banner
 #  ------------------------------------------------------------------------
 def projectStart():
     print('\n',' ' * 4, '-'* 80, '\n',' ' * 4, 'Start of Project 07')
@@ -167,128 +167,148 @@ def projectStart():
     print('\t  Form Design Program | Employee Intake Form')
     print(' ' * 4,'-' * 80, '\n')
 
-# Display End of Program Boiler EOPB
+
+#   EOPB - End of Program Banner
 #  ------------------------------------------------------------------------
 def projectEnd():
     print(' ' * 4,'-' * 80, '\n')
     print( ' ' * 5, 'End of Project 07')
     print(' ' * 4,'-' * 80)    
 
-#  SSN Input + Validation
+#   Validate SSN Format (xxx-xx-xxxx or 9 digits)
 #  ------------------------------------------------------------------------
 def validateSSN(prompt):
     while True:
-        value = getStringData(prompt)
+        value = getStringData(prompt)  # Get SSN input <
+        
+        # Check numeric format (9 digits)
         if value.isnumeric():
             if len(value) != 9:
-                print("\tUnsupported length for numerical format SSN input!")
+                print("\tUnsupported length for numerical format SSN input!")  # Error >
             else:
-                return value
+                return value  # Valid 9-digit SSN >
+        
+        # Check dashed format (xxx-xx-xxxx)
         elif '-' in value:
             if len(value) != 11:
-                print("\tUnsupported length for SSN xxx-xx-xxxx format!")
+                print("\tUnsupported length for SSN xxx-xx-xxxx format!")  # Error >
             elif value[3] != '-' or value[6] != '-':
-                print("\tInvalid format! Use xxx-xx-xxxx format!")
+                print("\tInvalid format! Use xxx-xx-xxxx format!")  # Error >
             else:
-                return value
+                return value  # Valid dashed SSN >
         else:
-            print('\tPROVIDE VALID SSN!')
+            print('\tPROVIDE VALID SSN!')  # Error: invalid format >
 
-#  Updates vars dict with new key-value pair
+#   Store Input Variable in Dictionary
 #  ------------------------------------------------------------------------
 def getInputVars(vars:dict[object],name:str, value:object):
-    vars.update({name:value})
-    return vars
+    vars.update({name:value})  # Add/update key-value pair |
+    return vars  # Return updated dict >
 
-#  Generates derived vars: initials, email, l4ssn, eID
+
+#   Generate Derived Variables (initials, email, l4ssn, eID)
 #  ------------------------------------------------------------------------
 def generateDerived(vars:dict[object], domain):
-    initials:str = (f"{(vars['first'])[:1]}{(vars['last'])[:1]}").upper()
-    email:str = (f"{(vars['first'])[:1]}{vars['last']}@{domain}").lower()
-
-    # Extract last 4 digits, removing dashes if present
-    ssn_clean = vars['ssn'].replace('-', '')
-    l4ssn:str = ssn_clean[-4:]
-    eID:str = (f"{vars['last'].lower()}.{l4ssn}")
-
+    # Create initials from first and last name
+    initials:str = (f"{(vars['first'])[:1]}{(vars['last'])[:1]}").upper()  # |
+    
+    # Generate email: firstInitial + lastName @ domain
+    email:str = (f"{(vars['first'])[:1]}{vars['last']}@{domain}").lower()  # |
+    
+    # Extract last 4 SSN digits (remove dashes if present)
+    ssn_clean = vars['ssn'].replace('-', '')  # Clean SSN |
+    l4ssn:str = ssn_clean[-4:]  # Get last 4 digits |
+    
+    # Generate employee ID: lastName.last4SSN
+    eID:str = (f"{vars['last'].lower()}.{l4ssn}")  # |
+    
+    # Store all derived variables
     vars.update({'initials':initials})
     vars.update({'email': email})
     vars.update({'l4ssn':l4ssn})
     vars.update({'eID': eID})
+    
+    return vars  # Return updated dict >
 
-    return vars
-
-#  Menu function - Collects user input
+#   Menu - Collect Employee Input with Optional Customization
 #  ------------------------------------------------------------------------
 def menu(vars:dict[object]):
-    role = 'Software Developer'
-    domain = 'gmail.com'
-
+    # Set default values
+    role = 'Software Developer'  # Default job title |
+    domain = 'gmail.com'  # Default email domain |
+    
+    # Optional customization prompt
     while True:
-        getIn = input('\n\tWould you like to change special values?\n\t\'y\' to modify: ')
+        getIn = input('\n\tWould you like to change special values?\n\t\'y\' to modify: ')  # <
         if (getIn == 'y' or getIn == 'Y'):
-            domain = input('\tProvide domain in (domain.com) format: ')
-            role = input('\tProvide your employee position: ')
+            domain = input('\tProvide domain in (domain.com) format: ')  # <
+            role = input('\tProvide your employee position: ')  # <
         break
-
+    
+    # Display data entry form header
     print()
     print(' ' * 4 + role + '\'s Entry')
     print(' ' * 4 + '-' * 80)
     print(' ' * 4 + 'Employer Information')
     
-    last:str = getStringData(' ' * 8 + 'Last name    ')
-    vars = getInputVars(vars, 'last', last)
-    first:str = getStringData(' ' * 8 + 'First name    ')
-    vars = getInputVars(vars, 'first', first)
-    ssn:str = validateSSN(' ' * 8 + 'SSN (ex. 111-23-3333):  ')
-    vars = getInputVars(vars, 'ssn', ssn)
-    dependents:int = getIntegerData(' ' * 8 + 'Number of dependents: ', True)
-    vars = getInputVars(vars, 'dependents', dependents)
-    wage:float =  getFloatData(' ' * 8 + 'Wage: $', True)
-    vars = getInputVars(vars, 'wage', wage)
+    # Collect all employee information
+    last:str = getStringData(' ' * 8 + 'Last name    ')  # <
+    vars = getInputVars(vars, 'last', last)  # Store |
+    first:str = getStringData(' ' * 8 + 'First name    ')  # <
+    vars = getInputVars(vars, 'first', first)  # Store |
+    ssn:str = validateSSN(' ' * 8 + 'SSN (ex. 111-23-3333):  ')  # <
+    vars = getInputVars(vars, 'ssn', ssn)  # Store |
+    dependents:int = getIntegerData(' ' * 8 + 'Number of dependents: ', True)  # <
+    vars = getInputVars(vars, 'dependents', dependents)  # Store |
+    wage:float =  getFloatData(' ' * 8 + 'Wage: $', True)  # <
+    vars = getInputVars(vars, 'wage', wage)  # Store |
     
+    # Store customization options
     vars.update({'domain':domain})
     vars.update({'role':role})
+    
+    return vars  # Return complete input dict >
 
-    return vars
 
-#  Displays formatted summary with all employee info
+#   Display Employee Information Summary
 #  ------------------------------------------------------------------------
 def displayResults(vars):
+    # Display formatted summary report
     print()
     print(' ' * 4 + '-' * 80)
     print(' ' * 4 + 'Summary: Create Identity')
     print(' ' * 4 + '-' * 80)
     print(' ' * 4 + 'The Employer\'s')
-    print(' ' * 8 + f'Name:   {vars["first"]} {vars["last"]}')
-    print(' ' * 8 + f'User\'s initial:   {vars["initials"]}')
-    print(' ' * 8 + f'Email address:  {vars["email"]}')
-    print(' ' * 8 + f'Last 4-digit of SSN:  {vars["l4ssn"]}')
-    print(' ' * 8 + f'Number of dependents: {vars["dependents"]}')
-    print(' ' * 8 + f'Wage: ${vars["wage"]:.2f}')
-    print(' ' * 8 + f'Employee ID: {vars["eID"]}')
+    print(' ' * 8 + f'Name:   {vars["first"]} {vars["last"]}')  # >
+    print(' ' * 8 + f'User\'s initial:   {vars["initials"]}')  # >
+    print(' ' * 8 + f'Email address:  {vars["email"]}')  # >
+    print(' ' * 8 + f'Last 4-digit of SSN:  {vars["l4ssn"]}')  # >
+    print(' ' * 8 + f'Number of dependents: {vars["dependents"]}')  # >
+    print(' ' * 8 + f'Wage: ${vars["wage"]:.2f}')  # >
+    print(' ' * 8 + f'Employee ID: {vars["eID"]}')  # >
     print()
 
-###############################################################
-##    MAIN FUNCTION                                          ##
-###############################################################
-
+#   MAIN FUNCTION - Program Orchestration
+#  ------------------------------------------------------------------------
 def main(): 
-    vars:dict[object] = {}
+    vars:dict[object] = {}  # Initialize employee data dictionary |
     
-    # Calls function to display the start of project
+    # Display program start banner
     projectStart()
-
-    # Collect user input
-    vars = menu(vars)
     
-    # Generate derived variables
-    vars = generateDerived(vars, vars['domain'])
+    # Collect all employee input data
+    vars = menu(vars)  # <
     
-    # Display results
-    displayResults(vars)
-
-    # Calls function to display the end of project
+    # Generate derived variables (initials, email, eID, etc.)
+    vars = generateDerived(vars, vars['domain'])  # <
+    
+    # Display formatted employee summary
+    displayResults(vars)  # >
+    
+    # Display program end banner
     projectEnd()
-      
-main() # calling the function main()
+
+
+#   PROGRAM ENTRY POINT
+#  ------------------------------------------------------------------------
+main()
