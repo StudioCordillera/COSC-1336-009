@@ -1,24 +1,50 @@
-########################################
-## Matthew Ochoa                   #####
-## November 06, 2025               #####
-## Project: 03                     #####
-## Status: FINISHED                #####
-## Class: COSC 1336                #####
-########################################
+###############################################################
+##:::::|   Matthew Ochoa       |-----------------------|:::::##
+##:::::|   November 25, 2025   |   Status: COMPLETE    |:::::##
+##:::::|   Class: COSC 1336    |-----------------------|:::::##
+###############################################################
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+______________________________________________________________
+|   REQUIREMENTS - Project 04                                |
+|   Objectives: Odd Numbers Sum Calculator                   |
+|____________________________________________________________|
 
-# ------------------------------------------------------------#
-#                | Project 3 - Requirements |                 #
-# ------------------------------------------------------------#
+INPUTS (User Provided):
+    - Positive integer (ceiling value, must be > 0)
 
-'''| Objectives | 
-    
-    Core:
-        1) Prompts the user to enter 1 single (input as integer).
-        2.1) Calculates - appends odd numbers in range of the provided number as a ceiling into a list, and 1 being a floor. (INCLUSIVE)
-            2.2) Calculates a sum from (the list beeing appended to).
-        3) Displays the odd numbers from the collection by iterating over a loop, then provides the sum. 
-        
-'''
+PROCESSING:
+    - Validate input is positive integer
+    - Generate list of all odd numbers from 1 to input (inclusive)
+    - Calculate sum of all odd numbers in the list
+
+DISPLAY:
+    - List all odd numbers (one per line)
+    - Display sum of all odd numbers
+    - Show range (1 to input value)
+
+FUNCTIONS:
+    - projectStart(): Display program header
+    - projectEnd(): Display program completion message
+    - getIntegerData(prompt): Get validated integer input
+    - getFloatData(prompt): Get validated float input
+    - getStringData(prompt): Get string input
+    - getCharData(prompt): Get validated character input
+    - storeInput(): Collect and validate user input, build odd number list
+    - calcSum(integerList): Calculate sum of list elements
+    - displaySummary(): Display odd numbers and their sum
+    - main(): Program orchestration
+
+VALIDATION RULES:
+    - Input must be positive integer (> 0)
+    - Re-prompt if invalid input provided
+
+ALGORITHM:
+    - Range: 1 to user_input (inclusive)
+    - Filter: Only odd numbers (num % 2 != 0)
+    - Store in list, then calculate sum
+
+______________________________________________________________
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 ###############################################################
 ##                    PROVIDED FUNCTIONS                     ##
 ###############################################################
@@ -63,7 +89,7 @@ def getCharData(prompt):
 ##                      START - MY CODE                      ##
 ###############################################################
 
-# Display Start of Program Boiler SOPB
+#   SOPB
 #  ------------------------------------------------------------------------
 def projectStart():
     print(' ' * 4, '-'* 80, '\n',' ' * 4, 'Start of Project 4')
@@ -73,7 +99,8 @@ def projectStart():
     print('\t  Odd numbers and sum of range in input program')
     print(' ' * 4,'-' * 80, '\n')
 
-# Display End of Program Boiler EOPB
+
+#   EOPB
 #  ------------------------------------------------------------------------
 def projectEnd():
     print(' ' * 4,'-' * 80, '\n')
@@ -81,66 +108,71 @@ def projectEnd():
     print(' ' * 4,'-' * 80)
 
 
-# Store and get input from user while validating and appending
+#   Collect Input and Build Odd Number List
 #  ------------------------------------------------------------------------
 def storeInput():
-    
+    # Display input section header
     print(f'\t  User\'s Entry\n\t','-' * 76)
     
-    integerList = []
+    integerList = []  # Initialize list for odd numbers |
     
+    # Validate input is positive
     while True:
-        
-        intVal = getIntegerData('\t  Enter a positive Integer: ')
+        intVal = getIntegerData('\t  Enter a positive Integer: ')  # <
         
         if (intVal <=0):
-            print('\tNumber must be greater than zero!')
+            print('\tNumber must be greater than zero!')  # Error message >
         else:
-            break
-
-    for odds in range(1, intVal + 1):
-        if (odds%2 != 0):
-            integerList.append(odds)
+            break  # Valid input |
     
-    return integerList, intVal
+    # Build list of odd numbers in range [1, intVal]
+    for odds in range(1, intVal + 1):
+        if (odds%2 != 0):  # Check if odd |
+            integerList.append(odds)  # Add to list |
+    
+    return integerList, intVal  # Return list and ceiling value >
 
-# calculate sum from integerList elements
+#   Calculate Sum of List
 #  ------------------------------------------------------------------------
 def calcSum(integerList):
-    
-    intSum = sum(integerList)
-    
-    return intSum
+    intSum = sum(integerList)  # Sum all elements |
+    return intSum  # Return total >
 
-# display the summary of required
+
+#   Display Odd Numbers and Sum
 #  ------------------------------------------------------------------------
 def displaySummary(integerList, intSum, intVal):
-    
+    # Display summary header
     print(f'\n\t', '-' * 76, '\n\t  Summary: Sum of Positive Odd Integers\n\t', '-' * 76, '\n\t  Numbers are:\n')
     
+    # Display each odd number
     for value in integerList:
-        print ('\t\t', value)
-        
-            
-    print(f'\n\t  The sum of odd integers between {1} and {intVal} is {intSum}!')
-
-
-
-###############################################################
-##    MAIN FUNCTION                                          ##
-###############################################################
-def main(): 
-
-    # Display SOPB
-    projectStart()
-
-    integerList, intVal = storeInput()
+        print ('\t\t', value)  # Print odd number >
     
-    intSum = calcSum(integerList)
+    # Display final sum
+    print(f'\n\t  The sum of odd integers between {1} and {intVal} is {intSum}!')  # >
 
-    displaySummary(integerList, intSum, intVal)
 
-    # Display EOPB
+
+#   MAIN FUNCTION - Program Orchestration
+#  ------------------------------------------------------------------------
+def main(): 
+    # Display program start
+    projectStart()
+    
+    # Get input and build odd number list
+    integerList, intVal = storeInput()  # <
+    
+    # Calculate sum of odd numbers
+    intSum = calcSum(integerList)  # <
+    
+    # Display results
+    displaySummary(integerList, intSum, intVal)  # >
+    
+    # Display program end
     projectEnd()
-      
-main() # calling the function main()
+
+
+#   PROGRAM ENTRY POINT
+#  ------------------------------------------------------------------------
+main()
