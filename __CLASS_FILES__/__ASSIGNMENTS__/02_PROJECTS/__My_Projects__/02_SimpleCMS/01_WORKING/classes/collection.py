@@ -1,21 +1,38 @@
 ## Element Collection Class
+import os
+from dataclasses import dataclass
+from element import Employee
 
+@dataclass
 class Collection:
-    def __init__(self, path, fileName):
-        pass
+
+    Employee = Employee()
+    state = {}
+    stateFile = './state.txt'
+
+    def updateEntry(self):
+        self.state[self.Employee.name]=self.Employee.__dict__
+        
+
+    def set_employee_name(self, name):
+        print(name)
+        self.Employee.name = name
+        self.updateEntry()
+
+    def saveState(self):
+        with open('./state.txt', 'w') as file:
+            for key, value in self.state.items():
+                file.write(f"{key}:{value}\n")
 
 
-    # Setters
-    def set_path(self, path):
-        self.path = path
-    def set_fileName(self, fileName):
-        self.fileName = fileName
 
-    # Getters
-    def get_path(self):
-        return self.path
-    def get_fileName(self):
-        return self.fileName
-    
+def main():
 
-    def save
+    c1 = Collection()
+    c1.set_employee_name('Dave')
+    print(c1.Employee.__dict__)
+
+    c1.saveState()
+
+
+#main()

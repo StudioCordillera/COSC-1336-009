@@ -1,49 +1,99 @@
 ## UI Menu Class
-import classes.collection
-import classes.element
+import os
+from dataclasses import dataclass
+from collection import Collection
+from element import Employee
 
+
+# clearTerminal()
+def clearTerminal():
+    os.system('cls')
+
+
+@dataclass
 class UI:
-    def __init__(self, running):
-        self.running = running
-        self.uiProvider(running)
 
-    def uiProvider(self, running:bool):
-        while running:
-            flow = self.mainMenu()
-            print(flow)
+    Collection = Collection()
 
+    def simpleInput(self, prompt):
+        userInput = input(prompt)
+        return userInput
 
-    def mainMenu(self):
-
-        choices = ['New Registration', 'Modify Existing Item', 'Settings', 'Exit']
-        prompt = '\tChoose your option:'
-
-        flow = self.choicesMenu(choices,prompt)
-        return flow
-    
-    def validateChoices(self, choices:list[str], userInput:str):
-
-        if str(userInput).lower().strip() in choices:
-            return True, userInput
-        else:
-            print('\tNOT A PROVIDED OPTION...')
-            return False, None
-
-
-
-    def choicesMenu(self, choices:list[str], prompt:str):
-        inputs = []
-        while not isValid:
+    def optionsMenu(self, prompt, options):
+        while True:
             print(prompt)
-            for count in range(0,len(choices)):
-                inputs.append(count+1)
-                print(f"\t{inputs[count]}. {choices[count]}")
-            userInput = input()
-            isValid, choice = self.validateChoices(choices, userInput)
-        return choice
+            for key in options:
+                print(f"{key}. {options[key]}")
+            userInput = int(input())
+            if userInput not in options.keys():
+                print('\nNOT AN OPTION!!')
+            else:
+                return userInput
             
 
+    def registrationFlow(self, stages, stage):
 
+        option = stages[stage]['fields']['type'](self, prompt=(stages[stage]['fields']['prompt']),options=(stages[stage]['inputs']))
+        option = stages[stage]['routes'][option]
+        option = stages[option]['fields']['type'](self, prompt=stages[option]['fields']['prompt'])
+
+        return option
+
+
+
+
+
+
+
+
+
+
+            
+
+def main():
+    index = 1
+    stage = 1
+    stages = {
+
+        1:{
+            'operation':{
+                'Register':'Employee'
+            },
+
+            'fields':{
+                'type': UI.optionsMenu,
+                'prompt': 'Choose an Option'
+            },
+
+            'inputs':{
+                1: 'Register Employee',
+                2: 'Confirm Employee'
+            },
+
+            'routes':{
+                1:2,
+                2:None
+            }
+        },
+
+        2:{
+            'operation':{
+                'edit':'name'
+            },
+            'fields':{
+                'type':UI.simpleInput,
+                'prompt':'Insert name: '
+            }}}
+    ui1 = UI()
+
+
+    option = ui1.registrationFlow(stages, stage)
+
+    ui1.Collection.set_employee_name(option)
+    ui1.Collection.saveState()
+
+
+main()
 
 
 

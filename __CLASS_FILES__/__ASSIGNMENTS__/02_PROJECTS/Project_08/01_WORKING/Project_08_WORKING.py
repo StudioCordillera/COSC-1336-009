@@ -206,7 +206,7 @@ def write_dict_to_files(data_dict, directory, extension='.txt'):
     print(f"Wrote {len(data_dict)} files to {directory}")
 
 '''
-
+            
 
 ###############################################################
 ##    MAIN FUNCTION                                          ##

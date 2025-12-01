@@ -1,11 +1,23 @@
 ## Element Class
+from dataclasses import dataclass
 
-class Element:
-    def __init__(self, name):
-        self.name = name
+@dataclass
+class Employee:
+
+    name = str
+
+
+
+
+def main():
+
+    e1 = Employee()
+    e1.name = 'Bob'
+
+    print(e1.__dict__)
     
-    def set_name(self, name):
-        self.name = name
-        
-    def get_name(self):
-        return self.name
+    for k, v in e1.__dict__.items():
+        print(k)
+        print(v)
+
+#main()
