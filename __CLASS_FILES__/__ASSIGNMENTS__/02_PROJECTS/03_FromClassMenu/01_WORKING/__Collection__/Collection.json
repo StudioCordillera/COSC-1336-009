@@ -1,0 +1,11 @@
+{
+  "last": "Last",
+  "first": "First",
+  "_Employee__dependents": 0,
+  "_Employee__wage": 0.0,
+  "_Employee__ssn": "123456789",
+  "initials": "FL",
+  "email": "flast@example.com",
+  "_Employee__l4ssn": "6789",
+  "_Employee__eID": "last.6789"
+}

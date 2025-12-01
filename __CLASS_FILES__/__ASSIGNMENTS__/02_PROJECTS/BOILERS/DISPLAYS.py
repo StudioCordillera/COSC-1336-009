@@ -21,3 +21,12 @@ print(f'\t  User\'s Entry\n\t','-' * 76)
 print('\n\t  PROGRAM STUFF HERE\n')
 print('\n\t\t  ERRORS SPACING\n')
 projectEnd()
+
+
+
+import os
+
+def clearTerminal():
+    os.system('cls')
+
+clearTerminal()
