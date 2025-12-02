@@ -25,8 +25,19 @@ projectEnd()
 
 
 import os
+#--------------------------------
+clear = lambda: os.system('cls')
+clear()
 
-def clearTerminal():
+
+# OR
+
+
+
+'''
+import os
+def clear():
     os.system('cls')
+clear()
+'''
 
-clearTerminal()

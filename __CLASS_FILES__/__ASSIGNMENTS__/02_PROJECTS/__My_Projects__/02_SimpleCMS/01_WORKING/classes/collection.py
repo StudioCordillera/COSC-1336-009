@@ -28,7 +28,7 @@ class Collection:
 
 def main():
 
-    c1 = Collection()
+    
     c1.set_employee_name('Dave')
     print(c1.Employee.__dict__)
 

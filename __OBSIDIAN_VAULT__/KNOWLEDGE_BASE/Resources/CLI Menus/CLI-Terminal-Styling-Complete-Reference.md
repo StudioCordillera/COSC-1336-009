@@ -1,86 +1,374 @@
 # CLI Terminal Styling Complete Reference
 
-## Quick Reference
+## Quick Reference - All Methods & Constants
 
-### ANSI Escape Sequences
+### Core ANSI Methods
 ```python
-ESC = '\033'        # Escape character
-CSI = '\033['       # Control Sequence Introducer
-RESET = '\033[0m'   # Reset all formatting
+# Escape Sequences
+ESC = '\033'                    # Escape character
+CSI = '\033['                   # Control Sequence Introducer
+RESET = '\033[0m'               # Reset all formatting
+
+# Text Formatting Methods
+BOLD = '\033[1m'                # Bold text
+DIM = '\033[2m'                 # Dimmed text
+ITALIC = '\033[3m'              # Italic text
+UNDERLINE = '\033[4m'           # Underlined text
+BLINK = '\033[5m'               # Blinking text
+REVERSE = '\033[7m'             # Reverse video
+HIDDEN = '\033[8m'              # Hidden text
+STRIKETHROUGH = '\033[9m'       # Strikethrough text
+
+# Reset Individual Attributes
+RESET_BOLD = '\033[22m'         # Reset bold/dim
+RESET_ITALIC = '\033[23m'       # Reset italic
+RESET_UNDERLINE = '\033[24m'    # Reset underline
+RESET_BLINK = '\033[25m'        # Reset blink
+RESET_REVERSE = '\033[27m'      # Reset reverse
+RESET_HIDDEN = '\033[28m'       # Reset hidden
 ```
 
-### Text Formatting
+### Standard Colors (16-Color Palette)
 ```python
-BOLD = '\033[1m'            ITALIC = '\033[3m'
-DIM = '\033[2m'             UNDERLINE = '\033[4m'
-REVERSE = '\033[7m'         STRIKETHROUGH = '\033[9m'
+# Foreground Colors
+FG_BLACK = '\033[30m'           FG_RED = '\033[31m'
+FG_GREEN = '\033[32m'           FG_YELLOW = '\033[33m'
+FG_BLUE = '\033[34m'            FG_MAGENTA = '\033[35m'
+FG_CYAN = '\033[36m'            FG_WHITE = '\033[37m'
+FG_DEFAULT = '\033[39m'         # Reset to default
+
+# Bright Foreground Colors
+FG_BRIGHT_BLACK = '\033[90m'    FG_BRIGHT_RED = '\033[91m'
+FG_BRIGHT_GREEN = '\033[92m'    FG_BRIGHT_YELLOW = '\033[93m'
+FG_BRIGHT_BLUE = '\033[94m'     FG_BRIGHT_MAGENTA = '\033[95m'
+FG_BRIGHT_CYAN = '\033[96m'     FG_BRIGHT_WHITE = '\033[97m'
+
+# Background Colors
+BG_BLACK = '\033[40m'           BG_RED = '\033[41m'
+BG_GREEN = '\033[42m'           BG_YELLOW = '\033[43m'
+BG_BLUE = '\033[44m'            BG_MAGENTA = '\033[45m'
+BG_CYAN = '\033[46m'            BG_WHITE = '\033[47m'
+BG_DEFAULT = '\033[49m'         # Reset to default
+
+# Bright Background Colors
+BG_BRIGHT_BLACK = '\033[100m'   BG_BRIGHT_RED = '\033[101m'
+BG_BRIGHT_GREEN = '\033[102m'   BG_BRIGHT_YELLOW = '\033[103m'
+BG_BRIGHT_BLUE = '\033[104m'    BG_BRIGHT_MAGENTA = '\033[105m'
+BG_BRIGHT_CYAN = '\033[106m'    BG_BRIGHT_WHITE = '\033[107m'
 ```
 
-### Standard Colors (Foreground)
+### Advanced Color Methods
 ```python
-FG_BLACK = '\033[30m'       FG_RED = '\033[31m'
-FG_GREEN = '\033[32m'       FG_YELLOW = '\033[33m'
-FG_BLUE = '\033[34m'        FG_MAGENTA = '\033[35m'
-FG_CYAN = '\033[36m'        FG_WHITE = '\033[37m'
+# 256-Color Palette (0-255)
+def fg_256(n: int) -> str:
+    """Foreground color from 256-color palette"""
+    return f'\033[38;5;{n}m'
+
+def bg_256(n: int) -> str:
+    """Background color from 256-color palette"""
+    return f'\033[48;5;{n}m'
+
+# RGB True Color (24-bit)
+def fg_rgb(r: int, g: int, b: int) -> str:
+    """Foreground RGB color (0-255 each)"""
+    return f'\033[38;2;{r};{g};{b}m'
+
+def bg_rgb(r: int, g: int, b: int) -> str:
+    """Background RGB color (0-255 each)"""
+    return f'\033[48;2;{r};{g};{b}m'
+
+# Hex Color Helpers
+def hex_to_rgb(hex_color: str) -> tuple:
+    """Convert #RRGGBB to (r, g, b)"""
+    hex_color = hex_color.lstrip('#')
+    return tuple(int(hex_color[i:i+2], 16) for i in (0, 2, 4))
+
+def fg_hex(hex_color: str) -> str:
+    """Foreground color from hex string"""
+    r, g, b = hex_to_rgb(hex_color)
+    return fg_rgb(r, g, b)
+
+def bg_hex(hex_color: str) -> str:
+    """Background color from hex string"""
+    r, g, b = hex_to_rgb(hex_color)
+    return bg_rgb(r, g, b)
 ```
 
-### Background Colors
+### Cursor Control Methods
 ```python
-BG_BLACK = '\033[40m'       BG_RED = '\033[41m'
-BG_GREEN = '\033[42m'       BG_YELLOW = '\033[43m'
-BG_BLUE = '\033[44m'        BG_MAGENTA = '\033[45m'
-BG_CYAN = '\033[46m'        BG_WHITE = '\033[47m'
+# Cursor Movement
+def CURSOR_UP(n: int = 1) -> str:
+    """Move cursor up n lines"""
+    return f'\033[{n}A'
+
+def CURSOR_DOWN(n: int = 1) -> str:
+    """Move cursor down n lines"""
+    return f'\033[{n}B'
+
+def CURSOR_FORWARD(n: int = 1) -> str:
+    """Move cursor right n columns"""
+    return f'\033[{n}C'
+
+def CURSOR_BACK(n: int = 1) -> str:
+    """Move cursor left n columns"""
+    return f'\033[{n}D'
+
+def CURSOR_NEXT_LINE(n: int = 1) -> str:
+    """Move cursor to beginning of line, n lines down"""
+    return f'\033[{n}E'
+
+def CURSOR_PREV_LINE(n: int = 1) -> str:
+    """Move cursor to beginning of line, n lines up"""
+    return f'\033[{n}F'
+
+def CURSOR_COL(n: int) -> str:
+    """Move cursor to column n"""
+    return f'\033[{n}G'
+
+def CURSOR_POS(row: int, col: int) -> str:
+    """Move cursor to position (row, col) - 1-based"""
+    return f'\033[{row};{col}H'
+
+# Cursor Position Shortcuts
+CURSOR_HOME = '\033[H'          # Move to (1,1)
+CURSOR_SAVE = '\033[s'          # Save cursor position
+CURSOR_RESTORE = '\033[u'       # Restore cursor position
+
+# Cursor Visibility
+CURSOR_HIDE = '\033[?25l'       # Hide cursor
+CURSOR_SHOW = '\033[?25h'       # Show cursor
 ```
 
-### Advanced Colors
+### Screen Control Methods
 ```python
-# 256-color palette
-fg_256(color_code)          # Foreground (0-255)
-bg_256(color_code)          # Background (0-255)
+# Clear Operations
+CLEAR_SCREEN = '\033[2J'        # Clear entire screen
+CLEAR_SCREEN_FROM_CURSOR = '\033[0J'  # Clear from cursor down
+CLEAR_SCREEN_TO_CURSOR = '\033[1J'    # Clear from cursor up
+CLEAR_LINE = '\033[2K'          # Clear entire line
+CLEAR_LINE_FROM_CURSOR = '\033[0K'    # Clear from cursor right
+CLEAR_LINE_TO_CURSOR = '\033[1K'      # Clear from cursor left
 
-# RGB true color (24-bit)
-fg_rgb(r, g, b)             # Foreground RGB (0-255 each)
-bg_rgb(r, g, b)             # Background RGB (0-255 each)
+# Scroll Operations
+def SCROLL_UP(n: int = 1) -> str:
+    """Scroll screen up n lines"""
+    return f'\033[{n}S'
+
+def SCROLL_DOWN(n: int = 1) -> str:
+    """Scroll screen down n lines"""
+    return f'\033[{n}T'
+
+# Screen Modes
+SAVE_SCREEN = '\033[?47h'       # Save screen
+RESTORE_SCREEN = '\033[?47l'    # Restore screen
+ALT_SCREEN_ENABLE = '\033[?1049h'  # Enable alternate screen buffer
+ALT_SCREEN_DISABLE = '\033[?1049l' # Disable alternate screen buffer
 ```
 
-### Cursor Control
+### Screen Utility Class
 ```python
-CURSOR_UP(n)                CURSOR_DOWN(n)
-CURSOR_FORWARD(n)           CURSOR_BACK(n)
-CURSOR_POS(row, col)        CURSOR_HOME = '\033[H'
-CURSOR_SAVE = '\033[s'      CURSOR_RESTORE = '\033[u'
-CURSOR_HIDE = '\033[?25l'   CURSOR_SHOW = '\033[?25h'
+class Screen:
+    """Screen control utilities"""
+    
+    @staticmethod
+    def clear():
+        """Clear entire screen"""
+        print('\033[2J', end='', flush=True)
+    
+    @staticmethod
+    def clear_line():
+        """Clear current line"""
+        print('\033[2K', end='', flush=True)
+    
+    @staticmethod
+    def move_to(row: int, col: int):
+        """Move cursor to position (1-based)"""
+        print(f'\033[{row};{col}H', end='', flush=True)
+    
+    @staticmethod
+    def print_at(row: int, col: int, text: str):
+        """Print text at position"""
+        print(f'\033[{row};{col}H{text}', end='', flush=True)
+    
+    @staticmethod
+    def hide_cursor():
+        """Hide cursor"""
+        print('\033[?25l', end='', flush=True)
+    
+    @staticmethod
+    def show_cursor():
+        """Show cursor"""
+        print('\033[?25h', end='', flush=True)
+    
+    @staticmethod
+    def save_cursor():
+        """Save cursor position"""
+        print('\033[s', end='', flush=True)
+    
+    @staticmethod
+    def restore_cursor():
+        """Restore cursor position"""
+        print('\033[u', end='', flush=True)
 ```
 
-### Screen Control
+### Box Drawing Characters (ASCII Safe)
 ```python
-CLEAR_SCREEN = '\033[2J'
-CLEAR_LINE = '\033[2K'
-SCROLL_UP(n)                SCROLL_DOWN(n)
-```
+# Single Line (ASCII fallback)
+BOX_H = '-'              # Horizontal line
+BOX_V = '|'              # Vertical line
+BOX_TL = '+'             # Top-left corner
+BOX_TR = '+'             # Top-right corner
+BOX_BL = '+'             # Bottom-left corner
+BOX_BR = '+'             # Bottom-right corner
+BOX_CROSS = '+'          # Cross/intersection
+BOX_T_DOWN = '+'         # T junction down
+BOX_T_UP = '+'           # T junction up
+BOX_T_RIGHT = '+'        # T junction right
+BOX_T_LEFT = '+'         # T junction left
 
-### Box Drawing (Single Line)
-```python
-─ │ ┌ ┐ └ ┘ ┬ ┴ ├ ┤ ┼
-BOX_SINGLE_H  BOX_SINGLE_V  BOX_SINGLE_TL  BOX_SINGLE_TR
-```
+# Unicode Box Drawing (use when encoding supports it)
+BOX_SINGLE_H = '─'       # ─
+BOX_SINGLE_V = '│'       # │
+BOX_SINGLE_TL = '┌'      # ┌
+BOX_SINGLE_TR = '┐'      # ┐
+BOX_SINGLE_BL = '└'      # └
+BOX_SINGLE_BR = '┘'      # ┘
+BOX_SINGLE_CROSS = '┼'   # ┼
+BOX_SINGLE_T_DOWN = '┬'  # ┬
+BOX_SINGLE_T_UP = '┴'    # ┴
+BOX_SINGLE_T_RIGHT = '├' # ├
+BOX_SINGLE_T_LEFT = '┤'  # ┤
 
-### Box Drawing (Double Line)
-```python
-═ ║ ╔ ╗ ╚ ╝ ╦ ╩ ╠ ╣ ╬
-BOX_DOUBLE_H  BOX_DOUBLE_V  BOX_DOUBLE_TL  BOX_DOUBLE_TR
+# Double Line
+BOX_DOUBLE_H = '═'       # ═
+BOX_DOUBLE_V = '║'       # ║
+BOX_DOUBLE_TL = '╔'      # ╔
+BOX_DOUBLE_TR = '╗'      # ╗
+BOX_DOUBLE_BL = '╚'      # ╚
+BOX_DOUBLE_BR = '╝'      # ╝
+BOX_DOUBLE_CROSS = '╬'   # ╬
+BOX_DOUBLE_T_DOWN = '╦'  # ╦
+BOX_DOUBLE_T_UP = '╩'    # ╩
+BOX_DOUBLE_T_RIGHT = '╠' # ╠
+BOX_DOUBLE_T_LEFT = '╣'  # ╣
 ```
 
 ### Block Elements
 ```python
-█ ▓ ▒ ░ ▀ ▄ ▌ ▐
-BLOCK_FULL  BLOCK_DARK  BLOCK_MEDIUM  BLOCK_LIGHT
+# Block Characters
+BLOCK_FULL = '█'         # Full block
+BLOCK_DARK = '▓'         # Dark shade
+BLOCK_MEDIUM = '▒'       # Medium shade
+BLOCK_LIGHT = '░'        # Light shade
+BLOCK_TOP = '▀'          # Upper half block
+BLOCK_BOTTOM = '▄'       # Lower half block
+BLOCK_LEFT = '▌'         # Left half block
+BLOCK_RIGHT = '▐'        # Right half block
+
+# Progress Bar Characters
+PROGRESS_FULL = '█'      # 100% filled
+PROGRESS_SEVEN_EIGHTHS = '▉'  # 7/8 filled
+PROGRESS_THREE_QUARTERS = '▊' # 3/4 filled
+PROGRESS_FIVE_EIGHTHS = '▋'   # 5/8 filled
+PROGRESS_HALF = '▌'      # 1/2 filled
+PROGRESS_THREE_EIGHTHS = '▍'  # 3/8 filled
+PROGRESS_QUARTER = '▎'   # 1/4 filled
+PROGRESS_EIGHTH = '▏'    # 1/8 filled
+PROGRESS_EMPTY = ' '     # Empty
 ```
 
-### Special Symbols
+### Special Symbols & Icons
 ```python
-✓ ✗ ★ ☆ ● ○ ■ □ ▲ ▼ ◀ ▶ → ← ↑ ↓ ⚠ ℹ
-CHECK_MARK  CROSS_MARK  STAR_FILLED  WARNING  INFO
+# Check Marks & Status
+CHECK_MARK = '✓'         # Check mark (or 'v')
+CROSS_MARK = '✗'         # X mark (or 'x')
+BALLOT_X = '☒'           # Ballot box with X
+BALLOT_CHECK = '☑'       # Ballot box with check
+BALLOT_EMPTY = '☐'       # Empty ballot box
+
+# Arrows & Pointers
+ARROW_RIGHT = '→'        # Right arrow (or '>')
+ARROW_LEFT = '←'         # Left arrow (or '<')
+ARROW_UP = '↑'           # Up arrow (or '^')
+ARROW_DOWN = '↓'         # Down arrow (or 'v')
+TRIANGLE_RIGHT = '▶'     # Right triangle (or '>')
+TRIANGLE_LEFT = '◀'      # Left triangle (or '<')
+TRIANGLE_UP = '▲'        # Up triangle (or '^')
+TRIANGLE_DOWN = '▼'      # Down triangle (or 'v')
+
+# Shapes & Bullets
+BULLET = '•'             # Bullet point (or '*')
+CIRCLE_FILLED = '●'      # Filled circle (or 'o')
+CIRCLE_EMPTY = '○'       # Empty circle (or 'o')
+SQUARE_FILLED = '■'      # Filled square (or '#')
+SQUARE_EMPTY = '□'       # Empty square (or '[  ]')
+DIAMOND = '◆'            # Filled diamond (or '<>')
+DIAMOND_EMPTY = '◇'      # Empty diamond (or '<>')
+
+# Stars & Ratings
+STAR_FILLED = '★'        # Filled star (or '*')
+STAR_EMPTY = '☆'         # Empty star (or '*')
+
+# Status & Warnings
+WARNING = '⚠'            # Warning sign (or '!')
+INFO = 'ℹ'              # Information (or 'i')
+QUESTION = '?'           # Question mark
+EXCLAMATION = '!'        # Exclamation mark
+
+# Spinner Animation Frames
+SPINNER_DOTS = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏']
+SPINNER_LINE = ['|', '/', '-', '\\']
+SPINNER_ARROW = ['←', '↖', '↑', '↗', '→', '↘', '↓', '↙']
+SPINNER_BOX = ['◰', '◳', '◲', '◱']
+```
+
+### Terminal Size Methods
+```python
+import shutil
+import os
+
+def get_terminal_size() -> tuple:
+    """Get terminal dimensions (width, height)"""
+    return shutil.get_terminal_size()
+
+def get_terminal_width() -> int:
+    """Get terminal width in columns"""
+    return shutil.get_terminal_size().columns
+
+def get_terminal_height() -> int:
+    """Get terminal height in rows"""
+    return shutil.get_terminal_size().lines
+
+# Windows-specific console control
+def set_console_size(width: int, height: int):
+    """Set Windows console size (Windows only)"""
+    if os.name == 'nt':
+        os.system(f'mode con: cols={width} lines={height}')
+```
+
+### Platform Detection Methods
+```python
+import sys
+import platform
+
+def is_windows() -> bool:
+    """Check if running on Windows"""
+    return sys.platform == 'win32' or os.name == 'nt'
+
+def is_mac() -> bool:
+    """Check if running on macOS"""
+    return sys.platform == 'darwin'
+
+def is_linux() -> bool:
+    """Check if running on Linux"""
+    return sys.platform.startswith('linux')
+
+def enable_ansi_windows():
+    """Enable ANSI escape sequences on Windows"""
+    if is_windows():
+        import ctypes
+        kernel32 = ctypes.windll.kernel32
+        kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
 ```
 
 ---

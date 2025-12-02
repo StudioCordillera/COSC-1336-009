@@ -121,11 +121,6 @@ def readData():
     with open("data.txt", 'r') as file:         # OPEN <
         for line in file:                       # EXTRACT <
             varList.append(int(line.strip()))   # COLLECT >
-
-    # --------------------#
-    file.close()                                # CLOSE ><
-    # ^^ DO NOT DELETE ^^
-    # --------------------#
     
     return varList                              # SEND TO MAIN >
 
