@@ -1,137 +1,346 @@
-# FILE_OPERATIONS.md
+# FILE_OPERATIONS
 
-## META-INFORMATION
+## Core Definition
+**File operations** enable reading from and writing to files on disk. Essential for data persistence, configuration management, and processing external data sources. Files must be opened, operated on, then properly closed to prevent data loss.
 
-- **SOURCE**: W3Schools Python File Handling + COSC-1336 Advanced Course Materials
-- **FAMILY**: Input/Output Operations & Data Processing
-- **CROSS-REFERENCES**: [[LOOPS.md]], [[LIST_OPERATIONS.md]], [[ERROR_HANDLING.md]], [[STRING_METHODS.md]]
-- **EXAM_RELEVANCE**: HIGH - File operations critical for data processing projects
-- **LAST_UPDATED**: 2025-01-19
+**Tags**: #file-io #data-persistence #file-handling #error-handling #context-manager
 
-## BY YOU FOR YOU: PRACTICAL NOTES
+---
 
-### WHAT IS FILE HANDLING?
+## COMPLETE FILE OPERATIONS QUICK REFERENCE
 
-File handling is the process of working with files stored on the computer - reading data from files, writing data to files, and managing file operations. It's essential for data persistence and processing.
-
-### WHY FILE OPERATIONS MATTER
-
-From course material analysis (particularly the advanced loop exercises with `data1.txt` processing), file operations enable:
-
-- **Data Persistence**: Save program results and user data permanently
-- **Data Processing**: Read and analyze datasets from external files  
-- **Input Automation**: Load test data and configuration automatically
-- **Report Generation**: Create output files with processed results
-- **Real-World Integration**: Work with data from other systems and applications
-
-### CRITICAL PATTERNS FOR EXAM SUCCESS
-
-Based on analysis of course materials (particularly file processing with mixed data types), these patterns are essential:
-
-1. **Safe File Reading**: Always use try/except for file operations
-2. **Data Type Handling**: Process mixed numeric and string data from files
-3. **Line Processing**: Clean and validate data from each line
-4. **Error Recovery**: Handle file not found and permission errors gracefully
-5. **Resource Management**: Properly close files to prevent data loss
-
-## W3SCHOOLS INTEGRATION
-
-### 1. OPENING FILES
+### FILE OPERATIONS - Target | Operation | Output
 
 ```python
-# Basic file opening
-file = open("filename.txt", "r")  # Read mode
-file = open("filename.txt", "w")  # Write mode (overwrites)
-file = open("filename.txt", "a")  # Append mode
-file = open("filename.txt", "x")  # Create mode (fails if exists)
+# ═══════════════════════════════════════════════════════════════════════════
+# FILE OPENING & CLOSING
+# ═══════════════════════════════════════════════════════════════════════════
+open(filename, mode)         # Filename + mode | Open file | Returns file object
+open(filename, 'r')          # Filename | Open for reading (default) | Returns file object
+open(filename, 'w')          # Filename | Open for writing (overwrites) | Returns file object
+open(filename, 'a')          # Filename | Open for appending | Returns file object
+open(filename, 'x')          # Filename | Create new file (fails if exists) | Returns file object
+open(filename, 'r+')         # Filename | Open for read/write | Returns file object
+open(filename, 'w+')         # Filename | Open for write/read (overwrites) | Returns file object
+open(filename, 'a+')         # Filename | Open for append/read | Returns file object
+open(filename, mode, encoding='utf-8') # Filename + encoding | Open with encoding | Returns file object
+file.close()                 # File object | Close file | Returns None
+with open(filename, mode) as file: # Filename | Auto-closing context | File auto-closed after block
 
-# File modes
-# "r" - Read (default)
-# "w" - Write (overwrites existing file)
-# "a" - Append (adds to end of file)
-# "x" - Create (exclusive creation, fails if exists)
-# "t" - Text mode (default)
-# "b" - Binary mode
+# ═══════════════════════════════════════════════════════════════════════════
+# FILE READING METHODS
+# ═══════════════════════════════════════════════════════════════════════════
+file.read()                  # File object | Read entire file | Returns string with full content
+file.read(size)              # File object | Read size bytes | Returns string with size bytes
+file.readline()              # File object | Read one line | Returns string with line (includes \n)
+file.readlines()             # File object | Read all lines | Returns list of strings (lines)
+for line in file:            # File object | Iterate lines | Yields each line as string
+next(file)                   # File object | Read next line | Returns next line or StopIteration
 
-# Always close files
-file.close()
+# ═══════════════════════════════════════════════════════════════════════════
+# FILE WRITING METHODS
+# ═══════════════════════════════════════════════════════════════════════════
+file.write(string)           # File object + string | Write string to file | Returns number of chars written
+file.writelines(list)        # File object + list | Write list of strings | Returns None
+file.flush()                 # File object | Force write buffer to disk | Returns None
+
+# ═══════════════════════════════════════════════════════════════════════════
+# FILE POSITION & INFO
+# ═══════════════════════════════════════════════════════════════════════════
+file.tell()                  # File object | Get current position | Returns int byte offset
+file.seek(offset)            # File object + offset | Move to position | Returns new position
+file.seek(offset, whence)    # File object + offset + origin | Move relative | Returns new position (0=start, 1=current, 2=end)
+file.name                    # File object | Get filename | Returns string filename
+file.mode                    # File object | Get file mode | Returns string mode
+file.closed                  # File object | Check if closed | Returns True/False
+file.readable()              # File object | Check if readable | Returns True/False
+file.writable()              # File object | Check if writable | Returns True/False
+file.seekable()              # File object | Check if seekable | Returns True/False
+
+# ═══════════════════════════════════════════════════════════════════════════
+# OS PATH OPERATIONS (import os)
+# ═══════════════════════════════════════════════════════════════════════════
+os.path.exists(path)         # Path | Check if exists | Returns True/False
+os.path.isfile(path)         # Path | Check if file | Returns True/False
+os.path.isdir(path)          # Path | Check if directory | Returns True/False
+os.path.getsize(path)        # Path | Get file size | Returns int bytes
+os.path.abspath(path)        # Path | Get absolute path | Returns string absolute path
+os.path.dirname(path)        # Path | Get directory name | Returns string directory
+os.path.basename(path)       # Path | Get filename | Returns string filename
+os.path.split(path)          # Path | Split dir and file | Returns (dir, filename) tuple
+os.path.splitext(path)       # Path | Split name and extension | Returns (name, ext) tuple
+os.path.join(path1, path2)   # Path parts | Join paths | Returns string combined path
+os.remove(path)              # Path | Delete file | Returns None
+os.rename(old, new)          # Old + new paths | Rename file | Returns None
+os.getcwd()                  # None | Get current directory | Returns string current dir
+os.chdir(path)               # Path | Change directory | Returns None
+os.listdir(path)             # Path | List directory contents | Returns list of filenames
+os.mkdir(path)               # Path | Create directory | Returns None
+os.makedirs(path)            # Path | Create nested directories | Returns None
+os.rmdir(path)               # Path | Remove empty directory | Returns None
+
+# ═══════════════════════════════════════════════════════════════════════════
+# FILE MODE FLAGS
+# ═══════════════════════════════════════════════════════════════════════════
+'r'                          # Mode | Read (default) | Opens for reading, fails if not exists
+'w'                          # Mode | Write | Opens for writing, creates new/overwrites
+'a'                          # Mode | Append | Opens for appending, creates if not exists
+'x'                          # Mode | Exclusive create | Creates new file, fails if exists
+'b'                          # Mode flag | Binary mode | Combine with r/w/a for binary
+'t'                          # Mode flag | Text mode (default) | Combine with r/w/a for text
+'+'                          # Mode flag | Update (read+write) | Combine with r/w/a
+
+# ═══════════════════════════════════════════════════════════════════════════
+# ERROR HANDLING FOR FILES
+# ═══════════════════════════════════════════════════════════════════════════
+FileNotFoundError            # Exception | File doesn't exist | Raised when file not found
+PermissionError              # Exception | Access denied | Raised when lacking permissions
+IsADirectoryError            # Exception | Path is directory | Raised when expecting file
+FileExistsError              # Exception | File already exists | Raised with 'x' mode
+IOError                      # Exception | General I/O error | Raised on I/O operation failure
 ```
 
-### 2. SAFE FILE HANDLING WITH 'WITH' STATEMENT
+### COMMON OPERATION EXAMPLES
 
 ```python
-# BEST PRACTICE - Automatic file closing
-with open("filename.txt", "r") as file:
-    content = file.read()
-# File automatically closed when leaving 'with' block
-
-# Multiple files
-with open("input.txt", "r") as infile, open("output.txt", "w") as outfile:
-    data = infile.read()
-    outfile.write(processed_data)
-```
-
-### 3. READING FILES
-
-```python
-# Read entire file
+# Safe file reading with context manager
 with open("data.txt", "r") as file:
-    content = file.read()  # Returns string with entire file
+    content = file.read()                      # → Full file as string
 
 # Read line by line
 with open("data.txt", "r") as file:
     for line in file:
-        print(line.strip())  # Remove newline characters
+        print(line.strip())                    # → Each line without newline
 
 # Read all lines into list
 with open("data.txt", "r") as file:
-    lines = file.readlines()  # Returns list of lines
+    lines = file.readlines()                   # → ['line1\n', 'line2\n', ...]
 
-# Read one line at a time
-with open("data.txt", "r") as file:
-    first_line = file.readline()
-    second_line = file.readline()
+# Write to file
+with open("output.txt", "w") as file:
+    file.write("Hello World\n")                # → Writes and returns char count
+
+# Append to file
+with open("log.txt", "a") as file:
+    file.write("New log entry\n")              # → Appends to end
+
+# Check if file exists
+import os
+if os.path.exists("data.txt"):
+    print("File exists")                       # → True/False
+
+# Get file size
+size = os.path.getsize("data.txt")             # → Size in bytes
+
+# Join paths safely
+path = os.path.join("folder", "file.txt")      # → "folder/file.txt" (OS-appropriate)
 ```
 
-### 4. WRITING FILES
+---
+
+## DETAILED FILE OPERATIONS
+
+### 1. FILE OPENING PATTERNS
 
 ```python
-# Write string to file
+# Manual file opening (NOT RECOMMENDED)
+file = open("filename.txt", "r")               # Open for reading
+try:
+    content = file.read()
+finally:
+    file.close()                               # Must manually close
+
+# BEST PRACTICE: Context manager (with statement)
+with open("filename.txt", "r") as file:
+    content = file.read()
+# File automatically closed, even if error occurs
+
+# Multiple files simultaneously
+with open("input.txt", "r") as infile, open("output.txt", "w") as outfile:
+    data = infile.read()
+    outfile.write(data.upper())
+
+# File modes
+# 'r'  = Read (default), fails if not exists
+# 'w'  = Write, creates/overwrites
+# 'a'  = Append, creates if not exists
+# 'x'  = Exclusive create, fails if exists
+# 'r+' = Read+Write, fails if not exists
+# 'w+' = Write+Read, creates/overwrites
+# 'a+' = Append+Read, creates if not exists
+# 'b'  = Binary mode (add to mode: 'rb', 'wb')
+```
+
+### 2. READING FILE PATTERNS
+
+```python
+text = "data.txt"
+
+# Read entire file at once
+with open(text, "r") as file:
+    content = file.read()                      # → Full file as single string
+
+# Read with size limit
+with open(text, "r") as file:
+    chunk = file.read(100)                     # → First 100 bytes
+
+# Read line by line (memory efficient)
+with open(text, "r") as file:
+    for line in file:
+        print(line.strip())                    # → Each line, newline removed
+
+# Read all lines into list
+with open(text, "r") as file:
+    lines = file.readlines()                   # → ['line1\n', 'line2\n', ...]
+
+# Read lines without newlines
+with open(text, "r") as file:
+    lines = [line.strip() for line in file]    # → ['line1', 'line2', ...]
+
+# Read one line at a time
+with open(text, "r") as file:
+    first_line = file.readline()               # → First line with \n
+    second_line = file.readline()              # → Second line with \n
+
+# Read non-empty lines only
+with open(text, "r") as file:
+    lines = [line.strip() for line in file if line.strip()]
+```
+
+### 3. WRITING FILE PATTERNS
+
+```python
+# Write single string
 with open("output.txt", "w") as file:
-    file.write("Hello, World!\n")
-    file.write("Second line\n")
+    file.write("Hello World\n")                # → Returns 12 (chars written)
+
+# Write multiple strings
+with open("output.txt", "w") as file:
+    file.write("Line 1\n")
+    file.write("Line 2\n")
+    file.write("Line 3\n")
 
 # Write list of strings
 lines = ["Line 1\n", "Line 2\n", "Line 3\n"]
 with open("output.txt", "w") as file:
-    file.writelines(lines)
+    file.writelines(lines)                     # → Writes all lines
 
 # Append to existing file
 with open("log.txt", "a") as file:
-    file.write("New log entry\n")
+    file.write("New log entry\n")              # → Adds to end
+
+# Write formatted data
+data = {"name": "Alice", "age": 30, "city": "NYC"}
+with open("data.txt", "w") as file:
+    for key, value in data.items():
+        file.write(f"{key}: {value}\n")
+
+# Write numbers
+numbers = [1, 2, 3, 4, 5]
+with open("numbers.txt", "w") as file:
+    for num in numbers:
+        file.write(f"{num}\n")
+    # OR
+    file.write('\n'.join(map(str, numbers)) + '\n')
 ```
 
-## EXAM-FOCUSED TASK DIRECTIVES
-
-### TASK 1: Safe File Reading with Error Handling
-
-**CONTEXT**: Based on patterns observed in advanced course materials
+### 4. ERROR HANDLING PATTERNS
 
 ```python
-def safeReadFile(filename):
+# Basic error handling
+try:
+    with open("data.txt", "r") as file:
+        content = file.read()
+except FileNotFoundError:
+    print("File not found")
+except PermissionError:
+    print("Permission denied")
+except Exception as e:
+    print(f"Error: {e}")
+
+# Check if file exists first
+import os
+if os.path.exists("data.txt"):
+    with open("data.txt", "r") as file:
+        content = file.read()
+else:
+    print("File does not exist")
+
+# Create file if not exists
+try:
+    with open("output.txt", "x") as file:       # 'x' mode
+        file.write("New file\n")
+except FileExistsError:
+    print("File already exists")
+
+# Safe read with default
+def safe_read_file(filename, default=""):
+    try:
+        with open(filename, "r") as file:
+            return file.read()
+    except FileNotFoundError:
+        return default
+```
+
+### 5. PATH OPERATIONS
+
+```python
+import os
+
+# Check existence
+os.path.exists("data.txt")                     # → True/False
+os.path.isfile("data.txt")                     # → True if file
+os.path.isdir("folder")                        # → True if directory
+
+# File information
+os.path.getsize("data.txt")                    # → Size in bytes
+os.path.getmtime("data.txt")                   # → Last modified timestamp
+os.path.getctime("data.txt")                   # → Creation timestamp
+
+# Path manipulation
+os.path.abspath("data.txt")                    # → "/full/path/to/data.txt"
+os.path.dirname("/path/to/file.txt")           # → "/path/to"
+os.path.basename("/path/to/file.txt")          # → "file.txt"
+os.path.split("/path/to/file.txt")             # → ("/path/to", "file.txt")
+os.path.splitext("file.txt")                   # → ("file", ".txt")
+
+# Join paths (OS-appropriate separator)
+os.path.join("folder", "subfolder", "file.txt") # → "folder/subfolder/file.txt"
+
+# Current directory
+os.getcwd()                                    # → Current working directory
+os.chdir("/new/path")                          # Change directory
+
+# List directory
+os.listdir(".")                                # → ['file1.txt', 'file2.txt', ...]
+os.listdir("/path/to/dir")                     # → Files in directory
+
+# File operations
+os.remove("file.txt")                          # Delete file
+os.rename("old.txt", "new.txt")                # Rename file
+```
+
+---
+
+## PRACTICAL EXAM PATTERNS
+
+### PATTERN 1: Safe File Reading with Error Handling
+
+```python
+def safe_read_file(filename):
     """
-    Safely read file with comprehensive error handling
-    Returns list of cleaned lines or empty list if error
+    Safely read file with comprehensive error handling.
+    Returns list of cleaned lines or empty list on error.
     """
     try:
         with open(filename, 'r') as file:
             lines = file.readlines()
         
-        # Clean the data
+        # Clean data - remove whitespace and empty lines
         cleaned_lines = []
         for line in lines:
-            cleaned = line.strip()  # Remove whitespace
-            if cleaned:  # Skip empty lines
+            cleaned = line.strip()
+            if cleaned:                            # Skip empty lines
                 cleaned_lines.append(cleaned)
         
         return cleaned_lines
@@ -140,104 +349,108 @@ def safeReadFile(filename):
         print(f"ERROR: File '{filename}' not found")
         return []
     except PermissionError:
-        print(f"ERROR: Permission denied to read '{filename}'")
+        print(f"ERROR: Permission denied for '{filename}'")
         return []
     except Exception as e:
-        print(f"ERROR: Unexpected error reading file: {e}")
+        print(f"ERROR: {e}")
         return []
 
-# Usage pattern from course materials
-def processDataFile(filename):
-    """Process file with mixed data types like data1.txt"""
-    lines = safeReadFile(filename)
+# Process mixed data types (numbers + strings)
+def process_data_file(filename):
+    """Process file with mixed numeric and text data."""
+    lines = safe_read_file(filename)
     
     numbers = []
     strings = []
     
     for line in lines:
-        # Try to convert to number first
         try:
+            # Try numeric conversion
             if '.' in line:
                 numbers.append(float(line))
             else:
                 numbers.append(int(line))
         except ValueError:
-            # If not a number, treat as string
+            # Not a number, store as string
             strings.append(line)
     
     return numbers, strings
+
+# Usage
+nums, strs = process_data_file("data1.txt")
+print(f"Found {len(nums)} numbers and {len(strs)} strings")
 ```
 
-### TASK 2: Data Processing with File I/O
-
-**CONTEXT**: Essential pattern for exam projects requiring data analysis
+### PATTERN 2: Data Analysis with File Output
 
 ```python
-def analyzeDataFile(filename):
+def analyze_data_file(filename):
     """
-    Complete data analysis from file - exam project pattern
+    Complete data analysis from file - exam project pattern.
+    Reads mixed data, analyzes, and writes results to files.
     """
-    print(f"Analyzing data from: {filename}")
+    print(f"Analyzing: {filename}")
     
-    # Read and process data
-    numbers, strings = processDataFile(filename)
+    # Read and categorize data
+    numbers, strings = process_data_file(filename)
     
     if not numbers and not strings:
-        print("No data found in file")
+        print("No data found")
         return
     
     # Numeric analysis
     if numbers:
-        print(f"\nNumeric Data Analysis:")
-        print(f"Count: {len(numbers)}")
-        print(f"Sum: {sum(numbers):.2f}")
-        print(f"Average: {sum(numbers)/len(numbers):.2f}")
-        print(f"Maximum: {max(numbers):.2f}")
-        print(f"Minimum: {min(numbers):.2f}")
+        print("\nNumeric Analysis:")
+        print(f"  Count: {len(numbers)}")
+        print(f"  Sum: {sum(numbers):.2f}")
+        print(f"  Average: {sum(numbers)/len(numbers):.2f}")
+        print(f"  Max: {max(numbers):.2f}")
+        print(f"  Min: {min(numbers):.2f}")
         
-        # Write numeric results
-        with open("numeric_analysis.txt", "w") as file:
-            file.write(f"Numeric Analysis Results\n")
-            file.write(f"========================\n")
-            file.write(f"Total numbers: {len(numbers)}\n")
-            file.write(f"Sum: {sum(numbers):.2f}\n")
+        # Save numeric results
+        with open("numeric_results.txt", "w") as file:
+            file.write("Numeric Analysis Results\n")
+            file.write("=" * 30 + "\n")
+            file.write(f"Count:   {len(numbers)}\n")
+            file.write(f"Sum:     {sum(numbers):.2f}\n")
             file.write(f"Average: {sum(numbers)/len(numbers):.2f}\n")
-            file.write(f"Range: {max(numbers) - min(numbers):.2f}\n")
+            file.write(f"Max:     {max(numbers):.2f}\n")
+            file.write(f"Min:     {min(numbers):.2f}\n")
+            file.write(f"Range:   {max(numbers) - min(numbers):.2f}\n")
     
     # String analysis
     if strings:
-        print(f"\nString Data Analysis:")
-        print(f"Count: {len(strings)}")
-        print(f"Unique values: {len(set(strings))}")
+        unique = set(strings)
+        print("\nString Analysis:")
+        print(f"  Count: {len(strings)}")
+        print(f"  Unique: {len(unique)}")
         
-        # Write string results
-        with open("string_analysis.txt", "w") as file:
-            file.write(f"String Analysis Results\n")
-            file.write(f"=======================\n")
-            file.write(f"Total strings: {len(strings)}\n")
-            file.write(f"Unique strings: {len(set(strings))}\n")
-            file.write(f"All strings:\n")
+        # Save string results
+        with open("string_results.txt", "w") as file:
+            file.write("String Analysis Results\n")
+            file.write("=" * 30 + "\n")
+            file.write(f"Total:  {len(strings)}\n")
+            file.write(f"Unique: {len(unique)}\n\n")
+            file.write("All Strings:\n")
             for i, s in enumerate(strings, 1):
-                file.write(f"{i}. {s}\n")
+                file.write(f"  {i}. {s}\n")
 
 # Usage
-analyzeDataFile("data1.txt")
+analyze_data_file("data1.txt")
 ```
 
-### TASK 3: User Data Collection and File Storage
-
-**CONTEXT**: Interactive programs that save user input - common exam pattern
+### PATTERN 3: Interactive User Data Collection
 
 ```python
-def collectAndSaveUserData():
+def collect_and_save_data():
     """
-    Collect user data and save to file with validation
-    Pattern commonly used in exam projects
+    Interactive data collection with file persistence.
+    Common exam pattern for user input programs.
     """
     data = []
     
     print("Data Collection System")
-    print("Enter data (type 'save' to save and exit, 'quit' to exit without saving)")
+    print("Commands: 'save' to save, 'quit' to exit")
     
     while True:
         user_input = input("Enter data: ").strip()
@@ -247,93 +460,228 @@ def collectAndSaveUserData():
         elif user_input.lower() == 'quit':
             print("Exiting without saving")
             return
-        elif user_input:  # Not empty
+        elif user_input:
             data.append(user_input)
-            print(f"Added: {user_input}")
+            print(f"  Added: {user_input}")
     
     if not data:
         print("No data to save")
         return
     
-    # Get filename from user
+    # Get valid filename
     while True:
-        filename = input("Enter filename to save (with .txt extension): ")
+        filename = input("Filename (.txt): ")
         if filename.endswith('.txt'):
             break
-        print("Filename must end with .txt")
+        print("Must end with .txt")
     
-    # Save data
+    # Save to file
     try:
         with open(filename, 'w') as file:
             file.write(f"Data Collection Session\n")
             file.write(f"Total items: {len(data)}\n")
-            file.write(f"{'='*30}\n")
+            file.write("=" * 30 + "\n\n")
             
             for i, item in enumerate(data, 1):
                 file.write(f"{i}. {item}\n")
         
-        print(f"Data saved successfully to {filename}")
+        print(f"Saved to {filename}")
         
     except Exception as e:
-        print(f"Error saving file: {e}")
+        print(f"Error: {e}")
 
-def loadAndDisplayData():
-    """Load previously saved data file"""
-    filename = input("Enter filename to load: ")
+def load_and_display_data():
+    """Load and display previously saved file."""
+    filename = input("Filename to load: ")
     
     try:
         with open(filename, 'r') as file:
             content = file.read()
-            print(f"\nContent of {filename}:")
-            print("=" * 40)
+            print(f"\n{'='*40}")
+            print(f"Content of {filename}:")
+            print('='*40)
             print(content)
             
     except FileNotFoundError:
-        print(f"File {filename} not found")
+        print(f"File '{filename}' not found")
     except Exception as e:
-        print(f"Error loading file: {e}")
+        print(f"Error: {e}")
 ```
 
-### TASK 4: CSV-Style Data Processing
-
-**CONTEXT**: Structured data handling for advanced projects
+### PATTERN 4: Text File with Comma-Separated Values to Dictionary
 
 ```python
-def processCSVData(filename, delimiter=','):
+def parse_line_to_dict(line, keys):
     """
-    Process CSV-style data files
-    Advanced pattern for structured data
+    Parse line with comma-space separated values into dictionary.
+    Splits on ', ' (comma-space) pattern.
+    
+    Args:
+        line: String like "Alice, 30, New York"
+        keys: List of key names ["name", "age", "city"]
+    
+    Returns:
+        Dictionary {'name': 'Alice', 'age': '30', 'city': 'New York'}
+    """
+    values = line.strip().split(', ')
+    
+    # Pad with empty strings if not enough values
+    while len(values) < len(keys):
+        values.append('')
+    
+    # Map keys to values
+    return {keys[i]: values[i] for i in range(len(keys))}
+
+# Example: Parse single line
+keys = ["name", "age", "city"]
+line = "Alice, 30, New York"
+person = parse_line_to_dict(line, keys)
+print(person)                                  # → {'name': 'Alice', 'age': '30', 'city': 'New York'}
+
+# Example: Load text file into list of dictionaries
+def load_txt_as_dicts(filename, keys):
+    """
+    Read .txt file where each line has comma-space separated values.
+    Returns list of dictionaries.
+    """
+    records = []
+    
+    try:
+        with open(filename, 'r') as file:
+            for line in file:
+                line = line.strip()
+                if line:                       # Skip empty lines
+                    record = parse_line_to_dict(line, keys)
+                    records.append(record)
+        
+        return records
+        
+    except FileNotFoundError:
+        print(f"File not found: {filename}")
+        return []
+    except Exception as e:
+        print(f"Error: {e}")
+        return []
+
+# Usage
+keys = ["name", "age", "city"]
+data = load_txt_as_dicts("people.txt", keys)
+
+# If people.txt contains:
+# Alice, 30, New York
+# Bob, 25, Los Angeles
+# Carol, 35, Chicago
+
+for person in data:
+    print(f"{person['name']} is {person['age']} years old")
+# Output:
+# Alice is 30 years old
+# Bob is 25 years old
+# Carol is 35 years old
+
+# Example: Load with header line
+def load_txt_with_header(filename):
+    """
+    Load .txt file where first line defines keys.
+    Rest of lines are comma-space separated values.
     """
     try:
         with open(filename, 'r') as file:
             lines = file.readlines()
         
         if not lines:
-            print("File is empty")
             return []
         
-        # Process header
-        header = lines[0].strip().split(delimiter)
-        print(f"Columns found: {header}")
+        # First line defines keys
+        keys = [k.strip() for k in lines[0].strip().split(', ')]
         
-        # Process data rows
+        # Parse remaining lines
+        records = []
+        for line in lines[1:]:
+            line = line.strip()
+            if line:
+                record = parse_line_to_dict(line, keys)
+                records.append(record)
+        
+        return records
+        
+    except Exception as e:
+        print(f"Error: {e}")
+        return []
+
+# Usage
+data = load_txt_with_header("data.txt")
+# If data.txt contains:
+# name, age, city
+# Alice, 30, New York
+# Bob, 25, Los Angeles
+
+print(data)
+# → [{'name': 'Alice', 'age': '30', 'city': 'New York'},
+#    {'name': 'Bob', 'age': '25', 'city': 'Los Angeles'}]
+
+# Example: Type conversion after loading
+def load_txt_with_types(filename, keys, types):
+    """
+    Load .txt and convert values to specific types.
+    
+    Args:
+        filename: .txt file path
+        keys: List of key names
+        types: List of type converters [str, int, str]
+    """
+    records = load_txt_as_dicts(filename, keys)
+    
+    # Convert types
+    for record in records:
+        for i, key in enumerate(keys):
+            try:
+                record[key] = types[i](record[key])
+            except (ValueError, IndexError):
+                pass
+    
+    return records
+
+# Usage with type conversion
+keys = ["name", "age", "salary"]
+types = [str, int, float]
+data = load_txt_with_types("employees.txt", keys, types)
+
+# Now age is int, salary is float
+for emp in data:
+    print(f"{emp['name']}: ${emp['salary']:.2f}")
+```
+
+### PATTERN 5: CSV-Style Data Processing
+
+```python
+def process_csv_data(filename, delimiter=','):
+    """
+    Read CSV-style file and return list of dictionaries.
+    First line is treated as header.
+    """
+    try:
+        with open(filename, 'r') as file:
+            lines = file.readlines()
+        
+        if not lines:
+            return []
+        
+        # Parse header
+        header = lines[0].strip().split(delimiter)
+        
+        # Parse data rows
         data_rows = []
-        for i, line in enumerate(lines[1:], 2):  # Start from line 2
+        for line in lines[1:]:
             row = line.strip().split(delimiter)
-            
             if len(row) == len(header):
-                # Create dictionary for each row
-                row_dict = {}
-                for j, value in enumerate(row):
-                    row_dict[header[j]] = value
+                row_dict = {header[j]: value for j, value in enumerate(row)}
                 data_rows.append(row_dict)
-            else:
-                print(f"Warning: Line {i} has {len(row)} columns, expected {len(header)}")
         
         return data_rows
         
     except Exception as e:
-        print(f"Error processing CSV: {e}")
+        print(f"Error: {e}")
         return []
 
 def writeCSVData(filename, data, headers):

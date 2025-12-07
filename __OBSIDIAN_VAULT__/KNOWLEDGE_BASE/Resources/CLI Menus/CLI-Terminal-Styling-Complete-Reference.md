@@ -1,6 +1,22 @@
 # CLI Terminal Styling Complete Reference
 
-## Quick Reference - All Methods & Constants
+> **ASCII & ASCII .py standardized config file template**
+
+---
+
+## Table of Contents
+
+1. [ASCII Character Reference](#ascii-character-reference)
+2. [Standardized Config Templates](#standardized-config-templates)
+3. [ANSI Escape Sequences](#ansi-escape-sequences)
+4. [Python Configuration Patterns](#python-configuration-patterns)
+5. [Complete Code Examples](#complete-code-examples)
+
+---
+
+## ASCII Character Reference
+
+### Quick Reference - All Methods & Constants
 
 ### Core ANSI Methods
 ```python

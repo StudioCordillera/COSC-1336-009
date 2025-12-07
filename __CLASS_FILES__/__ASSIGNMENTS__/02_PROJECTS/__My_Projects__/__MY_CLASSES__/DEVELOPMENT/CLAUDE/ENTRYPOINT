@@ -1,0 +1,9 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    CLI MENU SYSTEM STANDARDIZATION PROJECT                  ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+This project extracts, perfects, and unifies standards from CLI menu navigation 
+patterns, UI component taxonomies, and visual design conventions. Read DASHBOARD.MD 
+for complete scope, rules, and conventions BEFORE starting any sprint iteration. 
+Track all progress in TRACKING.CSV across sprints, phases, and project scopes. 
+Always re-read DASHBOARD.MD AFTER each iteration to maintain alignment.

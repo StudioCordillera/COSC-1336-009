@@ -1,0 +1,161 @@
+ 
+Project Statement 
+Professor AllyBaba wants to keep track of student performance based on three exam scores per student. Your task is to develop a program that collects, processes, and displays student grades in a clean and organized format using classes and lists of objects. 
+ 
+
+Input Requirements 
+For each student, the user will input: 
+• Student Name (string) 
+
+• Exam 1 Score (float) 
+
+• Exam 2 Score (float) 
+
+• Exam 3 Score (float) 
+
+
+The number of students will be entered by the user at the start of the program. 
+ 
+
+Validation Rules 
+• Exam scores are based on a 100-point scale, with a 5-point bonus question. 
+
+• Valid scores range from 0 to 105, inclusive. 
+
+• Input must be validated; scores outside this range should prompt the user to re-enter the value. 
+
+
+ 
+
+Processing Requirements 
+The program should: 
+1. Prompt for the number of students to be processed. 
+
+2. Use a class to represent a student, including: o Name 
+
+o Exam scores (3) 
+
+o A method to calculate the average score 
+
+o A method to determine the letter grade (based on the average) 
+
+
+
+
+3. Store each student as an object in a list. 
+
+4. Sort the students by their average score in ascending order. 
+
+5. Display a table that includes: o Student Name 
+
+o Sorted Exam Scores 
+
+o Average Score 
+
+o Letter Grade 
+
+
+
+
+
+ 
+
+Suggested Letter Grade Criteria 
+Average Score Range 
+ Letter Grade 
+ 
+
+90 – 105 
+ A 
+ 
+80 – 89 
+ B 
+ 
+70 – 79 
+ C 
+ 
+60 – 69 
+ D 
+ 
+Below 60 
+ F 
+ 
+
+
+ 
+
+Program Structure – Required Functions 
+You must define and use the following (or similar) functions in your program: 
+• getIntegerData() – Validates and returns a positive integer (e.g., number of students). 
+
+• getFloatData() – Validates and returns a float score between 0 and 105. 
+
+• getStringData() – Validates and returns a non-empty string. 
+
+• sortStudents() – Sorts the list of student objects by average score. 
+
+• displayResults() – Displays the sorted student table with average and letter grades. 
+
+• main() – Controls the overall flow of the program. 
+
+
+ 
+
+Additional Requirements 
+• Use classes and objects to model students. 
+
+• Store data in a list of objects. 
+
+• Format the final table for clarity and readability. 
+
+• Ensure your program works for any number of students. 
+
+
+ 
+ 
+  
+Sample Output (User entry is in RED) 
+ 
+Project #3 
+Written by: Ally Baba 
+----------------------------------------------- 
+Instructor’s Entry 
+Name of the course:  AllyBaba Break Dance 
+How many students:  3 
+ 
+Student #1 
+Enter the name He Man 
+Enter grade for Exam 1: 10 
+Enter grade for Exam 2: 20 
+Enter grade for Exam 3: 30 
+ 
+Student #2 
+Enter the name Scooby Doo 
+Enter grade for Exam 1: 80 
+Enter grade for Exam 2: 80 
+Enter grade for Exam 3: 80 
+ 
+Student #3 
+Enter the name Ally Baba 
+Enter grade for Exam 1: 100 
+Enter grade for Exam 2: 80 
+Enter grade for Exam 3: 90 
+ 
+Summary: Student Grades 
+    Total Number of Students: 3 
+Name   Scores   Average Letter Grade 
+Ally Baba  80, 90, 100       90.00  A 
+Scooby Doo  80, 80, 80       80.00  B 
+He Man   10, 20, 30       20.00  F 
+----------------------------------------------- 
+Course Summary 
+ Name of the Course: AllyBaba Break Dance 
+ Average Grade of all students  63.33 
+Number of A’s    1 
+Number of B’s    1 
+Number of C’s    0 
+Number of D’s    0 
+Number of F’s    1 
+-------------------------------------------------------------------------------- 
+End of Exam 3Project 
+

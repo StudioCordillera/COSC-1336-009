@@ -1,4 +1,4 @@
-# LIST_OPERATIONS
+			# LIST_OPERATIONS
 
 ## Core Definition
 **Lists** are mutable, ordered sequences that can contain any type of elements. Support indexing, slicing, and modification.

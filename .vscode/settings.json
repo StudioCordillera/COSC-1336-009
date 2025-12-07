@@ -2,9 +2,16 @@
     "taipyStudio.gUI.elementsFilePaths": [],
     "editor.inlineSuggest.enabled": false,
     "python.terminal.executeInFileDir": true,
-    "python.defaultInterpreterPath": "python",
+    "python.defaultInterpreterPath": "C:/Users/WORK_ADMIN/AppData/Local/Microsoft/WindowsApps/python3.11.exe",
     "code-runner.executorMap": {
-        "python": "cd $dir && python $fileName"
+        "python": "cd $dir && C:/Users/WORK_ADMIN/AppData/Local/Microsoft/WindowsApps/python3.11.exe $fileName"
     },
-    "code-runner.runInTerminal": true
+    "code-runner.runInTerminal": true,
+    "code-runner.clearPreviousOutput": false,
+    "code-runner.saveFileBeforeRun": true,
+    "livecode.pythonPath": "C:/Users/WORK_ADMIN/AppData/Local/Microsoft/WindowsApps/python3.11.exe",
+    "arepl.pythonPath": "C:/Users/WORK_ADMIN/AppData/Local/Microsoft/WindowsApps/python3.11.exe",
+    "terminal.integrated.env.windows": {
+        "PYTHON": "C:/Users/WORK_ADMIN/AppData/Local/Microsoft/WindowsApps/python3.11.exe"
+    }
 }

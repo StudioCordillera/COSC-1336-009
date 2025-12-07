@@ -1,0 +1,553 @@
+{
+  "module": "str",
+  "title": "str — Text Sequence Type",
+  "source_code": "Python/Objects/unicodeobject.c",
+  "description": "Textual data in Python is handled with str objects, or strings. Strings are immutable sequences of Unicode code points. String literals are written in a variety of ways.",
+  "note": "Strings are immutable sequences. This means that once created, you cannot change them. Operations that appear to modify a string actually create a new string.",
+  "string_literals": [
+    {"type": "Single quotes", "example": "'allows embedded \"double\" quotes'"},
+    {"type": "Double quotes", "example": "\"allows embedded 'single' quotes\""},
+    {"type": "Triple quotes", "example": "'''Three single quotes''', \"\"\"Three double quotes\"\"\""},
+    {"type": "Raw string", "example": "r'\\n not processed as newline'"},
+    {"type": "F-string", "example": "f'Value is {value}'", "version": "3.6+"}
+  ],
+  "methods": [
+    {
+      "name": "str.capitalize",
+      "signature": "str.capitalize()",
+      "description": "Return a copy of the string with its first character capitalized and the rest lowercased.",
+      "return_type": "str",
+      "example": ">>> 'hello world'.capitalize()\n'Hello world'"
+    },
+    {
+      "name": "str.casefold",
+      "signature": "str.casefold()",
+      "description": "Return a casefolded copy of the string. Casefolded strings may be used for caseless matching.",
+      "return_type": "str",
+      "example": ">>> 'ß'.casefold()\n'ss'"
+    },
+    {
+      "name": "str.center",
+      "signature": "str.center(width[, fillchar])",
+      "description": "Return centered in a string of length width. Padding is done using the specified fillchar (default is an ASCII space).",
+      "parameters": [
+        {"name": "width", "type": "int"},
+        {"name": "fillchar", "type": "str", "default": "' '"}
+      ],
+      "return_type": "str",
+      "example": ">>> 'hello'.center(11)\n'   hello   '"
+    },
+    {
+      "name": "str.count",
+      "signature": "str.count(sub[, start[, end]])",
+      "description": "Return the number of non-overlapping occurrences of substring sub in the range [start, end].",
+      "parameters": [
+        {"name": "sub", "type": "str"},
+        {"name": "start", "type": "int", "default": "0"},
+        {"name": "end", "type": "int", "default": "len(string)"}
+      ],
+      "return_type": "int",
+      "example": ">>> 'hello world'.count('l')\n3"
+    },
+    {
+      "name": "str.encode",
+      "signature": "str.encode(encoding='utf-8', errors='strict')",
+      "description": "Return the string encoded to bytes.",
+      "parameters": [
+        {"name": "encoding", "type": "str", "default": "'utf-8'"},
+        {"name": "errors", "type": "str", "default": "'strict'"}
+      ],
+      "return_type": "bytes",
+      "example": ">>> 'hello'.encode()\nb'hello'"
+    },
+    {
+      "name": "str.endswith",
+      "signature": "str.endswith(suffix[, start[, end]])",
+      "description": "Return True if the string ends with the specified suffix, otherwise return False. suffix can also be a tuple of suffixes to look for.",
+      "parameters": [
+        {"name": "suffix", "type": "str | tuple[str, ...]"},
+        {"name": "start", "type": "int", "default": "0"},
+        {"name": "end", "type": "int", "default": "len(string)"}
+      ],
+      "return_type": "bool",
+      "example": ">>> 'hello.py'.endswith('.py')\nTrue"
+    },
+    {
+      "name": "str.expandtabs",
+      "signature": "str.expandtabs(tabsize=8)",
+      "description": "Return a copy of the string where all tab characters are replaced by one or more spaces.",
+      "parameters": [
+        {"name": "tabsize", "type": "int", "default": "8"}
+      ],
+      "return_type": "str",
+      "example": ">>> 'hello\\tworld'.expandtabs()\n'hello   world'"
+    },
+    {
+      "name": "str.find",
+      "signature": "str.find(sub[, start[, end]])",
+      "description": "Return the lowest index in the string where substring sub is found within the slice s[start:end]. Return -1 if sub is not found.",
+      "parameters": [
+        {"name": "sub", "type": "str"},
+        {"name": "start", "type": "int", "default": "0"},
+        {"name": "end", "type": "int", "default": "len(string)"}
+      ],
+      "return_type": "int",
+      "example": ">>> 'hello world'.find('o')\n4",
+      "note": "The find() method should be used only if you need to know the position of sub. To check if sub is a substring or not, use the in operator."
+    },
+    {
+      "name": "str.format",
+      "signature": "str.format(*args, **kwargs)",
+      "description": "Perform a string formatting operation. The string on which this method is called can contain literal text or replacement fields delimited by braces {}.",
+      "return_type": "str",
+      "example": ">>> 'Hello {}, you are {}'.format('Alice', 30)\n'Hello Alice, you are 30'"
+    },
+    {
+      "name": "str.format_map",
+      "signature": "str.format_map(mapping)",
+      "description": "Similar to str.format(**mapping), except that mapping is used directly and not copied to a dict.",
+      "parameters": [
+        {"name": "mapping", "type": "Mapping"}
+      ],
+      "return_type": "str",
+      "example": ">>> 'Hello {name}'.format_map({'name': 'Alice'})\n'Hello Alice'",
+      "version": "3.2+"
+    },
+    {
+      "name": "str.index",
+      "signature": "str.index(sub[, start[, end]])",
+      "description": "Like find(), but raise ValueError when the substring is not found.",
+      "parameters": [
+        {"name": "sub", "type": "str"},
+        {"name": "start", "type": "int", "default": "0"},
+        {"name": "end", "type": "int", "default": "len(string)"}
+      ],
+      "return_type": "int",
+      "raises": ["ValueError"],
+      "example": ">>> 'hello world'.index('o')\n4"
+    },
+    {
+      "name": "str.isalnum",
+      "signature": "str.isalnum()",
+      "description": "Return True if all characters in the string are alphanumeric and there is at least one character, False otherwise.",
+      "return_type": "bool",
+      "example": ">>> 'abc123'.isalnum()\nTrue"
+    },
+    {
+      "name": "str.isalpha",
+      "signature": "str.isalpha()",
+      "description": "Return True if all characters in the string are alphabetic and there is at least one character, False otherwise.",
+      "return_type": "bool",
+      "example": ">>> 'abc'.isalpha()\nTrue"
+    },
+    {
+      "name": "str.isascii",
+      "signature": "str.isascii()",
+      "description": "Return True if the string is empty or all characters in the string are ASCII, False otherwise.",
+      "return_type": "bool",
+      "example": ">>> 'hello'.isascii()\nTrue",
+      "version": "3.7+"
+    },
+    {
+      "name": "str.isdecimal",
+      "signature": "str.isdecimal()",
+      "description": "Return True if all characters in the string are decimal characters and there is at least one character, False otherwise.",
+      "return_type": "bool",
+      "example": ">>> '123'.isdecimal()\nTrue"
+    },
+    {
+      "name": "str.isdigit",
+      "signature": "str.isdigit()",
+      "description": "Return True if all characters in the string are digits and there is at least one character, False otherwise.",
+      "return_type": "bool",
+      "example": ">>> '123'.isdigit()\nTrue"
+    },
+    {
+      "name": "str.isidentifier",
+      "signature": "str.isidentifier()",
+      "description": "Return True if the string is a valid Python identifier according to the language definition.",
+      "return_type": "bool",
+      "example": ">>> 'variable_name'.isidentifier()\nTrue"
+    },
+    {
+      "name": "str.islower",
+      "signature": "str.islower()",
+      "description": "Return True if all cased characters in the string are lowercase and there is at least one cased character, False otherwise.",
+      "return_type": "bool",
+      "example": ">>> 'hello'.islower()\nTrue"
+    },
+    {
+      "name": "str.isnumeric",
+      "signature": "str.isnumeric()",
+      "description": "Return True if all characters in the string are numeric characters, and there is at least one character, False otherwise.",
+      "return_type": "bool",
+      "example": ">>> '½'.isnumeric()\nTrue"
+    },
+    {
+      "name": "str.isprintable",
+      "signature": "str.isprintable()",
+      "description": "Return True if all characters in the string are printable or the string is empty, False otherwise.",
+      "return_type": "bool",
+      "example": ">>> 'hello'.isprintable()\nTrue"
+    },
+    {
+      "name": "str.isspace",
+      "signature": "str.isspace()",
+      "description": "Return True if there are only whitespace characters in the string and there is at least one character, False otherwise.",
+      "return_type": "bool",
+      "example": ">>> '   '.isspace()\nTrue"
+    },
+    {
+      "name": "str.istitle",
+      "signature": "str.istitle()",
+      "description": "Return True if the string is a titlecased string and there is at least one character.",
+      "return_type": "bool",
+      "example": ">>> 'Hello World'.istitle()\nTrue"
+    },
+    {
+      "name": "str.isupper",
+      "signature": "str.isupper()",
+      "description": "Return True if all cased characters in the string are uppercase and there is at least one cased character, False otherwise.",
+      "return_type": "bool",
+      "example": ">>> 'HELLO'.isupper()\nTrue"
+    },
+    {
+      "name": "str.join",
+      "signature": "str.join(iterable)",
+      "description": "Return a string which is the concatenation of the strings in iterable. A TypeError will be raised if there are any non-string values in iterable.",
+      "parameters": [
+        {"name": "iterable", "type": "Iterable[str]"}
+      ],
+      "return_type": "str",
+      "raises": ["TypeError"],
+      "example": ">>> ', '.join(['a', 'b', 'c'])\n'a, b, c'"
+    },
+    {
+      "name": "str.ljust",
+      "signature": "str.ljust(width[, fillchar])",
+      "description": "Return the string left justified in a string of length width. Padding is done using the specified fillchar (default is an ASCII space).",
+      "parameters": [
+        {"name": "width", "type": "int"},
+        {"name": "fillchar", "type": "str", "default": "' '"}
+      ],
+      "return_type": "str",
+      "example": ">>> 'hello'.ljust(10)\n'hello     '"
+    },
+    {
+      "name": "str.lower",
+      "signature": "str.lower()",
+      "description": "Return a copy of the string with all the cased characters converted to lowercase.",
+      "return_type": "str",
+      "example": ">>> 'HELLO'.lower()\n'hello'"
+    },
+    {
+      "name": "str.lstrip",
+      "signature": "str.lstrip([chars])",
+      "description": "Return a copy of the string with leading characters removed. The chars argument is a string specifying the set of characters to be removed.",
+      "parameters": [
+        {"name": "chars", "type": "str | None", "default": "None"}
+      ],
+      "return_type": "str",
+      "example": ">>> '   hello'.lstrip()\n'hello'"
+    },
+    {
+      "name": "str.maketrans",
+      "signature": "static str.maketrans(x[, y[, z]])",
+      "description": "This static method returns a translation table usable for str.translate().",
+      "parameters": [
+        {"name": "x", "type": "dict[int, int | str | None] | str"},
+        {"name": "y", "type": "str", "default": "None"},
+        {"name": "z", "type": "str", "default": "None"}
+      ],
+      "return_type": "dict[int, int | str | None]",
+      "example": ">>> table = str.maketrans('aeiou', '12345')\n>>> 'hello'.translate(table)\n'h2ll4'"
+    },
+    {
+      "name": "str.partition",
+      "signature": "str.partition(sep)",
+      "description": "Split the string at the first occurrence of sep, and return a 3-tuple containing the part before the separator, the separator itself, and the part after the separator.",
+      "parameters": [
+        {"name": "sep", "type": "str"}
+      ],
+      "return_type": "tuple[str, str, str]",
+      "example": ">>> 'hello:world'.partition(':')\n('hello', ':', 'world')"
+    },
+    {
+      "name": "str.removeprefix",
+      "signature": "str.removeprefix(prefix, /)",
+      "description": "If the string starts with the prefix string, return string[len(prefix):]. Otherwise, return a copy of the original string.",
+      "parameters": [
+        {"name": "prefix", "type": "str"}
+      ],
+      "return_type": "str",
+      "example": ">>> 'TestHook'.removeprefix('Test')\n'Hook'",
+      "version": "3.9+"
+    },
+    {
+      "name": "str.removesuffix",
+      "signature": "str.removesuffix(suffix, /)",
+      "description": "If the string ends with the suffix string and that suffix is not empty, return string[:-len(suffix)]. Otherwise, return a copy of the original string.",
+      "parameters": [
+        {"name": "suffix", "type": "str"}
+      ],
+      "return_type": "str",
+      "example": ">>> 'MiscTests'.removesuffix('Tests')\n'Misc'",
+      "version": "3.9+"
+    },
+    {
+      "name": "str.replace",
+      "signature": "str.replace(old, new[, count])",
+      "description": "Return a copy of the string with all occurrences of substring old replaced by new. If the optional argument count is given, only the first count occurrences are replaced.",
+      "parameters": [
+        {"name": "old", "type": "str"},
+        {"name": "new", "type": "str"},
+        {"name": "count", "type": "int", "default": "-1"}
+      ],
+      "return_type": "str",
+      "example": ">>> 'hello world'.replace('world', 'Python')\n'hello Python'"
+    },
+    {
+      "name": "str.rfind",
+      "signature": "str.rfind(sub[, start[, end]])",
+      "description": "Return the highest index in the string where substring sub is found, such that sub is contained within s[start:end]. Return -1 on failure.",
+      "parameters": [
+        {"name": "sub", "type": "str"},
+        {"name": "start", "type": "int", "default": "0"},
+        {"name": "end", "type": "int", "default": "len(string)"}
+      ],
+      "return_type": "int",
+      "example": ">>> 'hello world'.rfind('o')\n7"
+    },
+    {
+      "name": "str.rindex",
+      "signature": "str.rindex(sub[, start[, end]])",
+      "description": "Like rfind() but raises ValueError when the substring sub is not found.",
+      "parameters": [
+        {"name": "sub", "type": "str"},
+        {"name": "start", "type": "int", "default": "0"},
+        {"name": "end", "type": "int", "default": "len(string)"}
+      ],
+      "return_type": "int",
+      "raises": ["ValueError"],
+      "example": ">>> 'hello world'.rindex('o')\n7"
+    },
+    {
+      "name": "str.rjust",
+      "signature": "str.rjust(width[, fillchar])",
+      "description": "Return the string right justified in a string of length width. Padding is done using the specified fillchar (default is an ASCII space).",
+      "parameters": [
+        {"name": "width", "type": "int"},
+        {"name": "fillchar", "type": "str", "default": "' '"}
+      ],
+      "return_type": "str",
+      "example": ">>> 'hello'.rjust(10)\n'     hello'"
+    },
+    {
+      "name": "str.rpartition",
+      "signature": "str.rpartition(sep)",
+      "description": "Split the string at the last occurrence of sep, and return a 3-tuple containing the part before the separator, the separator itself, and the part after the separator.",
+      "parameters": [
+        {"name": "sep", "type": "str"}
+      ],
+      "return_type": "tuple[str, str, str]",
+      "example": ">>> 'hello:world:test'.rpartition(':')\n('hello:world', ':', 'test')"
+    },
+    {
+      "name": "str.rsplit",
+      "signature": "str.rsplit(sep=None, maxsplit=-1)",
+      "description": "Return a list of the words in the string, using sep as the delimiter string. If maxsplit is given, at most maxsplit splits are done, the rightmost ones.",
+      "parameters": [
+        {"name": "sep", "type": "str | None", "default": "None"},
+        {"name": "maxsplit", "type": "int", "default": "-1"}
+      ],
+      "return_type": "list[str]",
+      "example": ">>> 'a,b,c,d'.rsplit(',', 2)\n['a,b', 'c', 'd']"
+    },
+    {
+      "name": "str.rstrip",
+      "signature": "str.rstrip([chars])",
+      "description": "Return a copy of the string with trailing characters removed. The chars argument is a string specifying the set of characters to be removed.",
+      "parameters": [
+        {"name": "chars", "type": "str | None", "default": "None"}
+      ],
+      "return_type": "str",
+      "example": ">>> 'hello   '.rstrip()\n'hello'"
+    },
+    {
+      "name": "str.split",
+      "signature": "str.split(sep=None, maxsplit=-1)",
+      "description": "Return a list of the words in the string, using sep as the delimiter string. If maxsplit is given, at most maxsplit splits are done (thus, the list will have at most maxsplit+1 elements).",
+      "parameters": [
+        {"name": "sep", "type": "str | None", "default": "None"},
+        {"name": "maxsplit", "type": "int", "default": "-1"}
+      ],
+      "return_type": "list[str]",
+      "example": ">>> 'hello world'.split()\n['hello', 'world']"
+    },
+    {
+      "name": "str.splitlines",
+      "signature": "str.splitlines(keepends=False)",
+      "description": "Return a list of the lines in the string, breaking at line boundaries. Line breaks are not included in the resulting list unless keepends is given and true.",
+      "parameters": [
+        {"name": "keepends", "type": "bool", "default": "False"}
+      ],
+      "return_type": "list[str]",
+      "example": ">>> 'hello\\nworld\\n'.splitlines()\n['hello', 'world']"
+    },
+    {
+      "name": "str.startswith",
+      "signature": "str.startswith(prefix[, start[, end]])",
+      "description": "Return True if string starts with the prefix, otherwise return False. prefix can also be a tuple of prefixes to look for.",
+      "parameters": [
+        {"name": "prefix", "type": "str | tuple[str, ...]"},
+        {"name": "start", "type": "int", "default": "0"},
+        {"name": "end", "type": "int", "default": "len(string)"}
+      ],
+      "return_type": "bool",
+      "example": ">>> 'hello.py'.startswith('hello')\nTrue"
+    },
+    {
+      "name": "str.strip",
+      "signature": "str.strip([chars])",
+      "description": "Return a copy of the string with the leading and trailing characters removed. The chars argument is a string specifying the set of characters to be removed.",
+      "parameters": [
+        {"name": "chars", "type": "str | None", "default": "None"}
+      ],
+      "return_type": "str",
+      "example": ">>> '   hello   '.strip()\n'hello'"
+    },
+    {
+      "name": "str.swapcase",
+      "signature": "str.swapcase()",
+      "description": "Return a copy of the string with uppercase characters converted to lowercase and vice versa.",
+      "return_type": "str",
+      "example": ">>> 'Hello World'.swapcase()\n'hELLO wORLD'"
+    },
+    {
+      "name": "str.title",
+      "signature": "str.title()",
+      "description": "Return a titlecased version of the string where words start with an uppercase character and the remaining characters are lowercase.",
+      "return_type": "str",
+      "example": ">>> 'hello world'.title()\n'Hello World'"
+    },
+    {
+      "name": "str.translate",
+      "signature": "str.translate(table)",
+      "description": "Return a copy of the string in which each character has been mapped through the given translation table.",
+      "parameters": [
+        {"name": "table", "type": "dict[int, int | str | None]"}
+      ],
+      "return_type": "str",
+      "example": ">>> table = str.maketrans('aeiou', '12345')\n>>> 'hello world'.translate(table)\n'h2ll4 w4rld'"
+    },
+    {
+      "name": "str.upper",
+      "signature": "str.upper()",
+      "description": "Return a copy of the string with all the cased characters converted to uppercase.",
+      "return_type": "str",
+      "example": ">>> 'hello'.upper()\n'HELLO'"
+    },
+    {
+      "name": "str.zfill",
+      "signature": "str.zfill(width)",
+      "description": "Return a copy of the string left filled with ASCII '0' digits to make a string of length width. A leading sign prefix ('+'/'-') is handled by inserting the padding after the sign character rather than before.",
+      "parameters": [
+        {"name": "width", "type": "int"}
+      ],
+      "return_type": "str",
+      "example": ">>> '42'.zfill(5)\n'00042'\n>>> '-42'.zfill(5)\n'-0042'"
+    }
+  ],
+  "printf_style_formatting": {
+    "description": "String objects have one unique built-in operation: the % operator (modulo). This is also known as the string formatting or interpolation operator.",
+    "syntax": "format % values",
+    "example": ">>> 'Hello %s' % 'world'\n'Hello world'\n>>> '%d %s cost $%.2f' % (6, 'bananas', 1.74)\n'6 bananas cost $1.74'",
+    "conversion_specifiers": [
+      {"specifier": "%s", "description": "String (converts any Python object using str())"},
+      {"specifier": "%r", "description": "String (converts any Python object using repr())"},
+      {"specifier": "%d", "description": "Signed integer decimal"},
+      {"specifier": "%i", "description": "Signed integer decimal"},
+      {"specifier": "%o", "description": "Signed octal value"},
+      {"specifier": "%x", "description": "Signed hexadecimal (lowercase)"},
+      {"specifier": "%X", "description": "Signed hexadecimal (uppercase)"},
+      {"specifier": "%e", "description": "Floating point exponential format (lowercase)"},
+      {"specifier": "%E", "description": "Floating point exponential format (uppercase)"},
+      {"specifier": "%f", "description": "Floating point decimal format"},
+      {"specifier": "%F", "description": "Floating point decimal format"},
+      {"specifier": "%g", "description": "Floating point format. Uses lowercase exponential format if exponent is less than -4 or not less than precision, decimal format otherwise"},
+      {"specifier": "%G", "description": "Floating point format. Uses uppercase exponential format if exponent is less than -4 or not less than precision, decimal format otherwise"},
+      {"specifier": "%%", "description": "No argument is converted, results in a '%' character in the result"}
+    ]
+  },
+  "format_specification_mini_language": {
+    "description": "The str.format() method and the Formatter class share the same syntax for format strings (although in the case of Formatter, subclasses can define their own format string syntax).",
+    "syntax": "format_spec ::=  [[fill]align][sign][#][0][width][grouping_option][.precision][type]",
+    "align_options": [
+      {"option": "<", "description": "Forces the field to be left-aligned within the available space (this is the default for most objects)"},
+      {"option": ">", "description": "Forces the field to be right-aligned within the available space (this is the default for numbers)"},
+      {"option": "=", "description": "Forces the padding to be placed after the sign (if any) but before the digits"},
+      {"option": "^", "description": "Forces the field to be centered within the available space"}
+    ],
+    "sign_options": [
+      {"option": "+", "description": "Indicates that a sign should be used for both positive as well as negative numbers"},
+      {"option": "-", "description": "Indicates that a sign should be used only for negative numbers (this is the default behavior)"},
+      {"option": " ", "description": "Indicates that a leading space should be used on positive numbers, and a minus sign on negative numbers"}
+    ],
+    "type_options": [
+      {"option": "s", "description": "String format. This is the default type for strings and may be omitted"},
+      {"option": "b", "description": "Binary format. Outputs the number in base 2"},
+      {"option": "c", "description": "Character. Converts the integer to the corresponding unicode character before printing"},
+      {"option": "d", "description": "Decimal Integer. Outputs the number in base 10"},
+      {"option": "o", "description": "Octal format. Outputs the number in base 8"},
+      {"option": "x", "description": "Hex format. Outputs the number in base 16, using lower-case letters for the digits above 9"},
+      {"option": "X", "description": "Hex format. Outputs the number in base 16, using upper-case letters for the digits above 9"},
+      {"option": "n", "description": "Number. This is the same as 'd', except that it uses the current locale setting to insert the appropriate number separator characters"},
+      {"option": "e", "description": "Exponent notation. Prints the number in scientific notation using the letter 'e' to indicate the exponent"},
+      {"option": "E", "description": "Exponent notation. Same as 'e' except it uses an upper case 'E' as the separator character"},
+      {"option": "f", "description": "Fixed-point notation. Displays the number as a fixed-point number"},
+      {"option": "F", "description": "Fixed-point notation. Same as 'f', but converts nan to NAN and inf to INF"},
+      {"option": "g", "description": "General format. For a given precision p >= 1, this rounds the number to p significant digits"},
+      {"option": "G", "description": "General format. Same as 'g' except switches to 'E' if the number gets too large"},
+      {"option": "%", "description": "Percentage. Multiplies the number by 100 and displays in fixed ('f') format, followed by a percent sign"}
+    ],
+    "examples": [
+      {"code": "'{:<30}'.format('left aligned')", "result": "'left aligned                  '"},
+      {"code": "'{:>30}'.format('right aligned')", "result": "'                 right aligned'"},
+      {"code": "'{:^30}'.format('centered')", "result": "'           centered           '"},
+      {"code": "'{:*^30}'.format('centered')", "result": "'***********centered***********'"},
+      {"code": "'{:+f}; {:+f}'.format(3.14, -3.14)", "result": "'+3.140000; -3.140000'"},
+      {"code": "'{:.2f}'.format(3.14159)", "result": "'3.14'"}
+    ]
+  },
+  "formatted_string_literals": {
+    "description": "Formatted string literals (also called f-strings for short) let you include the value of Python expressions inside a string by prefixing the string with f or F and writing expressions as {expression}.",
+    "version": "3.6+",
+    "syntax": "f'string text {expression}'",
+    "examples": [
+      {
+        "description": "Simple variable interpolation",
+        "code": ">>> name = 'Fred'\n>>> f'He said his name is {name}.'\n\"He said his name is Fred.\""
+      },
+      {
+        "description": "Expression evaluation",
+        "code": ">>> f'{2 * 37}'\n'74'"
+      },
+      {
+        "description": "Format specifier",
+        "code": ">>> value = 123.456\n>>> f'result: {value:.2f}'\n'result: 123.46'"
+      },
+      {
+        "description": "Debug format (Python 3.8+)",
+        "code": ">>> x = 10\n>>> f'{x=}'\n'x=10'"
+      }
+    ]
+  },
+  "see_also": [
+    {"module": "string", "description": "Common string operations"},
+    {"module": "re", "description": "Regular expression operations"},
+    {"module": "difflib", "description": "Helpers for computing deltas"},
+    {"module": "textwrap", "description": "Text wrapping and filling"},
+    {"module": "unicodedata", "description": "Unicode Database"},
+    {"module": "codecs", "description": "Codec registry and base classes"}
+  ]
+}

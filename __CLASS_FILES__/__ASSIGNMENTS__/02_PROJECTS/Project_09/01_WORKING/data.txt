@@ -1,4 +1,81 @@
-A007, Ally Baba
-B123, He Man
-A123, Super Man
-C234, Spider Man
+{
+    'bmw': {
+        'type':    'Luxury Sedan',
+        'country': 'German',
+        'year':    2023,
+        'make':    'BMW',
+        'speed':   0
+    },
+
+    'tesla': {
+        'type':    'Electric Vehicle',
+        'country': 'American',
+        'year':    2022,
+        'make':    'Tesla',
+        'speed':   0
+    },
+
+    'honda': {
+        'type':    'Compact Car',
+        'country': 'Japanese',
+        'year':    2024,
+        'make':    'Honda',
+        'speed':   0
+    },
+
+    'chevy': {
+        'type':    'SUV',
+        'country': 'American',
+        'year':    2022,
+        'make':    'Chevy',
+        'speed':   0
+    },
+
+    'ford': {
+        'type':    'Truck',
+        'country': 'American',
+        'year':    2023,
+        'make':    'Ford',
+        'speed':   0
+    },
+
+    'porsche': {
+        'type':    'Luxury Sports Car',
+        'country': 'Italian',
+        'year':    2021,
+        'make':    'Porsche',
+        'speed':   0
+    },
+
+    'toyota': {
+        'type':    'Mid-size Sedan',
+        'country': 'Japanese',
+        'year':    2023,
+        'make':    'Toyota',
+        'speed':   0
+    },
+
+    'hyundai': {
+        'type':    'Crossover SUV',
+        'country': 'Korean',
+        'year':    2024,
+        'make':    'Hyundai',
+        'speed':   0
+    },
+
+    'dodge': {
+        'type':    'Performance Car',
+        'country': 'American',
+        'year':    2020,
+        'make':    'Dodge',
+        'speed':   0
+    },
+
+    'volvo': {
+        'type':    'Luxury Wagon',
+        'country': 'Swedish',
+        'year':    2021,
+        'make':    'Volvo',
+        'speed':   0
+    }
+}    

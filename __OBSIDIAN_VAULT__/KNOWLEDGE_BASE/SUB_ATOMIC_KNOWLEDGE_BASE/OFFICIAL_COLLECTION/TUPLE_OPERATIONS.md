@@ -43,7 +43,7 @@ a, *rest = (1, 2, 3, 4)      # Tuple | Unpack with rest | Assigns a=1, rest=[2,3
 *first, last = (1, 2, 3, 4)  # Tuple | Unpack head/tail | Assigns first=[1,2,3], last=4
 a, *mid, z = (1, 2, 3, 4, 5) # Tuple | Unpack edges/middle | Assigns a=1, mid=[2,3,4], z=5
 x, y = y, x                  # Tuples | Swap variables | Swaps values
-
+	
 # ═══════════════════════════════════════════════════════════════════════════
 # TUPLE OPERATIONS
 # ═══════════════════════════════════════════════════════════════════════════

@@ -1,18 +1,21 @@
 # CLI Menu Design Reference
 
-> **Complete atomic operations reference for Windows CLI menu systems using Python**
+> **ctypes, msvcrt + ASCII mappings for menu functionality: keyboard events, mouse events, and interactivity**
 
 ---
 
 ## Table of Contents
 
-1. [Complete Atomic Operations Reference](#complete-atomic-operations-reference)
-2. [Learning Objectives (A Priori Knowledge)](#learning-objectives-a-priori-knowledge)
-3. [Implementation Examples](#implementation-examples)
+1. [Windows Console API Overview](#windows-console-api-overview)
+2. [ASCII Character Mappings](#ascii-character-mappings)
+3. [msvcrt Keyboard Event Handling](#msvcrt-keyboard-event-handling)
+4. [ctypes Mouse Event Handling](#ctypes-mouse-event-handling)
+5. [Complete Integration Patterns](#complete-integration-patterns)
+6. [Implementation Examples](#implementation-examples)
 
 ---
 
-## Complete Atomic Operations Reference
+## Windows Console API Overview
 
 ### ANSI ESCAPE SEQUENCES - Operation | Parameters | Action | Output
 
