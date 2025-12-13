@@ -1,0 +1,376 @@
+{
+  "nodes": [
+    {
+      "id": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "type": "file",
+      "file": "Modules/smtplib.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "9bbaeee8-cc7c-4bb3-b0ed-30cc109766b3",
+      "type": "file",
+      "file": "Classes/SMTPException.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "aff89f01-2968-4b37-aa59-f3c89ea2960f",
+      "type": "file",
+      "file": "Classes/SMTPNotSupportedError.md",
+      "x": 708,
+      "y": 371,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "fb56abcd-cd63-4874-81a2-803ba7c706f0",
+      "type": "file",
+      "file": "Classes/SMTPServerDisconnected.md",
+      "x": 454,
+      "y": 658,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "aa8c5067-ee49-4723-a2e9-eda1725e0469",
+      "type": "file",
+      "file": "Classes/SMTPResponseException.md",
+      "x": 96,
+      "y": 794,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "04b4f33c-c72e-4fed-bc00-7b2d473a0f05",
+      "type": "file",
+      "file": "Classes/SMTPSenderRefused.md",
+      "x": -283,
+      "y": 748,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "f54395ae-7160-490b-9c32-15f996d21bea",
+      "type": "file",
+      "file": "Classes/SMTPRecipientsRefused.md",
+      "x": -598,
+      "y": 530,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "6c982943-8e35-4bf6-a0cf-ade96b6c44c2",
+      "type": "file",
+      "file": "Classes/SMTPDataError.md",
+      "x": -776,
+      "y": 191,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "fc950c05-812e-4a86-9a51-ef16884cfc91",
+      "type": "file",
+      "file": "Classes/SMTPConnectError.md",
+      "x": -776,
+      "y": -191,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "36e7c819-fb1b-4aa5-adf0-1b1b51466d60",
+      "type": "file",
+      "file": "Classes/SMTPHeloError.md",
+      "x": -598,
+      "y": -530,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "e48cca48-50ed-4c8c-98f7-cd6f6a53b1fd",
+      "type": "file",
+      "file": "Classes/SMTPAuthenticationError.md",
+      "x": -283,
+      "y": -748,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "e5fbe637-7bb2-4ad3-903b-62ac4d5ae92b",
+      "type": "file",
+      "file": "Classes/SMTP.md",
+      "x": 96,
+      "y": -794,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "2fbeb7a3-df14-4499-a7a2-e86d559fb0cf",
+      "type": "file",
+      "file": "Classes/SMTP_SSL.md",
+      "x": 454,
+      "y": -658,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "3ce7d921-9ac5-42ce-b3fb-b092feae8c0f",
+      "type": "file",
+      "file": "Classes/LMTP.md",
+      "x": 708,
+      "y": -371,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "7cfd094d-2a8d-4f0f-ade1-9c74ec49283c",
+      "type": "file",
+      "file": "Functions/encode_base64_3417.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "4933765f-d950-462e-8ead-51c6144d8366",
+      "type": "file",
+      "file": "Functions/quoteaddr_3421.md",
+      "x": 748,
+      "y": 938,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "5cf887eb-1c43-4b15-bb0c-c2aa93764f12",
+      "type": "file",
+      "file": "Functions/_addr_only_3422.md",
+      "x": -267,
+      "y": 1169,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "8f8e769d-727e-4d41-9ef4-40662ad71723",
+      "type": "file",
+      "file": "Functions/quotedata_3423.md",
+      "x": -1081,
+      "y": 520,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "86498087-9ff2-4d06-9078-64393329f3af",
+      "type": "file",
+      "file": "Functions/_quote_periods_3424.md",
+      "x": -1081,
+      "y": -520,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "ff83fcfb-d83d-4eb7-a566-c5673c1fe180",
+      "type": "file",
+      "file": "Functions/_fix_eols_3425.md",
+      "x": -267,
+      "y": -1169,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "d582d51d-3c96-4591-a7dd-b34d33806970",
+      "type": "file",
+      "file": "Functions/prompt_3464.md",
+      "x": 748,
+      "y": -938,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "5a85eeb9-bae3-4ad0-bdf8-d16cb6c71dfc",
+      "fromNode": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "fromSide": "right",
+      "toNode": "9bbaeee8-cc7c-4bb3-b0ed-30cc109766b3",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "feb4ec91-7423-4908-9b21-80882578ea62",
+      "fromNode": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "fromSide": "right",
+      "toNode": "aff89f01-2968-4b37-aa59-f3c89ea2960f",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "b80311d6-b750-4b76-b5b5-76f60c1a846c",
+      "fromNode": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "fromSide": "right",
+      "toNode": "fb56abcd-cd63-4874-81a2-803ba7c706f0",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "8016d14f-71c9-408d-855b-67755db4d1ed",
+      "fromNode": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "fromSide": "right",
+      "toNode": "aa8c5067-ee49-4723-a2e9-eda1725e0469",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "0389eb97-7e9d-4cf8-a28e-c18b39cc49f9",
+      "fromNode": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "fromSide": "right",
+      "toNode": "04b4f33c-c72e-4fed-bc00-7b2d473a0f05",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "803d25b4-b899-4bc2-a5d4-cda6feab1ce8",
+      "fromNode": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "fromSide": "right",
+      "toNode": "f54395ae-7160-490b-9c32-15f996d21bea",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "427ab5bc-c8f3-4e58-97d8-388b26d40cfe",
+      "fromNode": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "fromSide": "right",
+      "toNode": "6c982943-8e35-4bf6-a0cf-ade96b6c44c2",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "417bdd96-832d-4b0e-8f9c-69d97e957483",
+      "fromNode": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "fromSide": "right",
+      "toNode": "fc950c05-812e-4a86-9a51-ef16884cfc91",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "ca1daf81-f061-4711-83db-6300f83e669d",
+      "fromNode": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "fromSide": "right",
+      "toNode": "36e7c819-fb1b-4aa5-adf0-1b1b51466d60",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "737ebf07-514b-4d75-bfde-5bc857f84407",
+      "fromNode": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "fromSide": "right",
+      "toNode": "e48cca48-50ed-4c8c-98f7-cd6f6a53b1fd",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "12bebbe0-1c38-4a0d-8ade-a11f1678dd28",
+      "fromNode": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "fromSide": "right",
+      "toNode": "e5fbe637-7bb2-4ad3-903b-62ac4d5ae92b",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "3f1a5056-b24e-4638-93a0-672fe080cf31",
+      "fromNode": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "fromSide": "right",
+      "toNode": "2fbeb7a3-df14-4499-a7a2-e86d559fb0cf",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "945187f6-a334-424b-b1d3-752fc6bf5555",
+      "fromNode": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "fromSide": "right",
+      "toNode": "3ce7d921-9ac5-42ce-b3fb-b092feae8c0f",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "59817e34-9c65-4ee1-8e59-b20d1a5e9e44",
+      "fromNode": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "fromSide": "right",
+      "toNode": "7cfd094d-2a8d-4f0f-ade1-9c74ec49283c",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "5b2c8dd4-42d7-4c46-aa6d-24b291c3d811",
+      "fromNode": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "fromSide": "right",
+      "toNode": "4933765f-d950-462e-8ead-51c6144d8366",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "35971f90-8afc-4c62-9c5d-179146a760df",
+      "fromNode": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "fromSide": "right",
+      "toNode": "5cf887eb-1c43-4b15-bb0c-c2aa93764f12",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "10c50cdb-38b3-4afd-b80d-54d3a4435cd1",
+      "fromNode": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "fromSide": "right",
+      "toNode": "8f8e769d-727e-4d41-9ef4-40662ad71723",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "f99ab390-9f0d-451f-8d3c-9ae7455cc132",
+      "fromNode": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "fromSide": "right",
+      "toNode": "86498087-9ff2-4d06-9078-64393329f3af",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "974e78a5-b748-4761-96b4-796093b7addb",
+      "fromNode": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "fromSide": "right",
+      "toNode": "ff83fcfb-d83d-4eb7-a566-c5673c1fe180",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "b36f52e8-3c82-4417-84ed-8d380ffd5aac",
+      "fromNode": "6c27b7a4-8496-469e-86de-e4186ada5cdf",
+      "fromSide": "right",
+      "toNode": "d582d51d-3c96-4591-a7dd-b34d33806970",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+task_id,phase,sprint,status,priority,description,dependencies,assigned_to,notes
+1,1,1,complete,critical,Design API endpoint schema for module submission,,system,ModuleDiscoveryResult dataclass created with JSON serialization
+2,1,1,complete,critical,Design relational database schema for modules/classes/functions,,system,5 tables: modules classes functions relationships taxonomy
+3,1,1,complete,high,Create database models with SQLAlchemy/SQLite,,system,Repository pattern with UnitOfWork implemented
+4,1,1,complete,high,Implement API receiver endpoint with queue system,,system,FastAPI with Command/Observer patterns InMemoryQueue
+5,1,2,complete,high,Build recursive module scanner that calls API,,system,Scanner integrated with APIClient batch submission
+6,1,2,complete,medium,Implement processing queue with async workers,,system,WorkerPool with Observer pattern and UnitOfWork DB writes
+7,1,2,complete,medium,Create database writer for pyclbr extracted data,,system,Enhanced workers.py with import/inheritance/method tracking
+8,2,3,complete,high,Build taxonomy mapper for fundamental categories,,system,Created taxonomy.py with Strategy pattern and integrated into workers
+9,2,3,complete,high,Create relationship graph builder,,system,Created graph.py with dependency/inheritance/taxonomy traversal
+10,2,3,complete,medium,Implement search/query interface for relationships,,system,QueryInterface with search + formatters (JSON/text/markdown)
+11,2,4,complete,high,Design Obsidian vault structure and templates,,system,MCP-integrated vault generator with WikiLinks
+12,2,4,complete,high,Build Obsidian markdown generator,,system,Created generate_vault.py and populate_db.py for full vault generation
+13,2,4,complete,medium,Generate graph data for Obsidian canvas,,system,Created canvas_builder.py and integrated into generate_vault.py
+14,3,5,complete,medium,Create CLI interface for system control,,system,Created cli.py with scan populate generate-vault and query commands
+15,3,5,complete,low,Add logging and monitoring,,system,Implemented logger_config and integrated into all components
+16,3,5,complete,low,Write integration tests,,system,Created test_integration.py validating full CLI workflow
+17,3,6,complete,low,Create documentation and examples,,system,Usage guides and sample queries
+18,3,6,complete,low,Performance optimization and caching,,system,Implemented LRU cache and optimized DB queries
+19,3,6,pending,low,Build web dashboard for visualization,,system,Optional web UI for exploration

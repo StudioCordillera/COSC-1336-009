@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {
+      "id": "5add440d-e30f-4f30-aa6d-952180eaf13b",
+      "type": "file",
+      "file": "Modules/itertools.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    }
+  ],
+  "edges": []
+}

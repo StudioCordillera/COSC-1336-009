@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "id": "c3b1abdb-abb3-4bec-af67-e197bec9b770",
+      "type": "file",
+      "file": "Modules/shelve.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "b8162d68-b9c3-4eae-90b1-e719a8f7a958",
+      "type": "file",
+      "file": "Classes/_ClosedDict.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "5b9d596e-7e33-4bb8-a9db-ba1f0f24d6c5",
+      "type": "file",
+      "file": "Classes/Shelf.md",
+      "x": 0,
+      "y": 800,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "d80646c3-7bc2-45fc-9656-7429d7452966",
+      "type": "file",
+      "file": "Classes/BsdDbShelf.md",
+      "x": -800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "8197c09b-1259-4b7f-958c-9746da688b47",
+      "type": "file",
+      "file": "Classes/DbfilenameShelf.md",
+      "x": 0,
+      "y": -800,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "0b5c4898-04fd-4a0f-8b8e-ff022c0afed5",
+      "type": "file",
+      "file": "Functions/open_1529.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "8fa99c94-96ed-43dd-bbf3-282d34f34232",
+      "fromNode": "c3b1abdb-abb3-4bec-af67-e197bec9b770",
+      "fromSide": "right",
+      "toNode": "b8162d68-b9c3-4eae-90b1-e719a8f7a958",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "12b98802-ef77-4b37-bd7a-5cf8ae941d17",
+      "fromNode": "c3b1abdb-abb3-4bec-af67-e197bec9b770",
+      "fromSide": "right",
+      "toNode": "5b9d596e-7e33-4bb8-a9db-ba1f0f24d6c5",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "fb68c2b5-1732-4278-89df-94bcf63e75d4",
+      "fromNode": "c3b1abdb-abb3-4bec-af67-e197bec9b770",
+      "fromSide": "right",
+      "toNode": "d80646c3-7bc2-45fc-9656-7429d7452966",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "6fe4e657-3e14-4687-a45e-a76aecb9ef9f",
+      "fromNode": "c3b1abdb-abb3-4bec-af67-e197bec9b770",
+      "fromSide": "right",
+      "toNode": "8197c09b-1259-4b7f-958c-9746da688b47",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "b386d263-3e35-4be6-a43d-3157cd6c2cc6",
+      "fromNode": "c3b1abdb-abb3-4bec-af67-e197bec9b770",
+      "fromSide": "right",
+      "toNode": "0b5c4898-04fd-4a0f-8b8e-ff022c0afed5",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

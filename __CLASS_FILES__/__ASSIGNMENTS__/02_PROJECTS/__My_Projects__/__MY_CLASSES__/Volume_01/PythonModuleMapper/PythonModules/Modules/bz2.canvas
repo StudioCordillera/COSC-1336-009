@@ -1,0 +1,88 @@
+{
+  "nodes": [
+    {
+      "id": "77c29955-da8e-4f96-b58d-8ba1cde7cf2f",
+      "type": "file",
+      "file": "Modules/bz2.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "95e98081-2aaf-451b-8e63-9de2df36336c",
+      "type": "file",
+      "file": "Classes/BZ2File.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "0d2d9bd7-8187-492a-ab22-8fd49d4a5198",
+      "type": "file",
+      "file": "Functions/open_1600.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "6cf755c4-2bf8-447b-af78-fb1bc74863c9",
+      "type": "file",
+      "file": "Functions/compress_1601.md",
+      "x": -599,
+      "y": 1039,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "7546aba1-6f08-4825-ae1a-14a8367f4251",
+      "type": "file",
+      "file": "Functions/decompress_1602.md",
+      "x": -600,
+      "y": -1039,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "21d20785-93d9-4231-adf2-d3bb42cb0e31",
+      "fromNode": "77c29955-da8e-4f96-b58d-8ba1cde7cf2f",
+      "fromSide": "right",
+      "toNode": "95e98081-2aaf-451b-8e63-9de2df36336c",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "4d53400e-d989-4836-a9dc-5adac3463a86",
+      "fromNode": "77c29955-da8e-4f96-b58d-8ba1cde7cf2f",
+      "fromSide": "right",
+      "toNode": "0d2d9bd7-8187-492a-ab22-8fd49d4a5198",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "a70aaa74-0033-4d63-b5a5-cedfba38cc55",
+      "fromNode": "77c29955-da8e-4f96-b58d-8ba1cde7cf2f",
+      "fromSide": "right",
+      "toNode": "6cf755c4-2bf8-447b-af78-fb1bc74863c9",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "38963c30-bacb-471a-8d56-52e2b3ac3a25",
+      "fromNode": "77c29955-da8e-4f96-b58d-8ba1cde7cf2f",
+      "fromSide": "right",
+      "toNode": "7546aba1-6f08-4825-ae1a-14a8367f4251",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

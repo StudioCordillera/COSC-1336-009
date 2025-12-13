@@ -1,0 +1,232 @@
+{
+  "nodes": [
+    {
+      "id": "09c10ee4-c0e7-4523-9087-51c2f6aa1f83",
+      "type": "file",
+      "file": "Modules/copy.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "d5223ff0-289f-426a-895c-87a85a852407",
+      "type": "file",
+      "file": "Classes/Error.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "55507e88-4069-40d1-b5f5-4714170790f6",
+      "type": "file",
+      "file": "Functions/copy_542.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "33c2b9c1-8ea1-4f57-87bd-8176d27f3ed7",
+      "type": "file",
+      "file": "Functions/_copy_immutable_543.md",
+      "x": 1009,
+      "y": 648,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "99fd3f5c-8b59-4421-ad3d-a6dc8dbf4f08",
+      "type": "file",
+      "file": "Functions/deepcopy_544.md",
+      "x": 498,
+      "y": 1091,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "8f7e6a72-735a-41b5-a04e-2a500bba33aa",
+      "type": "file",
+      "file": "Functions/_deepcopy_atomic_545.md",
+      "x": -170,
+      "y": 1187,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "f148f7aa-80bb-407f-a090-84c81eb3278d",
+      "type": "file",
+      "file": "Functions/_deepcopy_list_546.md",
+      "x": -785,
+      "y": 906,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "388c18cf-1e44-4ce3-979a-47e7b9001c9b",
+      "type": "file",
+      "file": "Functions/_deepcopy_tuple_547.md",
+      "x": -1151,
+      "y": 338,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "b9277c3b-7b1e-4710-bf7a-f4e26cb33006",
+      "type": "file",
+      "file": "Functions/_deepcopy_dict_548.md",
+      "x": -1151,
+      "y": -338,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "778a2abb-087e-4377-a256-e639c24c7720",
+      "type": "file",
+      "file": "Functions/_deepcopy_method_549.md",
+      "x": -785,
+      "y": -906,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "184eb5d5-5390-4482-b39d-51076da8f000",
+      "type": "file",
+      "file": "Functions/_keep_alive_550.md",
+      "x": -170,
+      "y": -1187,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "f01d160d-e638-4543-b499-74d85edd2e0c",
+      "type": "file",
+      "file": "Functions/_reconstruct_551.md",
+      "x": 498,
+      "y": -1091,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "116e6191-bb49-410b-8169-f0ec26dde3fc",
+      "type": "file",
+      "file": "Functions/replace_552.md",
+      "x": 1009,
+      "y": -648,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1883a5e-29ef-4c36-a91b-7ee608676477",
+      "fromNode": "09c10ee4-c0e7-4523-9087-51c2f6aa1f83",
+      "fromSide": "right",
+      "toNode": "d5223ff0-289f-426a-895c-87a85a852407",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "1390bd2a-9134-422a-af21-0d83fef0355e",
+      "fromNode": "09c10ee4-c0e7-4523-9087-51c2f6aa1f83",
+      "fromSide": "right",
+      "toNode": "55507e88-4069-40d1-b5f5-4714170790f6",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "73a86de4-0425-4e43-84c5-3e3de4bc27cf",
+      "fromNode": "09c10ee4-c0e7-4523-9087-51c2f6aa1f83",
+      "fromSide": "right",
+      "toNode": "33c2b9c1-8ea1-4f57-87bd-8176d27f3ed7",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "e47770b3-4e66-4dab-9c7a-b608403d1e1b",
+      "fromNode": "09c10ee4-c0e7-4523-9087-51c2f6aa1f83",
+      "fromSide": "right",
+      "toNode": "99fd3f5c-8b59-4421-ad3d-a6dc8dbf4f08",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "7be6b1f7-743d-497d-985b-6522406296ac",
+      "fromNode": "09c10ee4-c0e7-4523-9087-51c2f6aa1f83",
+      "fromSide": "right",
+      "toNode": "8f7e6a72-735a-41b5-a04e-2a500bba33aa",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "0ba472bd-2c96-4ec7-bfe7-d8c55b691fb9",
+      "fromNode": "09c10ee4-c0e7-4523-9087-51c2f6aa1f83",
+      "fromSide": "right",
+      "toNode": "f148f7aa-80bb-407f-a090-84c81eb3278d",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "3dba3f41-debe-4444-815b-6520844c1fb2",
+      "fromNode": "09c10ee4-c0e7-4523-9087-51c2f6aa1f83",
+      "fromSide": "right",
+      "toNode": "388c18cf-1e44-4ce3-979a-47e7b9001c9b",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "9d724d2b-77b4-442b-a660-fc21c15e9c32",
+      "fromNode": "09c10ee4-c0e7-4523-9087-51c2f6aa1f83",
+      "fromSide": "right",
+      "toNode": "b9277c3b-7b1e-4710-bf7a-f4e26cb33006",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "c9ee937b-6372-4c1e-a508-b158e32177a6",
+      "fromNode": "09c10ee4-c0e7-4523-9087-51c2f6aa1f83",
+      "fromSide": "right",
+      "toNode": "778a2abb-087e-4377-a256-e639c24c7720",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "915463e0-eb98-42c3-83e5-3706aabd3158",
+      "fromNode": "09c10ee4-c0e7-4523-9087-51c2f6aa1f83",
+      "fromSide": "right",
+      "toNode": "184eb5d5-5390-4482-b39d-51076da8f000",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "a5e2d688-2f2c-495e-9959-63ee3c60808f",
+      "fromNode": "09c10ee4-c0e7-4523-9087-51c2f6aa1f83",
+      "fromSide": "right",
+      "toNode": "f01d160d-e638-4543-b499-74d85edd2e0c",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "8dcb4906-852a-43a7-9f60-d21532910cce",
+      "fromNode": "09c10ee4-c0e7-4523-9087-51c2f6aa1f83",
+      "fromSide": "right",
+      "toNode": "116e6191-bb49-410b-8169-f0ec26dde3fc",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

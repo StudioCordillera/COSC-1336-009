@@ -1,0 +1,466 @@
+{
+  "nodes": [
+    {
+      "id": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "type": "file",
+      "file": "Modules/webbrowser.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "71d3da5a-6e8f-42f1-ab82-e5432d065d3c",
+      "type": "file",
+      "file": "Classes/Error.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "d50a83ef-f6b0-439d-9c06-deb6e784edbd",
+      "type": "file",
+      "file": "Classes/BaseBrowser.md",
+      "x": 730,
+      "y": 325,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "d64495d3-b01a-435a-9b33-fcde57140fd5",
+      "type": "file",
+      "file": "Classes/GenericBrowser.md",
+      "x": 535,
+      "y": 594,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "373af894-ede0-417b-a43c-49985a7f10a4",
+      "type": "file",
+      "file": "Classes/BackgroundBrowser.md",
+      "x": 247,
+      "y": 760,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "2d7352c6-d3a0-45cb-a0f3-a5f089126d56",
+      "type": "file",
+      "file": "Classes/UnixBrowser.md",
+      "x": -83,
+      "y": 795,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "a897dfde-d972-4af8-9f0e-eaa04caf56dc",
+      "type": "file",
+      "file": "Classes/Mozilla.md",
+      "x": -399,
+      "y": 692,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "e72ed859-e656-45e1-b237-f7654e3c9840",
+      "type": "file",
+      "file": "Classes/Epiphany.md",
+      "x": -647,
+      "y": 470,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "58582202-9153-494f-96f1-0e50f9d27d2a",
+      "type": "file",
+      "file": "Classes/Chrome.md",
+      "x": -782,
+      "y": 166,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "4ff146cf-088e-4428-8f12-f6b7057ce605",
+      "type": "file",
+      "file": "Classes/Opera.md",
+      "x": -782,
+      "y": -166,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "52025b10-8a28-4d3f-9466-070ef0610d87",
+      "type": "file",
+      "file": "Classes/Elinks.md",
+      "x": -647,
+      "y": -470,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "d2921ed3-44ae-45cb-b39e-1df9c6871165",
+      "type": "file",
+      "file": "Classes/Konqueror.md",
+      "x": -400,
+      "y": -692,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "48e724f2-5575-4959-917d-4022199f9ad6",
+      "type": "file",
+      "file": "Classes/Edge.md",
+      "x": -83,
+      "y": -795,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "d975e932-7705-4a8a-86d7-d259754f0c26",
+      "type": "file",
+      "file": "Classes/WindowsDefault.md",
+      "x": 247,
+      "y": -760,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "6d6ad397-714b-4d40-ba08-6e6a7af57fac",
+      "type": "file",
+      "file": "Classes/MacOSXOSAScript.md",
+      "x": 535,
+      "y": -594,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "19e173ec-54ed-4ee2-afcd-4a0992f21f92",
+      "type": "file",
+      "file": "Classes/IOSBrowser.md",
+      "x": 730,
+      "y": -325,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "9b04bf61-d13c-4c80-853d-4a1f9e15bcbb",
+      "type": "file",
+      "file": "Functions/register_3201.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "88e82595-61a7-4c71-b9ab-6913e05a154f",
+      "type": "file",
+      "file": "Functions/get_3202.md",
+      "x": 970,
+      "y": 705,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "06b642bc-506d-4e14-9646-a2ba80429059",
+      "type": "file",
+      "file": "Functions/open_3203.md",
+      "x": 370,
+      "y": 1141,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "e8199888-f214-4630-b55f-b6f1a3982d17",
+      "type": "file",
+      "file": "Functions/open_new_3204.md",
+      "x": -370,
+      "y": 1141,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "d2cafe79-fa09-4cef-b8b2-4460b40bfce8",
+      "type": "file",
+      "file": "Functions/open_new_tab_3205.md",
+      "x": -970,
+      "y": 705,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "dd439cfe-6a4c-453a-b417-a914f64887c7",
+      "type": "file",
+      "file": "Functions/_synthesize_3206.md",
+      "x": -1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "8a1d3033-78e7-47b3-b3a7-47aac23f104c",
+      "type": "file",
+      "file": "Functions/register_X_browsers_3217.md",
+      "x": -970,
+      "y": -705,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "fb33f9cc-60aa-437b-8a3d-f1e4fa4aa5f0",
+      "type": "file",
+      "file": "Functions/register_standard_browsers_3218.md",
+      "x": -370,
+      "y": -1141,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "5e0d7dfd-19f5-4b44-879e-c43fd9b051ac",
+      "type": "file",
+      "file": "Functions/parse_args_3223.md",
+      "x": 370,
+      "y": -1141,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "d602ab8e-65bc-4cdd-b094-ad7f029227cd",
+      "type": "file",
+      "file": "Functions/main_3224.md",
+      "x": 970,
+      "y": -705,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "bc88a701-f704-46b9-8032-5c8451e96a47",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "71d3da5a-6e8f-42f1-ab82-e5432d065d3c",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "cc7a362c-8db4-49cc-a011-cdb86dfc97bd",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "d50a83ef-f6b0-439d-9c06-deb6e784edbd",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "63fc6a25-7518-4a64-876d-42e9e5ad57ae",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "d64495d3-b01a-435a-9b33-fcde57140fd5",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "4c061859-45c5-4a93-acb0-99f7e6b7cfc4",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "373af894-ede0-417b-a43c-49985a7f10a4",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "0be9fa23-5836-431c-8504-6a56d346737d",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "2d7352c6-d3a0-45cb-a0f3-a5f089126d56",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "e6ef39f4-f6b2-4a14-85d3-26e833771725",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "a897dfde-d972-4af8-9f0e-eaa04caf56dc",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "74aeec90-fd7e-474a-8e97-4afcbd04262f",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "e72ed859-e656-45e1-b237-f7654e3c9840",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "2b178dc4-1042-47af-830e-dbf850a427cf",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "58582202-9153-494f-96f1-0e50f9d27d2a",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "1741c43b-db7b-4a47-b41e-a9be2474db9c",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "4ff146cf-088e-4428-8f12-f6b7057ce605",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "08104e8a-bf9a-4b43-94ec-3bb8aa407057",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "52025b10-8a28-4d3f-9466-070ef0610d87",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "281993d0-15e8-4a89-85a7-6c8be3754f75",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "d2921ed3-44ae-45cb-b39e-1df9c6871165",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "5e08cfc3-0299-4c8b-a7a6-883c48f7f28f",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "48e724f2-5575-4959-917d-4022199f9ad6",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "7b489f82-b4cf-48a0-8453-f0f25542b0d6",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "d975e932-7705-4a8a-86d7-d259754f0c26",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "56918315-f80c-4ec1-b130-8148097ea905",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "6d6ad397-714b-4d40-ba08-6e6a7af57fac",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "80f2b44a-9ec6-4e9e-aab9-cbb179572e11",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "19e173ec-54ed-4ee2-afcd-4a0992f21f92",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "2d5b8307-46e7-4e3b-9e92-0fd08fc72965",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "9b04bf61-d13c-4c80-853d-4a1f9e15bcbb",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "5881b4fb-7293-418a-ae94-06775bc1a713",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "88e82595-61a7-4c71-b9ab-6913e05a154f",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "596e9239-fcf7-4ddc-b48d-6b84f229a0d5",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "06b642bc-506d-4e14-9646-a2ba80429059",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "fd753b3e-8b62-4386-bbdf-469ce57ac303",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "e8199888-f214-4630-b55f-b6f1a3982d17",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "63c07d5e-f3a8-467f-b04a-31eceeb937bf",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "d2cafe79-fa09-4cef-b8b2-4460b40bfce8",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "735c0b08-85f8-4312-84c2-a9675e7b4ebc",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "dd439cfe-6a4c-453a-b417-a914f64887c7",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "03b88bd5-ec5a-42b0-9f04-8acf38c7e84e",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "8a1d3033-78e7-47b3-b3a7-47aac23f104c",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "d232f51f-b85c-4e83-ae87-44a911c5d765",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "fb33f9cc-60aa-437b-8a3d-f1e4fa4aa5f0",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "2b869b08-6c50-47d6-9e62-7b12fa694640",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "5e0d7dfd-19f5-4b44-879e-c43fd9b051ac",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "54e81849-e375-4d41-b140-96751780bbef",
+      "fromNode": "4fedd29a-e3ec-41e5-bfa5-fe53702a4ad9",
+      "fromSide": "right",
+      "toNode": "d602ab8e-65bc-4cdd-b094-ad7f029227cd",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Module Knowledge Graph</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.23.0/cytoscape.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 { margin: 0; font-size: 1.5rem; }
+        #controls {
+            display: flex;
+            gap: 10px;
+        }
+        input, button, select {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover { background-color: #2980b9; }
+        #cy {
+            flex: 1;
+            background-color: white;
+            border-top: 1px solid #ddd;
+        }
+        #legend {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            font-size: 0.9rem;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .color-box {
+            width: 15px;
+            height: 15px;
+            margin-right: 8px;
+            border-radius: 3px;
+        }
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.2rem;
+            color: #666;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Python Module Knowledge Graph</h1>
+        <div id="controls">
+            <input type="text" id="search-input" placeholder="Search module/class...">
+            <button onclick="searchGraph()">Search</button>
+            <button onclick="loadFullGraph()">Load Full Graph</button>
+            <select id="layout-select" onchange="updateLayout()">
+                <option value="cose">Force Directed (COSE)</option>
+                <option value="circle">Circle</option>
+                <option value="grid">Grid</option>
+                <option value="concentric">Concentric</option>
+            </select>
+        </div>
+    </header>
+
+    <div id="cy"></div>
+    <div id="loading">Loading graph data...</div>
+
+    <div id="legend">
+        <div class="legend-item"><div class="color-box" style="background: #e74c3c;"></div>Module</div>
+        <div class="legend-item"><div class="color-box" style="background: #3498db;"></div>Class</div>
+        <div class="legend-item"><div class="color-box" style="background: #2ecc71;"></div>Function</div>
+        <div class="legend-item"><div class="color-box" style="background: #f1c40f;"></div>Taxonomy</div>
+    </div>
+
+    <script>
+        let cy;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            cy = cytoscape({
+                container: document.getElementById('cy'),
+                style: [
+                    {
+                        selector: 'node',
+                        style: {
+                            'label': 'data(label)',
+                            'text-valign': 'center',
+                            'color': '#fff',
+                            'text-outline-width': 2,
+                            'text-outline-color': '#555',
+                            'background-color': '#999',
+                            'width': 40,
+                            'height': 40
+                        }
+                    },
+                    {
+                        selector: 'node[type="module"]',
+                        style: { 'background-color': '#e74c3c' }
+                    },
+                    {
+                        selector: 'node[type="class"]',
+                        style: { 'background-color': '#3498db' }
+                    },
+                    {
+                        selector: 'node[type="function"]',
+                        style: { 'background-color': '#2ecc71', 'width': 30, 'height': 30 }
+                    },
+                    {
+                        selector: 'node[type="taxonomy"]',
+                        style: { 'background-color': '#f1c40f', 'color': '#333', 'text-outline-color': '#fff' }
+                    },
+                    {
+                        selector: 'edge',
+                        style: {
+                            'width': 2,
+                            'line-color': '#ccc',
+                            'target-arrow-color': '#ccc',
+                            'target-arrow-shape': 'triangle',
+                            'curve-style': 'bezier',
+                            'label': 'data(type)',
+                            'font-size': '10px',
+                            'text-rotation': 'autorotate',
+                            'text-background-color': '#fff',
+                            'text-background-opacity': 1
+                        }
+                    }
+                ]
+            });
+
+            // Initial load
+            loadFullGraph();
+        });
+
+        async function loadFullGraph() {
+            showLoading(true);
+            try {
+                const response = await fetch('/api/graph/data');
+                const data = await response.json();
+                
+                cy.elements().remove();
+                cy.add(data);
+                updateLayout();
+            } catch (error) {
+                console.error('Error loading graph:', error);
+                alert('Failed to load graph data');
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        async function searchGraph() {
+            const query = document.getElementById('search-input').value;
+            if (!query) return;
+
+            showLoading(true);
+            try {
+                const response = await fetch(`/api/graph/search?q=${encodeURIComponent(query)}`);
+                const data = await response.json();
+                
+                cy.elements().remove();
+                cy.add(data);
+                updateLayout();
+            } catch (error) {
+                console.error('Error searching graph:', error);
+                alert('Search failed');
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        function updateLayout() {
+            const layoutName = document.getElementById('layout-select').value;
+            const layout = cy.layout({
+                name: layoutName,
+                animate: true,
+                animationDuration: 500,
+                padding: 50
+            });
+            layout.run();
+        }
+
+        function showLoading(show) {
+            document.getElementById('loading').style.display = show ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

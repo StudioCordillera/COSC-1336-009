@@ -1,0 +1,70 @@
+{
+  "nodes": [
+    {
+      "id": "2baa2278-8b9c-4408-945e-af07abe64bc8",
+      "type": "file",
+      "file": "Modules/hmac.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "e53c6df0-a42f-4ef7-a45f-042a669ce47b",
+      "type": "file",
+      "file": "Classes/HMAC.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "40467da4-721e-4297-89c6-d268eda1a911",
+      "type": "file",
+      "file": "Functions/new_2069.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "2f5eef34-2c13-4939-8a92-7fad04e04e2d",
+      "type": "file",
+      "file": "Functions/digest_2070.md",
+      "x": -1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "a3f82253-2cb3-4560-a1bc-a0ce908d9673",
+      "fromNode": "2baa2278-8b9c-4408-945e-af07abe64bc8",
+      "fromSide": "right",
+      "toNode": "e53c6df0-a42f-4ef7-a45f-042a669ce47b",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "1daae5a7-74a7-430e-a7a2-245307817d42",
+      "fromNode": "2baa2278-8b9c-4408-945e-af07abe64bc8",
+      "fromSide": "right",
+      "toNode": "40467da4-721e-4297-89c6-d268eda1a911",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "30a970de-6127-40ee-b2f7-f4b99c840125",
+      "fromNode": "2baa2278-8b9c-4408-945e-af07abe64bc8",
+      "fromSide": "right",
+      "toNode": "2f5eef34-2c13-4939-8a92-7fad04e04e2d",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

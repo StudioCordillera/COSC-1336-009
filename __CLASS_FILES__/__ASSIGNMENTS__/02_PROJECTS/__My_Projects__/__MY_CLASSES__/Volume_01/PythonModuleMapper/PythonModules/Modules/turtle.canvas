@@ -1,0 +1,574 @@
+{
+  "nodes": [
+    {
+      "id": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "type": "file",
+      "file": "Modules/turtle.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "498c69bc-5e98-4c6c-a1da-870703651cf0",
+      "type": "file",
+      "file": "Classes/Vec2D.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "9c36c3cc-68f6-49ac-aada-473aa14a8592",
+      "type": "file",
+      "file": "Classes/ScrolledCanvas.md",
+      "x": 730,
+      "y": 325,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "4bc56154-36c5-45de-819c-ffa8362220c3",
+      "type": "file",
+      "file": "Classes/_Root.md",
+      "x": 535,
+      "y": 594,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "dff4844e-d989-4c74-b9de-672143e351cd",
+      "type": "file",
+      "file": "Classes/TurtleScreenBase.md",
+      "x": 247,
+      "y": 760,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "a6ffbed7-124c-4289-95e9-7d3e332727bf",
+      "type": "file",
+      "file": "Classes/Terminator.md",
+      "x": -83,
+      "y": 795,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "22c76a57-4104-4dea-8105-955169ac051a",
+      "type": "file",
+      "file": "Classes/TurtleGraphicsError.md",
+      "x": -399,
+      "y": 692,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "5bc3bf69-6c18-4ebf-958b-f788fa1ce0ff",
+      "type": "file",
+      "file": "Classes/Shape.md",
+      "x": -647,
+      "y": 470,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "22db7f4b-091c-42ec-83de-73b59d29b09b",
+      "type": "file",
+      "file": "Classes/Tbuffer.md",
+      "x": -782,
+      "y": 166,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "6a2ada73-2a25-4304-8107-c710383bea24",
+      "type": "file",
+      "file": "Classes/TurtleScreen.md",
+      "x": -782,
+      "y": -166,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "6a158384-4f0e-4e2c-86d3-5401fcf6a886",
+      "type": "file",
+      "file": "Classes/TNavigator.md",
+      "x": -647,
+      "y": -470,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "13f5878d-4a7d-42a5-8324-ab5f49b477ce",
+      "type": "file",
+      "file": "Classes/TPen.md",
+      "x": -400,
+      "y": -692,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "368227e1-dadf-41e5-b4fe-342d52515886",
+      "type": "file",
+      "file": "Classes/_TurtleImage.md",
+      "x": -83,
+      "y": -795,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "8a7e8f37-68cb-4afe-bcbf-b862f10328a2",
+      "type": "file",
+      "file": "Classes/RawTurtle.md",
+      "x": 247,
+      "y": -760,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "4be2a393-01f5-4d74-8cb0-802942d0d7e6",
+      "type": "file",
+      "file": "Classes/_Screen.md",
+      "x": 535,
+      "y": -594,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "4d5f280f-d6a4-4f48-a61b-7633f1ed0ffe",
+      "type": "file",
+      "file": "Classes/Turtle.md",
+      "x": 730,
+      "y": -325,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "88f6580a-ca75-4667-a584-96fcb168e519",
+      "type": "file",
+      "file": "Functions/deepcopy_3860.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "4997ab14-dc0b-40b3-b82e-993a2f4e08c2",
+      "type": "file",
+      "file": "Functions/config_dict_3861.md",
+      "x": 1108,
+      "y": 459,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "dada6bbc-271d-4d7b-87fa-e5bb4915e1db",
+      "type": "file",
+      "file": "Functions/readconfig_3862.md",
+      "x": 848,
+      "y": 848,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "9a14d0b2-4925-41c0-8e27-cd5ce2b9c55d",
+      "type": "file",
+      "file": "Functions/__methodDict_3873.md",
+      "x": 459,
+      "y": 1108,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "1e75152f-401f-47d4-a7ce-7bf8436caab2",
+      "type": "file",
+      "file": "Functions/__methods_3874.md",
+      "x": 0,
+      "y": 1200,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "f999cb2c-03ba-4d62-8e6e-6b7e77cb40f2",
+      "type": "file",
+      "file": "Functions/__forwardmethods_3875.md",
+      "x": -459,
+      "y": 1108,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "c27c8f8e-1aa5-4b4d-bffa-58c66ace4ea4",
+      "type": "file",
+      "file": "Functions/Screen_4060.md",
+      "x": -848,
+      "y": 848,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "23167152-b7ab-4151-916a-71b0e3b6ea10",
+      "type": "file",
+      "file": "Functions/write_docstringdict_4068.md",
+      "x": -1108,
+      "y": 459,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "33ab3896-8f6f-42f2-af15-658a4cf0113d",
+      "type": "file",
+      "file": "Functions/read_docstrings_4069.md",
+      "x": -1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "fdb867af-6fff-493e-9b48-b39cd9243273",
+      "type": "file",
+      "file": "Functions/getmethparlist_4070.md",
+      "x": -1108,
+      "y": -459,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "c9be1eb7-d061-4e2b-95d4-b80895851e2b",
+      "type": "file",
+      "file": "Functions/_turtle_docrevise_4071.md",
+      "x": -848,
+      "y": -848,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "0c2d1764-dd72-4a68-9213-790b928d05b5",
+      "type": "file",
+      "file": "Functions/_screen_docrevise_4072.md",
+      "x": -459,
+      "y": -1108,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "ab7f75da-a56c-4b00-a9ca-f8bcefa6c478",
+      "type": "file",
+      "file": "Functions/_make_global_funcs_4073.md",
+      "x": 0,
+      "y": -1200,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "833d94ee-0032-41d7-9d3e-fd05da72877d",
+      "type": "file",
+      "file": "Functions/switchpen_4074.md",
+      "x": 459,
+      "y": -1108,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "2dc48b61-7fcd-42f5-b4b0-0f7b3d046bef",
+      "type": "file",
+      "file": "Functions/demo1_4075.md",
+      "x": 848,
+      "y": -848,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "dcbf62de-12e8-44b8-a21a-d17516e23dcd",
+      "type": "file",
+      "file": "Functions/demo2_4076.md",
+      "x": 1108,
+      "y": -459,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "a3aaae8b-3d40-4e86-86db-f0a300e14f7c",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "498c69bc-5e98-4c6c-a1da-870703651cf0",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "33c05f71-3e44-4d9d-90e2-0d523ddaed69",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "9c36c3cc-68f6-49ac-aada-473aa14a8592",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "c4118cbc-f075-40d4-996a-14e4c44ba072",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "4bc56154-36c5-45de-819c-ffa8362220c3",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "07189064-7a0f-4edf-b34f-4c38a55befb2",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "dff4844e-d989-4c74-b9de-672143e351cd",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "c8b5ee9e-f3d0-4363-a1e6-b285eb60e5e2",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "a6ffbed7-124c-4289-95e9-7d3e332727bf",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "039e2a1e-aca0-45fb-8fea-4af6d2a010ec",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "22c76a57-4104-4dea-8105-955169ac051a",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "864f2bf1-ebb8-4b3b-9715-c2f6b3cdd7dc",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "5bc3bf69-6c18-4ebf-958b-f788fa1ce0ff",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "cfc18219-8fee-4c1a-8ebb-105eb9474e84",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "22db7f4b-091c-42ec-83de-73b59d29b09b",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "c6472432-41da-4e37-98a5-76500fbe2661",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "6a2ada73-2a25-4304-8107-c710383bea24",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "56ae50f2-4ada-43e4-87da-543e6dbc258f",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "6a158384-4f0e-4e2c-86d3-5401fcf6a886",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "4c28ddd9-a55a-41f4-8f9a-2417286e8d14",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "13f5878d-4a7d-42a5-8324-ab5f49b477ce",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "a54d9861-4b55-45bc-8980-0e64f933aafc",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "368227e1-dadf-41e5-b4fe-342d52515886",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "0cf09671-eb76-46f3-b44d-4ba31e4fabdb",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "8a7e8f37-68cb-4afe-bcbf-b862f10328a2",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "9942b2d8-c0ef-4303-92b8-eec85fe5e7f0",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "4be2a393-01f5-4d74-8cb0-802942d0d7e6",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "02ad61cb-f878-48cd-925b-f4980a0fcfea",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "4d5f280f-d6a4-4f48-a61b-7633f1ed0ffe",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "a72f6b67-16a8-4686-957d-e42205dc1705",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "88f6580a-ca75-4667-a584-96fcb168e519",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "deccd676-e2e8-4424-b0fa-354012b98636",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "4997ab14-dc0b-40b3-b82e-993a2f4e08c2",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "a115d1a9-161d-4b12-a2b7-04597bf31b6c",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "dada6bbc-271d-4d7b-87fa-e5bb4915e1db",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "621565d2-1959-40b6-9db9-bde12fa17735",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "9a14d0b2-4925-41c0-8e27-cd5ce2b9c55d",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "e821cfd6-5e48-4fbd-acb9-53cbf607e15b",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "1e75152f-401f-47d4-a7ce-7bf8436caab2",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "dcd97a6a-f212-4fe3-9173-82bc65b95295",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "f999cb2c-03ba-4d62-8e6e-6b7e77cb40f2",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "2051747f-5cdd-4deb-8028-e5996fbc3fd5",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "c27c8f8e-1aa5-4b4d-bffa-58c66ace4ea4",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "5037906e-7fea-448a-825e-7d433fb4f72f",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "23167152-b7ab-4151-916a-71b0e3b6ea10",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "88dc93a4-8e4a-4d4e-95d5-1974932a148e",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "33ab3896-8f6f-42f2-af15-658a4cf0113d",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "08adce3c-f811-4cf4-ba79-c0943e92cd36",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "fdb867af-6fff-493e-9b48-b39cd9243273",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "d7ea8474-50b0-4092-ae37-5d2cdbdc2870",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "c9be1eb7-d061-4e2b-95d4-b80895851e2b",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "a2b57b87-0394-4816-a0d6-1ca4778fc17d",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "0c2d1764-dd72-4a68-9213-790b928d05b5",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "3ef04a8d-3740-4c57-97ec-248aec3b729d",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "ab7f75da-a56c-4b00-a9ca-f8bcefa6c478",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "d6850349-853f-4ce4-9cb8-789ec6cc5dc1",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "833d94ee-0032-41d7-9d3e-fd05da72877d",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "636ab300-b8f1-4101-b7b1-b03332ccd32a",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "2dc48b61-7fcd-42f5-b4b0-0f7b3d046bef",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "32d1abaf-42d9-4737-b185-1cfb378035ad",
+      "fromNode": "9d76ef8f-a6cc-4185-834a-28c63211d3af",
+      "fromSide": "right",
+      "toNode": "dcbf62de-12e8-44b8-a21a-d17516e23dcd",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

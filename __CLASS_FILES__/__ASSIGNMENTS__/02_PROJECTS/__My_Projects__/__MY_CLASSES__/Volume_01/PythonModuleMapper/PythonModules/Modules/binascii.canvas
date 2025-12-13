@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {
+      "id": "26b55e47-9dce-49ae-a49c-2ec492d12c7b",
+      "type": "file",
+      "file": "Modules/binascii.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    }
+  ],
+  "edges": []
+}

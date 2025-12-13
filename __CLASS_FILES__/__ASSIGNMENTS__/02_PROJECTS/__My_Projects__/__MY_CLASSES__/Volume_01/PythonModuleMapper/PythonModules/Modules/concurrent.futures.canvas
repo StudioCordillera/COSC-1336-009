@@ -1,0 +1,52 @@
+{
+  "nodes": [
+    {
+      "id": "fd049e21-67d2-425e-bd59-8f3ef81739c0",
+      "type": "file",
+      "file": "Modules/concurrent.futures.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "9f9b03a1-1c8a-4f4f-9b81-7ee16547d9ca",
+      "type": "file",
+      "file": "Functions/__dir___2610.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "97a43afa-a33d-42ea-99ad-f15bbf49cc96",
+      "type": "file",
+      "file": "Functions/__getattr___2611.md",
+      "x": -1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "384e5439-2e5a-412d-9c34-3999b0bd3756",
+      "fromNode": "fd049e21-67d2-425e-bd59-8f3ef81739c0",
+      "fromSide": "right",
+      "toNode": "9f9b03a1-1c8a-4f4f-9b81-7ee16547d9ca",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "8af66582-3180-4bf3-ae4c-a8d805eaa276",
+      "fromNode": "fd049e21-67d2-425e-bd59-8f3ef81739c0",
+      "fromSide": "right",
+      "toNode": "97a43afa-a33d-42ea-99ad-f15bbf49cc96",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

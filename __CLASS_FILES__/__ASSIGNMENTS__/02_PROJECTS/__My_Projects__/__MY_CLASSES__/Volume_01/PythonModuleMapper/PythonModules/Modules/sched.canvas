@@ -1,0 +1,52 @@
+{
+  "nodes": [
+    {
+      "id": "8bb9f9b3-8b01-4ab4-8fac-59e8bb8b8260",
+      "type": "file",
+      "file": "Modules/sched.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "78a76057-ea6a-458c-b17e-b301056f0aee",
+      "type": "file",
+      "file": "Classes/scheduler.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "86b42c32-1dac-4b7e-8b16-9ed4290b20b7",
+      "type": "file",
+      "file": "Functions/namedtuple_2669.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "95871474-3481-4fb7-a45e-057229c42662",
+      "fromNode": "8bb9f9b3-8b01-4ab4-8fac-59e8bb8b8260",
+      "fromSide": "right",
+      "toNode": "78a76057-ea6a-458c-b17e-b301056f0aee",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "eed4b153-86d1-4ed4-a176-0e484ee4e54f",
+      "fromNode": "8bb9f9b3-8b01-4ab4-8fac-59e8bb8b8260",
+      "fromSide": "right",
+      "toNode": "86b42c32-1dac-4b7e-8b16-9ed4290b20b7",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

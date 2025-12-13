@@ -1,0 +1,2 @@
+
+"smart_sources:Classes/Enum.md": {"path":"Classes/Enum.md","last_embed":{"hash":null},"embeddings":{},"last_read":{"hash":"mx52i8","at":1765337414505},"class_name":"SmartSource","last_import":{"mtime":1765337327013,"size":178,"at":1765337414505,"hash":"mx52i8"},"blocks":{"#---frontmatter---":[1,9],"#Class: Enum":[11,17],"#Class: Enum#Overview":[13,17],"#Class: Enum#Overview#{1}":[15,17]},"outlinks":[{"title":"uuid","target":"Modules/uuid","line":15}],"metadata":{"type":"class","name":"Enum","module":"uuid","lineno":1109,"tags":["#python","#class"]},"task_lines":[]},

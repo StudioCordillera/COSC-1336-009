@@ -1,0 +1,2 @@
+
+"smart_sources:Classes/_C.md": {"path":"Classes/_C.md","last_embed":{"hash":null},"embeddings":{},"last_read":{"hash":"lhl7f6","at":1765337414503},"class_name":"SmartSource","last_import":{"mtime":1765337326826,"size":173,"at":1765337414503,"hash":"lhl7f6"},"blocks":{"#---frontmatter---":[1,9],"#Class: _C":[11,17],"#Class: _C#Overview":[13,17],"#Class: _C#Overview#{1}":[15,17]},"outlinks":[{"title":"types","target":"Modules/types","line":15}],"metadata":{"type":"class","name":"_C","module":"types","lineno":40,"tags":["#python","#class"]},"task_lines":[]},

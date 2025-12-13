@@ -1,0 +1,41 @@
+---
+type: function
+name: warning
+module: logging
+lineno: 1524
+is_async: False
+is_method: True
+tags:
+  - python
+  - function
+categories:
+  - public_method
+  - public_method
+  - public_method
+---
+
+# Function: warning()
+
+## Overview
+
+Log 'msg % args' with severity 'WARNING'.
+
+To pass exception information, use the keyword argument exc_info with
+a true value, e.g.
+
+logger.warning("Houston, we have a %s", "bit of a problem", exc_info=True)
+
+```python
+def warning(self, msg)
+```
+
+**Module:** [[Modules/logging|logging]]
+**Class:** [[Classes/Logger|Logger]]
+**Type:** Method
+**Line:** 1524
+
+## Categories
+
+- [[Taxonomy/public_method|public_method]]
+- [[Taxonomy/public_method|public_method]]
+- [[Taxonomy/public_method|public_method]]

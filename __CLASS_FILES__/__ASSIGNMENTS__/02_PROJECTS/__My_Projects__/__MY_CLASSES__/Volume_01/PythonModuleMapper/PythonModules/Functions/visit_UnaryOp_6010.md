@@ -1,0 +1,30 @@
+---
+type: function
+name: visit_UnaryOp
+module: ast
+lineno: 1470
+is_async: False
+is_method: True
+tags:
+  - python
+  - function
+categories:
+  - public_method
+---
+
+# Function: visit_UnaryOp()
+
+## Overview
+
+```python
+def visit_UnaryOp(self, node)
+```
+
+**Module:** [[Modules/ast|ast]]
+**Class:** [[Classes/_Unparser|_Unparser]]
+**Type:** Method
+**Line:** 1470
+
+## Categories
+
+- [[Taxonomy/public_method|public_method]]

@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {
+      "id": "f1727a26-2050-41f8-a8af-c41ccae997e3",
+      "type": "file",
+      "file": "Modules/sys.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,20 @@
+{
+  "database": "Zotero",
+  "noteImportFolder": "C:\\Users\\WORK_ADMIN\\Documents\\Obsidian Vault\\__USER_MANAGED__\\00_ZOTERO_INGEST",
+  "pdfExportImageDPI": 120,
+  "pdfExportImageFormat": "jpg",
+  "pdfExportImageQuality": 90,
+  "citeFormats": [],
+  "exportFormats": [
+    {
+      "name": "Import #1",
+      "outputPathTemplate": "{{citekey}}.md",
+      "imageOutputPathTemplate": "{{citekey}}/",
+      "imageBaseNameTemplate": "image"
+    }
+  ],
+  "citeSuggestTemplate": "[[{{citekey}}]]",
+  "openNoteAfterImport": false,
+  "whichNotesToOpenAfterImport": "first-imported-note",
+  "exeOverridePath": "C:\\Users\\WORK_ADMIN\\Documents\\,__WORK__\\01_COLLEGE\\FALL_2025\\MATH_1414_001\\,__ADVANCED_RESOURCES__\\ObsidianVault\\ZoteroPlugin\\pdfannots2json.exe"
+}

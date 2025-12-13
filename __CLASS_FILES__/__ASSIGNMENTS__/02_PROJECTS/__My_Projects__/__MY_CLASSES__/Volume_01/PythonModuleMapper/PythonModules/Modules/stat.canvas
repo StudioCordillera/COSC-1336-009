@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {
+      "id": "e4d33226-60a4-4e3b-9ded-e3a13bf9adee",
+      "type": "file",
+      "file": "Modules/stat.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    }
+  ],
+  "edges": []
+}

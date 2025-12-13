@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "id": "84d9aaed-ffcc-499c-beee-4a323f62d903",
+      "type": "file",
+      "file": "Modules/timeit.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "2d4c5d61-1b3e-463a-ba9d-658211d3da3f",
+      "type": "file",
+      "file": "Classes/Timer.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "e8e3e632-8cc8-4b76-82b4-82fc0fb4813e",
+      "type": "file",
+      "file": "Functions/reindent_5277.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "cd2201ec-6a5f-47c7-ae93-8398e8da8aaf",
+      "type": "file",
+      "file": "Functions/timeit_5283.md",
+      "x": 0,
+      "y": 1200,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "491d105f-809a-4470-8557-653a57961850",
+      "type": "file",
+      "file": "Functions/repeat_5284.md",
+      "x": -1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "6f95cc5a-7923-4e64-8266-c0baec8db353",
+      "type": "file",
+      "file": "Functions/main_5285.md",
+      "x": 0,
+      "y": -1200,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "b0014ec9-b257-4a23-b5c0-2f8bc5b25783",
+      "fromNode": "84d9aaed-ffcc-499c-beee-4a323f62d903",
+      "fromSide": "right",
+      "toNode": "2d4c5d61-1b3e-463a-ba9d-658211d3da3f",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "7af16465-66eb-4b28-8252-37c1ae5a46c0",
+      "fromNode": "84d9aaed-ffcc-499c-beee-4a323f62d903",
+      "fromSide": "right",
+      "toNode": "e8e3e632-8cc8-4b76-82b4-82fc0fb4813e",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "86d32393-59d3-4681-83b6-8d26f06094c5",
+      "fromNode": "84d9aaed-ffcc-499c-beee-4a323f62d903",
+      "fromSide": "right",
+      "toNode": "cd2201ec-6a5f-47c7-ae93-8398e8da8aaf",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "ed16fe3e-9365-4247-93bd-5c59ba68908f",
+      "fromNode": "84d9aaed-ffcc-499c-beee-4a323f62d903",
+      "fromSide": "right",
+      "toNode": "491d105f-809a-4470-8557-653a57961850",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "c88ceb58-22eb-4e84-8c8d-a564d1c304d8",
+      "fromNode": "84d9aaed-ffcc-499c-beee-4a323f62d903",
+      "fromSide": "right",
+      "toNode": "6f95cc5a-7923-4e64-8266-c0baec8db353",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

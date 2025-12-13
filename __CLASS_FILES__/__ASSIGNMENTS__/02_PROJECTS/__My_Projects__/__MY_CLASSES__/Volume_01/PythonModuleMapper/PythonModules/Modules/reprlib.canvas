@@ -1,0 +1,70 @@
+{
+  "nodes": [
+    {
+      "id": "642d3d1e-f078-431a-8eca-bfb20a7ba8dc",
+      "type": "file",
+      "file": "Modules/reprlib.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "27a7c9ee-c33b-486f-ad67-f22078f5d543",
+      "type": "file",
+      "file": "Classes/Repr.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "80389857-2583-4dd5-864f-5f26120660bd",
+      "type": "file",
+      "file": "Functions/recursive_repr_594.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "7c3e2dec-0305-4778-905b-8259190a0d6c",
+      "type": "file",
+      "file": "Functions/_possibly_sorted_610.md",
+      "x": -1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "2f9257fd-d592-4826-8fd8-02759f8ae822",
+      "fromNode": "642d3d1e-f078-431a-8eca-bfb20a7ba8dc",
+      "fromSide": "right",
+      "toNode": "27a7c9ee-c33b-486f-ad67-f22078f5d543",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "75d6cf4f-7935-4a7f-bbd7-898be99561f3",
+      "fromNode": "642d3d1e-f078-431a-8eca-bfb20a7ba8dc",
+      "fromSide": "right",
+      "toNode": "80389857-2583-4dd5-864f-5f26120660bd",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "98afe9b7-5884-4b3c-a68b-bda9703c8c47",
+      "fromNode": "642d3d1e-f078-431a-8eca-bfb20a7ba8dc",
+      "fromSide": "right",
+      "toNode": "7c3e2dec-0305-4778-905b-8259190a0d6c",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

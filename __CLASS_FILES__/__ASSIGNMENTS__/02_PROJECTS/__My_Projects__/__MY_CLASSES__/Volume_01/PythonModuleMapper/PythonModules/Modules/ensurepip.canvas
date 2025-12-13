@@ -1,0 +1,232 @@
+{
+  "nodes": [
+    {
+      "id": "1a6d8aae-56fe-4882-9075-9f685aaaf4dc",
+      "type": "file",
+      "file": "Modules/ensurepip.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "e03bc928-2c17-4fc9-a278-19b7e1981cfc",
+      "type": "file",
+      "file": "Classes/nullcontext.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "8f5421fa-c91a-4c40-b2ae-448ecfda12d4",
+      "type": "file",
+      "file": "Functions/copy2_5387.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "53021982-f1b8-49d8-a37a-184e0363efd5",
+      "type": "file",
+      "file": "Functions/_find_wheel_pkg_dir_pip_5388.md",
+      "x": 1009,
+      "y": 648,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "5953c0b7-db40-47a8-84cb-73b765158fef",
+      "type": "file",
+      "file": "Functions/_get_pip_whl_path_ctx_5389.md",
+      "x": 498,
+      "y": 1091,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "3656ae36-e991-4933-aa06-821fa3918fa5",
+      "type": "file",
+      "file": "Functions/_get_pip_version_5390.md",
+      "x": -170,
+      "y": 1187,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "8c036330-4e55-45b0-afcc-2fa5f5de22ee",
+      "type": "file",
+      "file": "Functions/_run_pip_5391.md",
+      "x": -785,
+      "y": 906,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "416b0d06-5945-4143-8a45-a0528c5cd471",
+      "type": "file",
+      "file": "Functions/version_5392.md",
+      "x": -1151,
+      "y": 338,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "c9823e96-993e-42ec-a588-535ebd952c81",
+      "type": "file",
+      "file": "Functions/_disable_pip_configuration_settings_5393.md",
+      "x": -1151,
+      "y": -338,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "c910e961-5ff0-473e-b9ab-a919faaf9dc2",
+      "type": "file",
+      "file": "Functions/bootstrap_5394.md",
+      "x": -785,
+      "y": -906,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "0dd22907-42ab-45c4-936a-44db511795d0",
+      "type": "file",
+      "file": "Functions/_bootstrap_5395.md",
+      "x": -170,
+      "y": -1187,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "857bf9ce-695a-40b0-9567-8259c302b95c",
+      "type": "file",
+      "file": "Functions/_uninstall_helper_5396.md",
+      "x": 498,
+      "y": -1091,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "dc1c17b1-8c7f-4485-a6ae-b0f9803f7c83",
+      "type": "file",
+      "file": "Functions/_main_5397.md",
+      "x": 1009,
+      "y": -648,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "887130c1-bdce-444d-9b15-f62026905193",
+      "fromNode": "1a6d8aae-56fe-4882-9075-9f685aaaf4dc",
+      "fromSide": "right",
+      "toNode": "e03bc928-2c17-4fc9-a278-19b7e1981cfc",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "a02dbd0f-897b-42be-86df-f9485f9840b2",
+      "fromNode": "1a6d8aae-56fe-4882-9075-9f685aaaf4dc",
+      "fromSide": "right",
+      "toNode": "8f5421fa-c91a-4c40-b2ae-448ecfda12d4",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "6114de3a-31ec-46a1-b0bf-d66c24f3ce07",
+      "fromNode": "1a6d8aae-56fe-4882-9075-9f685aaaf4dc",
+      "fromSide": "right",
+      "toNode": "53021982-f1b8-49d8-a37a-184e0363efd5",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "81c59ee5-7fc8-48d4-aad9-0ed65e94b126",
+      "fromNode": "1a6d8aae-56fe-4882-9075-9f685aaaf4dc",
+      "fromSide": "right",
+      "toNode": "5953c0b7-db40-47a8-84cb-73b765158fef",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "74f870d8-775d-49b9-8347-10c3eb0aba8d",
+      "fromNode": "1a6d8aae-56fe-4882-9075-9f685aaaf4dc",
+      "fromSide": "right",
+      "toNode": "3656ae36-e991-4933-aa06-821fa3918fa5",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "592d2e4f-f73d-450c-893c-07b3ad49b89f",
+      "fromNode": "1a6d8aae-56fe-4882-9075-9f685aaaf4dc",
+      "fromSide": "right",
+      "toNode": "8c036330-4e55-45b0-afcc-2fa5f5de22ee",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "3a3eb8f9-6a18-45b6-8eef-89a6b3bafba4",
+      "fromNode": "1a6d8aae-56fe-4882-9075-9f685aaaf4dc",
+      "fromSide": "right",
+      "toNode": "416b0d06-5945-4143-8a45-a0528c5cd471",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "68e9e65b-16c5-4bd9-b264-02be0b9852d5",
+      "fromNode": "1a6d8aae-56fe-4882-9075-9f685aaaf4dc",
+      "fromSide": "right",
+      "toNode": "c9823e96-993e-42ec-a588-535ebd952c81",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "fd3d943c-526b-40f4-8252-95d9bf740aad",
+      "fromNode": "1a6d8aae-56fe-4882-9075-9f685aaaf4dc",
+      "fromSide": "right",
+      "toNode": "c910e961-5ff0-473e-b9ab-a919faaf9dc2",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "2ffe27ba-29ec-4731-bf85-969f4143d35b",
+      "fromNode": "1a6d8aae-56fe-4882-9075-9f685aaaf4dc",
+      "fromSide": "right",
+      "toNode": "0dd22907-42ab-45c4-936a-44db511795d0",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "a381138e-5172-4951-9540-a57e04097c3b",
+      "fromNode": "1a6d8aae-56fe-4882-9075-9f685aaaf4dc",
+      "fromSide": "right",
+      "toNode": "857bf9ce-695a-40b0-9567-8259c302b95c",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "82fbf9c6-cf57-4cd4-baee-243a46456b2f",
+      "fromNode": "1a6d8aae-56fe-4882-9075-9f685aaaf4dc",
+      "fromSide": "right",
+      "toNode": "dc1c17b1-8c7f-4485-a6ae-b0f9803f7c83",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

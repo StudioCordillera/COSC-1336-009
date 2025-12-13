@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {
+      "id": "6b3eb45c-b6ec-4189-9ba9-53c4b9124214",
+      "type": "file",
+      "file": "Modules/struct.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    }
+  ],
+  "edges": []
+}

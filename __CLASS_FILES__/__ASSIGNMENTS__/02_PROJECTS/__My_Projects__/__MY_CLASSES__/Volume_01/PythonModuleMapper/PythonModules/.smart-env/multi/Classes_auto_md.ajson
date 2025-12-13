@@ -1,0 +1,2 @@
+
+"smart_sources:Classes/auto.md": {"path":"Classes/auto.md","last_embed":{"hash":null},"embeddings":{},"last_read":{"hash":"11ab84j","at":1765337414504},"class_name":"SmartSource","last_import":{"mtime":1765337327207,"size":173,"at":1765337414504,"hash":"11ab84j"},"blocks":{"#---frontmatter---":[1,9],"#Class: auto":[11,17],"#Class: auto#Overview":[13,17],"#Class: auto#Overview#{1}":[15,17]},"outlinks":[{"title":"ast","target":"Modules/ast","line":15}],"metadata":{"type":"class","name":"auto","module":"ast","lineno":176,"tags":["#python","#class"]},"task_lines":[]},

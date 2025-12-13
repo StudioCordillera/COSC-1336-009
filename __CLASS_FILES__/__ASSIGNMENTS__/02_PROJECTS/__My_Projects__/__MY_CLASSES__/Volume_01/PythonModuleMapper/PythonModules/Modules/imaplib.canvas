@@ -1,0 +1,178 @@
+{
+  "nodes": [
+    {
+      "id": "fd9b02b7-002c-40ea-b71a-214be9ded3a4",
+      "type": "file",
+      "file": "Modules/imaplib.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "2158cf74-f5e6-4e49-9d1f-7936f872a5f2",
+      "type": "file",
+      "file": "Classes/IMAP4.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "88de1b7c-5fb9-4b5c-b8a1-846bdce234a9",
+      "type": "file",
+      "file": "Classes/IMAP4_SSL.md",
+      "x": 0,
+      "y": 800,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "a3aa2807-bf55-4c59-b40e-f3c89a3ba4e2",
+      "type": "file",
+      "file": "Classes/IMAP4_stream.md",
+      "x": -800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "b44448e5-427a-4eeb-bef6-c4d2be638250",
+      "type": "file",
+      "file": "Classes/_Authenticator.md",
+      "x": 0,
+      "y": -800,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "deae0b3c-1aa9-41e2-a0bb-9ae846c46b91",
+      "type": "file",
+      "file": "Functions/Internaldate2tuple_3412.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "ed18b86f-027b-478d-afc0-51043b585a2f",
+      "type": "file",
+      "file": "Functions/Int2AP_3413.md",
+      "x": 370,
+      "y": 1141,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "f450bc67-4a2f-4766-8e8b-b973fccf4ebd",
+      "type": "file",
+      "file": "Functions/ParseFlags_3414.md",
+      "x": -970,
+      "y": 705,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "9608694b-ce42-4980-bf28-c3e030ace48d",
+      "type": "file",
+      "file": "Functions/Time2Internaldate_3415.md",
+      "x": -970,
+      "y": -705,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "798083ad-bc9f-4c37-b7b6-f93c334e1c87",
+      "type": "file",
+      "file": "Functions/run_3416.md",
+      "x": 370,
+      "y": -1141,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "3aec364e-3657-4bac-9948-d0fec5ab7ae5",
+      "fromNode": "fd9b02b7-002c-40ea-b71a-214be9ded3a4",
+      "fromSide": "right",
+      "toNode": "2158cf74-f5e6-4e49-9d1f-7936f872a5f2",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "0519f49b-06ab-49d6-8ece-a739d739c006",
+      "fromNode": "fd9b02b7-002c-40ea-b71a-214be9ded3a4",
+      "fromSide": "right",
+      "toNode": "88de1b7c-5fb9-4b5c-b8a1-846bdce234a9",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "30432194-cdb9-4907-a750-7be8ceb3c9d7",
+      "fromNode": "fd9b02b7-002c-40ea-b71a-214be9ded3a4",
+      "fromSide": "right",
+      "toNode": "a3aa2807-bf55-4c59-b40e-f3c89a3ba4e2",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "055c58d2-8daa-4ee4-9c3c-136af8a0557e",
+      "fromNode": "fd9b02b7-002c-40ea-b71a-214be9ded3a4",
+      "fromSide": "right",
+      "toNode": "b44448e5-427a-4eeb-bef6-c4d2be638250",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "ceef5143-2644-4b97-89ca-33983d479b62",
+      "fromNode": "fd9b02b7-002c-40ea-b71a-214be9ded3a4",
+      "fromSide": "right",
+      "toNode": "deae0b3c-1aa9-41e2-a0bb-9ae846c46b91",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "ff816939-92d8-494e-b57e-674d74200b3e",
+      "fromNode": "fd9b02b7-002c-40ea-b71a-214be9ded3a4",
+      "fromSide": "right",
+      "toNode": "ed18b86f-027b-478d-afc0-51043b585a2f",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "e8c03718-8104-469c-9b00-289a3506daf7",
+      "fromNode": "fd9b02b7-002c-40ea-b71a-214be9ded3a4",
+      "fromSide": "right",
+      "toNode": "f450bc67-4a2f-4766-8e8b-b973fccf4ebd",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "45194660-a7c8-4fed-bbc5-144f00023044",
+      "fromNode": "fd9b02b7-002c-40ea-b71a-214be9ded3a4",
+      "fromSide": "right",
+      "toNode": "9608694b-ce42-4980-bf28-c3e030ace48d",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "ef3c153f-c5cb-4b9d-8b32-262687499768",
+      "fromNode": "fd9b02b7-002c-40ea-b71a-214be9ded3a4",
+      "fromSide": "right",
+      "toNode": "798083ad-bc9f-4c37-b7b6-f93c334e1c87",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

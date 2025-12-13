@@ -1,0 +1,2 @@
+
+"smart_sources:Classes/_ABC.md": {"path":"Classes/_ABC.md","last_embed":{"hash":null},"embeddings":{},"last_read":{"hash":"1r2l0xq","at":1765337414548},"class_name":"SmartSource","last_import":{"mtime":1765337327209,"size":173,"at":1765337414548,"hash":"1r2l0xq"},"blocks":{"#---frontmatter---":[1,9],"#Class: _ABC":[11,17],"#Class: _ABC#Overview":[13,17],"#Class: _ABC#Overview#{1}":[15,17]},"outlinks":[{"title":"ast","target":"Modules/ast","line":15}],"metadata":{"type":"class","name":"_ABC","module":"ast","lineno":562,"tags":["#python","#class"]},"task_lines":[]},

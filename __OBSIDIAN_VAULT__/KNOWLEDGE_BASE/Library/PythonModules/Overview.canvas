@@ -1,0 +1,68 @@
+{
+  "nodes": [
+    {
+      "id": "f66dffd6-bd6f-48ec-af70-0c6414762522",
+      "type": "file",
+      "file": "Modules/json.md",
+      "x": 0,
+      "y": 0,
+      "width": 500,
+      "height": 300
+    },
+    {
+      "id": "4286fc1f-dce5-402a-86b7-39869b5fd4ae",
+      "type": "file",
+      "file": "Modules/os.md",
+      "x": 600,
+      "y": 0,
+      "width": 500,
+      "height": 300
+    },
+    {
+      "id": "c3736bc0-cebe-480f-8e58-8809d0fe8478",
+      "type": "file",
+      "file": "Modules/sys.md",
+      "x": 1200,
+      "y": 0,
+      "width": 500,
+      "height": 300
+    },
+    {
+      "id": "e8b688a0-84d6-4399-831d-8f317a36553c",
+      "type": "file",
+      "file": "Modules/math.md",
+      "x": 1800,
+      "y": 0,
+      "width": 500,
+      "height": 300
+    },
+    {
+      "id": "2e5bcde1-0aaf-4863-8bac-8561ded5978a",
+      "type": "file",
+      "file": "Modules/datetime.md",
+      "x": 0,
+      "y": 400,
+      "width": 500,
+      "height": 300
+    },
+    {
+      "id": "517c4e54-508a-48cf-b313-2a6fe4475006",
+      "type": "file",
+      "file": "Modules/collections.md",
+      "x": 600,
+      "y": 400,
+      "width": 500,
+      "height": 300
+    },
+    {
+      "id": "5130b221-4a09-4242-88dc-b01a647483d6",
+      "type": "file",
+      "file": "Modules/pathlib.md",
+      "x": 1200,
+      "y": 400,
+      "width": 500,
+      "height": 300
+    }
+  ],
+  "edges": []
+}

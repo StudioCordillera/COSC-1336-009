@@ -1,0 +1,124 @@
+{
+  "nodes": [
+    {
+      "id": "81f51351-5a55-44e8-b63c-d0f0e2f6068a",
+      "type": "file",
+      "file": "Modules/code.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "62bcaed0-ac3e-408a-8acd-e811b35e8ca5",
+      "type": "file",
+      "file": "Classes/CommandCompiler.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "d020b813-d9c1-49d6-833d-00e9ed12edff",
+      "type": "file",
+      "file": "Classes/InteractiveInterpreter.md",
+      "x": 0,
+      "y": 800,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "c88a9e91-290a-429d-be2d-b1046dffb28b",
+      "type": "file",
+      "file": "Classes/InteractiveConsole.md",
+      "x": -800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "46e33707-efc8-4543-9e86-437374d8ef71",
+      "type": "file",
+      "file": "Classes/Quitter.md",
+      "x": 0,
+      "y": -800,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "e469d6ca-0af9-471c-98cc-eebf7e1a3d79",
+      "type": "file",
+      "file": "Functions/compile_command_5819.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "6d876c5c-d82d-49d5-a007-aab87052d783",
+      "type": "file",
+      "file": "Functions/interact_5836.md",
+      "x": -1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "67273860-849b-4544-b4b7-1d8c8b6aa6a7",
+      "fromNode": "81f51351-5a55-44e8-b63c-d0f0e2f6068a",
+      "fromSide": "right",
+      "toNode": "62bcaed0-ac3e-408a-8acd-e811b35e8ca5",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "75c153d9-a6ba-4a7f-ba9d-1ed0a13283f9",
+      "fromNode": "81f51351-5a55-44e8-b63c-d0f0e2f6068a",
+      "fromSide": "right",
+      "toNode": "d020b813-d9c1-49d6-833d-00e9ed12edff",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "09e5e31a-2478-4a2f-96ed-217141ca4920",
+      "fromNode": "81f51351-5a55-44e8-b63c-d0f0e2f6068a",
+      "fromSide": "right",
+      "toNode": "c88a9e91-290a-429d-be2d-b1046dffb28b",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "1122eb47-1214-4d46-8234-8593d5e99196",
+      "fromNode": "81f51351-5a55-44e8-b63c-d0f0e2f6068a",
+      "fromSide": "right",
+      "toNode": "46e33707-efc8-4543-9e86-437374d8ef71",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "24139073-ddac-4912-8450-fe46897dfcb1",
+      "fromNode": "81f51351-5a55-44e8-b63c-d0f0e2f6068a",
+      "fromSide": "right",
+      "toNode": "e469d6ca-0af9-471c-98cc-eebf7e1a3d79",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "17f2d2fe-3431-44ed-8848-b89ced945f05",
+      "fromNode": "81f51351-5a55-44e8-b63c-d0f0e2f6068a",
+      "fromSide": "right",
+      "toNode": "6d876c5c-d82d-49d5-a007-aab87052d783",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

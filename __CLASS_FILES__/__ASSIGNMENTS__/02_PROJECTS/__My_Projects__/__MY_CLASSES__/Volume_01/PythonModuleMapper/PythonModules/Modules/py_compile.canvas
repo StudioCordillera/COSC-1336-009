@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "id": "c6702f55-8716-4597-a529-f012d8eb3457",
+      "type": "file",
+      "file": "Modules/py_compile.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "ccb79168-5f78-4b93-8544-0aa5902985e2",
+      "type": "file",
+      "file": "Classes/PyCompileError.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "e8be298b-df15-4f32-baaf-0cf0dd10c0d6",
+      "type": "file",
+      "file": "Classes/PycInvalidationMode.md",
+      "x": -800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "98ae79a0-4868-4710-8db5-a6d89f8ee943",
+      "type": "file",
+      "file": "Functions/_get_default_invalidation_mode_6148.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "17bcf7bf-c6e5-4aea-9561-53981f10ff78",
+      "type": "file",
+      "file": "Functions/compile_6149.md",
+      "x": -599,
+      "y": 1039,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "40795f36-99de-41af-b70d-2628e43c8103",
+      "type": "file",
+      "file": "Functions/main_6150.md",
+      "x": -600,
+      "y": -1039,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "746a4e15-77f0-4f2e-ad7c-f7ca370529a1",
+      "fromNode": "c6702f55-8716-4597-a529-f012d8eb3457",
+      "fromSide": "right",
+      "toNode": "ccb79168-5f78-4b93-8544-0aa5902985e2",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "1884e711-c3a9-4228-9461-bbce7ce8c0c9",
+      "fromNode": "c6702f55-8716-4597-a529-f012d8eb3457",
+      "fromSide": "right",
+      "toNode": "e8be298b-df15-4f32-baaf-0cf0dd10c0d6",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "6c80bd3c-2dfb-4637-bc5b-b37f7f62664a",
+      "fromNode": "c6702f55-8716-4597-a529-f012d8eb3457",
+      "fromSide": "right",
+      "toNode": "98ae79a0-4868-4710-8db5-a6d89f8ee943",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "9ecab978-20c5-4635-bfeb-462aefcb9550",
+      "fromNode": "c6702f55-8716-4597-a529-f012d8eb3457",
+      "fromSide": "right",
+      "toNode": "17bcf7bf-c6e5-4aea-9561-53981f10ff78",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "b3c886bc-2083-4f84-b06b-db523818a2e3",
+      "fromNode": "c6702f55-8716-4597-a529-f012d8eb3457",
+      "fromSide": "right",
+      "toNode": "40795f36-99de-41af-b70d-2628e43c8103",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

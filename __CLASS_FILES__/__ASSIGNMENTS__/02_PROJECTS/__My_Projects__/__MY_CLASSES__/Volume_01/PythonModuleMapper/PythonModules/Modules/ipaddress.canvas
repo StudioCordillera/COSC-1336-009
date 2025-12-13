@@ -1,0 +1,520 @@
+{
+  "nodes": [
+    {
+      "id": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "type": "file",
+      "file": "Modules/ipaddress.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "b1629f12-1242-46e4-97b6-38f15acc0f3b",
+      "type": "file",
+      "file": "Classes/AddressValueError.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "1ae093b0-2c64-4a97-a6d1-b94a039eaa9c",
+      "type": "file",
+      "file": "Classes/NetmaskValueError.md",
+      "x": 739,
+      "y": 306,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "6dcfb347-6630-4036-8a9b-f92e2cb26c0e",
+      "type": "file",
+      "file": "Classes/_IPAddressBase.md",
+      "x": 565,
+      "y": 565,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "1661bcb3-23b4-452b-a7a9-e901fab60cea",
+      "type": "file",
+      "file": "Classes/_BaseAddress.md",
+      "x": 306,
+      "y": 739,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "2e7563af-f009-422c-a5bb-7f18d4bf2aa3",
+      "type": "file",
+      "file": "Classes/_BaseNetwork.md",
+      "x": 0,
+      "y": 800,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "72a56586-0d95-4aae-94d9-904f0f7ebb9b",
+      "type": "file",
+      "file": "Classes/_BaseConstants.md",
+      "x": -306,
+      "y": 739,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "c656a9cd-afa5-476b-8c2d-b0fa43959457",
+      "type": "file",
+      "file": "Classes/_BaseV4.md",
+      "x": -565,
+      "y": 565,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "f3266def-5889-4eb3-b6db-7241c5d3929b",
+      "type": "file",
+      "file": "Classes/IPv4Address.md",
+      "x": -739,
+      "y": 306,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "fab2fff3-ad4c-4d0e-9f60-eec325aca3e5",
+      "type": "file",
+      "file": "Classes/IPv4Interface.md",
+      "x": -800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "7b10311c-e700-44eb-9f9b-9c751c0fe3eb",
+      "type": "file",
+      "file": "Classes/IPv4Network.md",
+      "x": -739,
+      "y": -306,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "430009c3-1cb3-4d2f-aa9e-7a28d1d1258c",
+      "type": "file",
+      "file": "Classes/_IPv4Constants.md",
+      "x": -565,
+      "y": -565,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "8952ae45-1b22-4d48-bb61-41dc2f784bda",
+      "type": "file",
+      "file": "Classes/_BaseV6.md",
+      "x": -306,
+      "y": -739,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "4e9dd415-630c-4411-b96c-074acf3e4782",
+      "type": "file",
+      "file": "Classes/IPv6Address.md",
+      "x": 0,
+      "y": -800,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "ab19421f-f0eb-40ff-8a97-bd82b6b12972",
+      "type": "file",
+      "file": "Classes/IPv6Interface.md",
+      "x": 306,
+      "y": -739,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "c454d7e0-ed9c-466a-8ec6-10c9a9b06200",
+      "type": "file",
+      "file": "Classes/IPv6Network.md",
+      "x": 565,
+      "y": -565,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "3de9e262-fd9e-454c-b48b-86c59add3926",
+      "type": "file",
+      "file": "Classes/_IPv6Constants.md",
+      "x": 739,
+      "y": -306,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "c459d66d-b5cc-48bd-8248-9ad4a258f10e",
+      "type": "file",
+      "file": "Functions/ip_address_3585.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "e91a164e-e63d-43a4-a4e6-aa422a436018",
+      "type": "file",
+      "file": "Functions/ip_network_3586.md",
+      "x": 1039,
+      "y": 599,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "3c62ced5-ebff-45f6-aa4e-98dda364f596",
+      "type": "file",
+      "file": "Functions/ip_interface_3587.md",
+      "x": 600,
+      "y": 1039,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "a8b56d5f-1eb4-4ada-a88d-c91f04fd516f",
+      "type": "file",
+      "file": "Functions/v4_int_to_packed_3588.md",
+      "x": 0,
+      "y": 1200,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "9679dcda-92c7-44cc-9c39-67feba77b21f",
+      "type": "file",
+      "file": "Functions/v6_int_to_packed_3589.md",
+      "x": -599,
+      "y": 1039,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "5a5d8822-8433-4231-808c-3bbae127868c",
+      "type": "file",
+      "file": "Functions/_split_optional_netmask_3590.md",
+      "x": -1039,
+      "y": 600,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "a44fef3b-207e-42f3-a2f7-b34c397cb698",
+      "type": "file",
+      "file": "Functions/_find_address_range_3591.md",
+      "x": -1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "3aec36eb-6572-463e-8b9e-f34f554de4ff",
+      "type": "file",
+      "file": "Functions/_count_righthand_zero_bits_3592.md",
+      "x": -1039,
+      "y": -599,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "143630de-6571-468a-bdc0-d988686a9152",
+      "type": "file",
+      "file": "Functions/summarize_address_range_3593.md",
+      "x": -600,
+      "y": -1039,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "ebb7b244-903e-4039-86d9-df63e06c48a8",
+      "type": "file",
+      "file": "Functions/_collapse_addresses_internal_3594.md",
+      "x": 0,
+      "y": -1200,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "c7be7a68-e0a7-4d74-a46d-168de0360d87",
+      "type": "file",
+      "file": "Functions/collapse_addresses_3595.md",
+      "x": 599,
+      "y": -1039,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "de8506de-e508-4102-bba7-9e514b9755a2",
+      "type": "file",
+      "file": "Functions/get_mixed_type_key_3596.md",
+      "x": 1039,
+      "y": -600,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "270bbb47-cd39-4b82-afa5-d30b930fb0c6",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "b1629f12-1242-46e4-97b6-38f15acc0f3b",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "6f54187c-c7eb-46a7-b1c9-c6243b028b29",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "1ae093b0-2c64-4a97-a6d1-b94a039eaa9c",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "7f613769-51ea-4525-b5da-365aa67ef2e5",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "6dcfb347-6630-4036-8a9b-f92e2cb26c0e",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "38bbc15b-d97b-45f8-ac1e-bb60ee0a9f8b",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "1661bcb3-23b4-452b-a7a9-e901fab60cea",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "d87da579-16ca-4cdf-8f5a-bf30df14ac8c",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "2e7563af-f009-422c-a5bb-7f18d4bf2aa3",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "28d0f88e-f4c0-4f83-8588-0cbc42251895",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "72a56586-0d95-4aae-94d9-904f0f7ebb9b",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "e4600d4b-d11d-4eba-8087-62829e4cb0c0",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "c656a9cd-afa5-476b-8c2d-b0fa43959457",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "5139e143-265e-4745-bac0-f0c15671cd27",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "f3266def-5889-4eb3-b6db-7241c5d3929b",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "81b42087-e4ec-4da6-a9d7-5ccab2ce2d1c",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "fab2fff3-ad4c-4d0e-9f60-eec325aca3e5",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "5dec3535-0448-4ead-89df-9de4f24d82f5",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "7b10311c-e700-44eb-9f9b-9c751c0fe3eb",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "f9e6946b-00f5-4c23-a64b-7cbc1198fa88",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "430009c3-1cb3-4d2f-aa9e-7a28d1d1258c",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "10136783-f66f-4bd2-91c3-fb83d0576a7e",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "8952ae45-1b22-4d48-bb61-41dc2f784bda",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "a34f8310-80b9-480a-850d-8d9e962a2bb7",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "4e9dd415-630c-4411-b96c-074acf3e4782",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "59f354bf-5340-4d2d-abe6-9d6baae2cbf7",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "ab19421f-f0eb-40ff-8a97-bd82b6b12972",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "e026148d-9720-44ee-b6a9-b40ccdf847b8",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "c454d7e0-ed9c-466a-8ec6-10c9a9b06200",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "85849c76-d07d-4845-878e-05e161665266",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "3de9e262-fd9e-454c-b48b-86c59add3926",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "8d0609ce-8514-43cc-b701-79d7b9189d3a",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "c459d66d-b5cc-48bd-8248-9ad4a258f10e",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "d3a2e175-b493-4efb-b8c5-b1ff8838187b",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "e91a164e-e63d-43a4-a4e6-aa422a436018",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "d8f78d59-ad20-431f-896e-4f405d87100e",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "3c62ced5-ebff-45f6-aa4e-98dda364f596",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "01154727-fbb5-46f9-b74f-042d04746ca5",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "a8b56d5f-1eb4-4ada-a88d-c91f04fd516f",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "eccc8375-f56b-483c-a669-7542dc303359",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "9679dcda-92c7-44cc-9c39-67feba77b21f",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "37414b22-b812-4c68-ba85-ba38f1b9362c",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "5a5d8822-8433-4231-808c-3bbae127868c",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "507b8b21-b482-4c87-9390-36b52bdd55df",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "a44fef3b-207e-42f3-a2f7-b34c397cb698",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "96397144-1afe-4bda-a420-934a31883e5f",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "3aec36eb-6572-463e-8b9e-f34f554de4ff",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "da7cbd3d-d0f3-4c85-a30c-ec1a9160fe75",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "143630de-6571-468a-bdc0-d988686a9152",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "b1fe2664-c111-4050-8570-bbf0f70e1d74",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "ebb7b244-903e-4039-86d9-df63e06c48a8",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "f027fabb-06d2-4297-ad1a-e2e4fa6b67da",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "c7be7a68-e0a7-4d74-a46d-168de0360d87",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "02b9a267-43ad-4def-9d93-852290d6a073",
+      "fromNode": "1f3be25d-74cc-434c-9671-50ca3f1c8c52",
+      "fromSide": "right",
+      "toNode": "de8506de-e508-4102-bba7-9e514b9755a2",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

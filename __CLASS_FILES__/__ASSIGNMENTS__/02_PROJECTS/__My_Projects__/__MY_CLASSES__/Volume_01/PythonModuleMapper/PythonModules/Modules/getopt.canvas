@@ -1,0 +1,160 @@
+{
+  "nodes": [
+    {
+      "id": "ef222683-93ae-44e5-80e4-4438753caf9f",
+      "type": "file",
+      "file": "Modules/getopt.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "5d3392c5-91b2-4122-81af-3e3ed60d9065",
+      "type": "file",
+      "file": "Classes/GetoptError.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "156c8f3b-c3d4-4d3f-91aa-9b8b8beb6519",
+      "type": "file",
+      "file": "Functions/__2212.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "715c3f3a-ab34-43bc-8180-6c7b2d3c3be6",
+      "type": "file",
+      "file": "Functions/getopt_2215.md",
+      "x": 748,
+      "y": 938,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "c695c9ec-41ea-440e-843c-ec0cafa694e5",
+      "type": "file",
+      "file": "Functions/gnu_getopt_2216.md",
+      "x": -267,
+      "y": 1169,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "230469ba-5c32-4363-a24d-4b8eb3a0a568",
+      "type": "file",
+      "file": "Functions/do_longs_2217.md",
+      "x": -1081,
+      "y": 520,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "b89969b8-de76-44f5-b54e-0ca5d13c5dac",
+      "type": "file",
+      "file": "Functions/long_has_args_2218.md",
+      "x": -1081,
+      "y": -520,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "7a61eda0-8c4b-4116-9a16-ee4de3068c72",
+      "type": "file",
+      "file": "Functions/do_shorts_2219.md",
+      "x": -267,
+      "y": -1169,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "53692e2c-d860-4e72-b098-c33313d87ac0",
+      "type": "file",
+      "file": "Functions/short_has_arg_2220.md",
+      "x": 748,
+      "y": -938,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "4e79f31f-4bef-421d-a2ad-4dedf5dab837",
+      "fromNode": "ef222683-93ae-44e5-80e4-4438753caf9f",
+      "fromSide": "right",
+      "toNode": "5d3392c5-91b2-4122-81af-3e3ed60d9065",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "67ccd224-7d17-462e-898a-2368d260637c",
+      "fromNode": "ef222683-93ae-44e5-80e4-4438753caf9f",
+      "fromSide": "right",
+      "toNode": "156c8f3b-c3d4-4d3f-91aa-9b8b8beb6519",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "de3902fb-ba09-4647-90eb-0e3ff364769a",
+      "fromNode": "ef222683-93ae-44e5-80e4-4438753caf9f",
+      "fromSide": "right",
+      "toNode": "715c3f3a-ab34-43bc-8180-6c7b2d3c3be6",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "decec010-51d2-4a04-aa54-85dc1f1cdb06",
+      "fromNode": "ef222683-93ae-44e5-80e4-4438753caf9f",
+      "fromSide": "right",
+      "toNode": "c695c9ec-41ea-440e-843c-ec0cafa694e5",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "0d61b6fa-ee50-423f-8b95-f788e123d663",
+      "fromNode": "ef222683-93ae-44e5-80e4-4438753caf9f",
+      "fromSide": "right",
+      "toNode": "230469ba-5c32-4363-a24d-4b8eb3a0a568",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "7e94d713-d6d7-4599-9134-660f8a6523f9",
+      "fromNode": "ef222683-93ae-44e5-80e4-4438753caf9f",
+      "fromSide": "right",
+      "toNode": "b89969b8-de76-44f5-b54e-0ca5d13c5dac",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "f524f4c8-7d45-4bbd-9d86-e40ce848d30b",
+      "fromNode": "ef222683-93ae-44e5-80e4-4438753caf9f",
+      "fromSide": "right",
+      "toNode": "7a61eda0-8c4b-4116-9a16-ee4de3068c72",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "1108b5b5-8074-4cdd-823f-c90ea2ee38be",
+      "fromNode": "ef222683-93ae-44e5-80e4-4438753caf9f",
+      "fromSide": "right",
+      "toNode": "53692e2c-d860-4e72-b098-c33313d87ac0",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

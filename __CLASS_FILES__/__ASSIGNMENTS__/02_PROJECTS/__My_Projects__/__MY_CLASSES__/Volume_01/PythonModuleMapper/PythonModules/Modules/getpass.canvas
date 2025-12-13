@@ -1,0 +1,124 @@
+{
+  "nodes": [
+    {
+      "id": "39caeff5-09f3-4ffe-af56-32d9a85ce4b0",
+      "type": "file",
+      "file": "Modules/getpass.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "3bc4671d-192d-483d-8017-3dc87b6028fb",
+      "type": "file",
+      "file": "Classes/GetPassWarning.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "a5cce8da-bdb8-45d2-aa46-ca2c99bfeef8",
+      "type": "file",
+      "file": "Functions/unix_getpass_2390.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "47c5588d-ac77-48a4-9d0f-fa75ce0d1186",
+      "type": "file",
+      "file": "Functions/win_getpass_2391.md",
+      "x": 370,
+      "y": 1141,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "78d71ade-59aa-4f9f-a330-ceb74e2e6305",
+      "type": "file",
+      "file": "Functions/fallback_getpass_2392.md",
+      "x": -970,
+      "y": 705,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "dea556d0-8c67-4a41-ae01-75432e12f402",
+      "type": "file",
+      "file": "Functions/_raw_input_2393.md",
+      "x": -970,
+      "y": -705,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "26b536aa-3089-4812-a6bf-986c85f78592",
+      "type": "file",
+      "file": "Functions/getuser_2394.md",
+      "x": 370,
+      "y": -1141,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "360c33b1-bc6c-4c6d-87da-31f35d600a56",
+      "fromNode": "39caeff5-09f3-4ffe-af56-32d9a85ce4b0",
+      "fromSide": "right",
+      "toNode": "3bc4671d-192d-483d-8017-3dc87b6028fb",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "b930bc5b-9d41-454c-b104-4131ad3f4bb1",
+      "fromNode": "39caeff5-09f3-4ffe-af56-32d9a85ce4b0",
+      "fromSide": "right",
+      "toNode": "a5cce8da-bdb8-45d2-aa46-ca2c99bfeef8",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "f31c8c2f-903a-4dc5-8648-c97113198646",
+      "fromNode": "39caeff5-09f3-4ffe-af56-32d9a85ce4b0",
+      "fromSide": "right",
+      "toNode": "47c5588d-ac77-48a4-9d0f-fa75ce0d1186",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "f31341bb-cb54-4e7c-ac4e-6c642fab1bc5",
+      "fromNode": "39caeff5-09f3-4ffe-af56-32d9a85ce4b0",
+      "fromSide": "right",
+      "toNode": "78d71ade-59aa-4f9f-a330-ceb74e2e6305",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "7c13f283-29b5-4f05-904f-47a2d6aace16",
+      "fromNode": "39caeff5-09f3-4ffe-af56-32d9a85ce4b0",
+      "fromSide": "right",
+      "toNode": "dea556d0-8c67-4a41-ae01-75432e12f402",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "7f911279-766a-4dce-a4d8-91f92d58aac6",
+      "fromNode": "39caeff5-09f3-4ffe-af56-32d9a85ce4b0",
+      "fromSide": "right",
+      "toNode": "26b536aa-3089-4812-a6bf-986c85f78592",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

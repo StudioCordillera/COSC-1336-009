@@ -1,0 +1,41 @@
+---
+type: function
+name: lru_cache
+module: functools
+lineno: 504
+is_async: False
+is_method: False
+tags:
+  - python
+  - function
+---
+
+# Function: lru_cache()
+
+## Overview
+
+Least-recently-used cache decorator.
+
+If *maxsize* is set to None, the LRU features are disabled and the cache
+can grow without bound.
+
+If *typed* is True, arguments of different types will be cached separately.
+For example, f(decimal.Decimal("3.0")) and f(3.0) will be treated as
+distinct calls with distinct results. Some types such as str and int may
+be cached separately even when typed is false.
+
+Arguments to the cached function must be hashable.
+
+View the cache statistics named tuple (hits, misses, maxsize, currsize)
+with f.cache_info().  Clear the cache and statistics with f.cache_clear().
+Access the underlying function with f.__wrapped__.
+
+See:  https://en.wikipedia.org/wiki/Cache_replacement_policies#Least_recently_used_(LRU)
+
+```python
+def lru_cache(maxsize, typed)
+```
+
+**Module:** [[Modules/functools|functools]]
+**Type:** Module-level function
+**Line:** 504

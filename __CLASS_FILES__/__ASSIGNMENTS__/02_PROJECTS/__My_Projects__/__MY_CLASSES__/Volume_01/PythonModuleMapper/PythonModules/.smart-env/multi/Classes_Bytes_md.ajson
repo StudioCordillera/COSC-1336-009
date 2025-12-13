@@ -1,0 +1,2 @@
+
+"smart_sources:Classes/Bytes.md": {"path":"Classes/Bytes.md","last_embed":{"hash":null},"embeddings":{},"last_read":{"hash":"ctl0da","at":1765337414549},"class_name":"SmartSource","last_import":{"mtime":1765337327211,"size":175,"at":1765337414549,"hash":"ctl0da"},"blocks":{"#---frontmatter---":[1,9],"#Class: Bytes":[11,17],"#Class: Bytes#Overview":[13,17],"#Class: Bytes#Overview#{1}":[15,17]},"outlinks":[{"title":"ast","target":"Modules/ast","line":15}],"metadata":{"type":"class","name":"Bytes","module":"ast","lineno":613,"tags":["#python","#class"]},"task_lines":[]},

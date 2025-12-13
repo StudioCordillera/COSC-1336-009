@@ -1,0 +1,88 @@
+{
+  "nodes": [
+    {
+      "id": "fc80f52f-01b9-41b1-8c51-db13cf88d7e0",
+      "type": "file",
+      "file": "Modules/fractions.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "19bc9f12-bd2c-4043-a3a7-42e48572d874",
+      "type": "file",
+      "file": "Classes/Fraction.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "014e3169-7e7e-4a01-a270-57588c045e98",
+      "type": "file",
+      "file": "Functions/_hash_algorithm_777.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "fbf8333b-e96a-4c50-9bbd-0039a6dcf5e2",
+      "type": "file",
+      "file": "Functions/_round_to_exponent_778.md",
+      "x": -599,
+      "y": 1039,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "f0ac7b00-3b4c-4fec-8afb-a34d38301e79",
+      "type": "file",
+      "file": "Functions/_round_to_figures_779.md",
+      "x": -600,
+      "y": -1039,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "a6c7a5fa-36b7-4797-a7eb-1f9d3cca5715",
+      "fromNode": "fc80f52f-01b9-41b1-8c51-db13cf88d7e0",
+      "fromSide": "right",
+      "toNode": "19bc9f12-bd2c-4043-a3a7-42e48572d874",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "1395fe1c-9a1d-4796-b236-85f7d3a95cf5",
+      "fromNode": "fc80f52f-01b9-41b1-8c51-db13cf88d7e0",
+      "fromSide": "right",
+      "toNode": "014e3169-7e7e-4a01-a270-57588c045e98",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "bb9aeeff-356c-4583-b7ec-ef647d542125",
+      "fromNode": "fc80f52f-01b9-41b1-8c51-db13cf88d7e0",
+      "fromSide": "right",
+      "toNode": "fbf8333b-e96a-4c50-9bbd-0039a6dcf5e2",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "d97dc156-f020-4dd4-a9e6-6795d4b5a7e0",
+      "fromNode": "fc80f52f-01b9-41b1-8c51-db13cf88d7e0",
+      "fromSide": "right",
+      "toNode": "f0ac7b00-3b4c-4fec-8afb-a34d38301e79",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

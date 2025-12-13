@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {
+      "id": "2dd8dc01-a4ad-4897-b6e3-d2f7a0df84db",
+      "type": "file",
+      "file": "Modules/codecs.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    }
+  ],
+  "edges": []
+}

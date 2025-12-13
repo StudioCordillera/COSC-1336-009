@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {
+      "id": "7d58e30f-e590-4a9a-b0a2-093785b459a8",
+      "type": "file",
+      "file": "Modules/gc.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    }
+  ],
+  "edges": []
+}

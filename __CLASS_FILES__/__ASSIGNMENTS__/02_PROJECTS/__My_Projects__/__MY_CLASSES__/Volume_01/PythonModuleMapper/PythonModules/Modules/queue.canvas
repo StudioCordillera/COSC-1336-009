@@ -1,0 +1,178 @@
+{
+  "nodes": [
+    {
+      "id": "a0e6840b-dcdd-41a2-8194-8b0a5f78632f",
+      "type": "file",
+      "file": "Modules/queue.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "e26dcf58-e41d-4764-850b-60809bf993e6",
+      "type": "file",
+      "file": "Classes/Empty.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "0e589cdb-3573-489a-82ca-ced603afb98b",
+      "type": "file",
+      "file": "Classes/Full.md",
+      "x": 498,
+      "y": 625,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "187e33c6-ae31-42b9-a47c-fd0471209d5d",
+      "type": "file",
+      "file": "Classes/ShutDown.md",
+      "x": -178,
+      "y": 779,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "192441ef-88a0-47ea-b56a-ade100ac1a7d",
+      "type": "file",
+      "file": "Classes/Queue.md",
+      "x": -720,
+      "y": 347,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "52f77664-226c-4dd3-b140-dbfbb6f8e488",
+      "type": "file",
+      "file": "Classes/PriorityQueue.md",
+      "x": -720,
+      "y": -347,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "8ee12b37-ecb4-425c-8a43-0a5fdccb7330",
+      "type": "file",
+      "file": "Classes/LifoQueue.md",
+      "x": -178,
+      "y": -779,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "1bbe6d7d-0b0c-4c99-a267-d6dccf7d1093",
+      "type": "file",
+      "file": "Classes/_PySimpleQueue.md",
+      "x": 498,
+      "y": -625,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "ee6ab06e-4b5a-4d13-a368-0d62b55ee668",
+      "type": "file",
+      "file": "Functions/heappush_2677.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "217e09ad-ad8d-4205-b723-e55c8b4ca8b0",
+      "type": "file",
+      "file": "Functions/heappop_2678.md",
+      "x": -1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "d35758ad-da28-4e99-9b56-c78c6ae7cbb4",
+      "fromNode": "a0e6840b-dcdd-41a2-8194-8b0a5f78632f",
+      "fromSide": "right",
+      "toNode": "e26dcf58-e41d-4764-850b-60809bf993e6",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "9b5c865e-67a5-4d18-9f71-29e18da58b2d",
+      "fromNode": "a0e6840b-dcdd-41a2-8194-8b0a5f78632f",
+      "fromSide": "right",
+      "toNode": "0e589cdb-3573-489a-82ca-ced603afb98b",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "e511bc11-b62d-4f78-a987-e95532d2368b",
+      "fromNode": "a0e6840b-dcdd-41a2-8194-8b0a5f78632f",
+      "fromSide": "right",
+      "toNode": "187e33c6-ae31-42b9-a47c-fd0471209d5d",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "88c7b2c9-6175-4fdf-882b-dd82edaf3504",
+      "fromNode": "a0e6840b-dcdd-41a2-8194-8b0a5f78632f",
+      "fromSide": "right",
+      "toNode": "192441ef-88a0-47ea-b56a-ade100ac1a7d",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "a6922209-f572-4723-9f52-e55b3d706742",
+      "fromNode": "a0e6840b-dcdd-41a2-8194-8b0a5f78632f",
+      "fromSide": "right",
+      "toNode": "52f77664-226c-4dd3-b140-dbfbb6f8e488",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "ca6870e7-1cdb-4d8e-9cfd-c059e2e56ba3",
+      "fromNode": "a0e6840b-dcdd-41a2-8194-8b0a5f78632f",
+      "fromSide": "right",
+      "toNode": "8ee12b37-ecb4-425c-8a43-0a5fdccb7330",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "c7840b66-a969-4563-8b5c-13d4f5943125",
+      "fromNode": "a0e6840b-dcdd-41a2-8194-8b0a5f78632f",
+      "fromSide": "right",
+      "toNode": "1bbe6d7d-0b0c-4c99-a267-d6dccf7d1093",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "5862f41f-afba-4ec0-b973-895eb136d17d",
+      "fromNode": "a0e6840b-dcdd-41a2-8194-8b0a5f78632f",
+      "fromSide": "right",
+      "toNode": "ee6ab06e-4b5a-4d13-a368-0d62b55ee668",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "2d8e4f61-14d3-41ed-97bb-f014d36e1b52",
+      "fromNode": "a0e6840b-dcdd-41a2-8194-8b0a5f78632f",
+      "fromSide": "right",
+      "toNode": "217e09ad-ad8d-4205-b723-e55c8b4ca8b0",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

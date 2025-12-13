@@ -1,0 +1,19 @@
+{
+  "activeProfile": {
+    "name": "MCP_01",
+    "modifiedAt": "2025-11-03T00:11:31.893Z"
+  },
+  "profileUpdate": true,
+  "profileUpdateDelay": 800,
+  "uiUpdate": true,
+  "uiUpdateInterval": 1000,
+  "devices": {
+    "eb3668fcfa9caf3bacd67c3b5e968d200c7489b79048bd9640a6bfe386450465": "C:\\Users\\WORK_ADMIN\\AppData\\Local\\ObsidianPlugins\\Data\\Profiles"
+  },
+  "statusbarInteraction": {
+    "click": "auto",
+    "ctrl_click": "none",
+    "shift_click": "none",
+    "alt_click": "none"
+  }
+}

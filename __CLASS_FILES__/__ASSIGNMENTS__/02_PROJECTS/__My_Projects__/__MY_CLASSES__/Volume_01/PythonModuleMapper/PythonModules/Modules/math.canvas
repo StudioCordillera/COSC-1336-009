@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {
+      "id": "24d9af3d-8350-47f4-9a8a-b02708a62f90",
+      "type": "file",
+      "file": "Modules/math.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    }
+  ],
+  "edges": []
+}

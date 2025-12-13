@@ -1,0 +1,39 @@
+---
+type: function
+name: platform
+module: platform
+lineno: 1312
+is_async: False
+is_method: False
+tags:
+  - python
+  - function
+---
+
+# Function: platform()
+
+## Overview
+
+Returns a single string identifying the underlying platform
+with as much useful information as possible (but no more :).
+
+The output is intended to be human readable rather than
+machine parseable. It may look different on different
+platforms and this is intended.
+
+If "aliased" is true, the function will use aliases for
+various platforms that report system names which differ from
+their common names, e.g. SunOS will be reported as
+Solaris. The system_alias() function is used to implement
+this.
+
+Setting terse to true causes the function to return only the
+absolute minimum information needed to identify the platform.
+
+```python
+def platform(aliased, terse)
+```
+
+**Module:** [[Modules/platform|platform]]
+**Type:** Module-level function
+**Line:** 1312

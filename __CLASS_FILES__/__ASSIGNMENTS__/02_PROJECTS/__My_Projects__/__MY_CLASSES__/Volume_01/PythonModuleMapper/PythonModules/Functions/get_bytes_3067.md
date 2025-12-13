@@ -1,0 +1,26 @@
+---
+type: function
+name: get_bytes
+module: mailbox
+lineno: 1373
+is_async: False
+is_method: True
+tags:
+  - python
+  - function
+---
+
+# Function: get_bytes()
+
+## Overview
+
+Return a string representation or raise a KeyError.
+
+```python
+def get_bytes(self, key)
+```
+
+**Module:** [[Modules/mailbox|mailbox]]
+**Class:** [[Classes/Babyl|Babyl]]
+**Type:** Method
+**Line:** 1373

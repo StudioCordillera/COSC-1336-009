@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {
+      "id": "0ac89ddd-a8ab-4428-be78-cf52308616e6",
+      "type": "file",
+      "file": "Modules/array.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    }
+  ],
+  "edges": []
+}

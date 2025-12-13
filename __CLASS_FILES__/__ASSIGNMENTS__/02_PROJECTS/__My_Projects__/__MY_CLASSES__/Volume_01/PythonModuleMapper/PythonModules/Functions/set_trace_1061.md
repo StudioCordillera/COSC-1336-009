@@ -1,0 +1,25 @@
+---
+type: function
+name: set_trace
+module: bdb
+lineno: 718
+is_async: False
+is_method: False
+tags:
+  - python
+  - function
+categories:
+  - mutator
+---
+
+# Function: set_trace()
+
+## Overview
+
+**Module:** [[Modules/bdb|bdb]]
+**Type:** Module-level function
+**Line:** 718
+
+## Categories
+
+- [[Taxonomy/mutator|mutator]]

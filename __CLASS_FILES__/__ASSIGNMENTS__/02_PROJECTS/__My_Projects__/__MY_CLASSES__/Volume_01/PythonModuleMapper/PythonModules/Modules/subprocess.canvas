@@ -1,0 +1,376 @@
+{
+  "nodes": [
+    {
+      "id": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "type": "file",
+      "file": "Modules/subprocess.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "e6a48b67-bb87-49db-be8a-68b16ef75eb3",
+      "type": "file",
+      "file": "Classes/_del_safe.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "d467a7d5-67d8-473c-809c-9fd44d8315d4",
+      "type": "file",
+      "file": "Classes/SubprocessError.md",
+      "x": 565,
+      "y": 565,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "408267b4-ab33-482e-8f36-c6c88df82695",
+      "type": "file",
+      "file": "Classes/CalledProcessError.md",
+      "x": 0,
+      "y": 800,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "a28d3d15-c5c7-4ea1-be19-dc8e1750f8dd",
+      "type": "file",
+      "file": "Classes/TimeoutExpired.md",
+      "x": -565,
+      "y": 565,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "8dc0b9d8-f5e7-4c6b-8498-8cafc4912557",
+      "type": "file",
+      "file": "Classes/STARTUPINFO.md",
+      "x": -800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "a709d612-f10c-45fe-84e7-31ecf9a16303",
+      "type": "file",
+      "file": "Classes/Handle.md",
+      "x": -565,
+      "y": -565,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "b434ca69-8038-4d3a-a064-1538f8c1569a",
+      "type": "file",
+      "file": "Classes/CompletedProcess.md",
+      "x": 0,
+      "y": -800,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "d32301f4-d30c-4c5b-a017-546f70af21a7",
+      "type": "file",
+      "file": "Classes/Popen.md",
+      "x": 565,
+      "y": -565,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "ffa9b7e5-fb6c-4f9e-a396-d18a0dcacacc",
+      "type": "file",
+      "file": "Functions/_cleanup_2623.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "55c8b8fb-af13-4abf-8f8f-33936d203fdc",
+      "type": "file",
+      "file": "Functions/_optim_args_from_interpreter_flags_2624.md",
+      "x": 1039,
+      "y": 599,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "37ca1ed0-8096-42a9-bc9e-25e0eb720245",
+      "type": "file",
+      "file": "Functions/_args_from_interpreter_flags_2625.md",
+      "x": 600,
+      "y": 1039,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "a5caaef5-9ca0-4e53-9e74-24f570d568ca",
+      "type": "file",
+      "file": "Functions/_text_encoding_2626.md",
+      "x": 0,
+      "y": 1200,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "92ae6597-0495-4661-846e-397ad7464e4f",
+      "type": "file",
+      "file": "Functions/call_2627.md",
+      "x": -599,
+      "y": 1039,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "b4ceded4-ade0-4826-bcc9-59dcc0804e4e",
+      "type": "file",
+      "file": "Functions/check_call_2628.md",
+      "x": -1039,
+      "y": 600,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "83b0d516-bc13-43b9-a710-a0f84fee7dc3",
+      "type": "file",
+      "file": "Functions/check_output_2629.md",
+      "x": -1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "8a48607a-d1cd-4361-a002-ff4c8d8cf1af",
+      "type": "file",
+      "file": "Functions/run_2633.md",
+      "x": -1039,
+      "y": -599,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "79a9619f-f18f-458f-aa21-0afa4fbebbda",
+      "type": "file",
+      "file": "Functions/list2cmdline_2634.md",
+      "x": -600,
+      "y": -1039,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "ed54ce94-011b-411a-85bb-5764bac208f3",
+      "type": "file",
+      "file": "Functions/getstatusoutput_2635.md",
+      "x": 0,
+      "y": -1200,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "bd9d6143-46ff-4e99-9cd6-364d137956aa",
+      "type": "file",
+      "file": "Functions/getoutput_2636.md",
+      "x": 599,
+      "y": -1039,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "86d36d71-e446-4fe7-a8e6-cf1fc8e0a730",
+      "type": "file",
+      "file": "Functions/_use_posix_spawn_2637.md",
+      "x": 1039,
+      "y": -600,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "a23a2e60-aa2b-4e98-a26b-2361eaefd5ef",
+      "fromNode": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "fromSide": "right",
+      "toNode": "e6a48b67-bb87-49db-be8a-68b16ef75eb3",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "c4362774-0771-450d-9df9-e65230b93d98",
+      "fromNode": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "fromSide": "right",
+      "toNode": "d467a7d5-67d8-473c-809c-9fd44d8315d4",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "4b67d4ec-e46e-42d5-9663-029290f74510",
+      "fromNode": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "fromSide": "right",
+      "toNode": "408267b4-ab33-482e-8f36-c6c88df82695",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "e298ed7a-7813-4c49-913d-348db2aebe70",
+      "fromNode": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "fromSide": "right",
+      "toNode": "a28d3d15-c5c7-4ea1-be19-dc8e1750f8dd",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "52959d4c-cc44-4341-af16-c2550978bbac",
+      "fromNode": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "fromSide": "right",
+      "toNode": "8dc0b9d8-f5e7-4c6b-8498-8cafc4912557",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "1259acbf-da48-4bff-8c6d-df85c7b202c2",
+      "fromNode": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "fromSide": "right",
+      "toNode": "a709d612-f10c-45fe-84e7-31ecf9a16303",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "6e6297e1-2b75-43a7-9493-df4c9889c782",
+      "fromNode": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "fromSide": "right",
+      "toNode": "b434ca69-8038-4d3a-a064-1538f8c1569a",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "bec0b8ab-32eb-4804-a587-453a7684eaf2",
+      "fromNode": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "fromSide": "right",
+      "toNode": "d32301f4-d30c-4c5b-a017-546f70af21a7",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "f621efbb-8297-4f98-b392-c8001ce12b6c",
+      "fromNode": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "fromSide": "right",
+      "toNode": "ffa9b7e5-fb6c-4f9e-a396-d18a0dcacacc",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "968b3cf5-300d-4773-923a-98192e10fb0b",
+      "fromNode": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "fromSide": "right",
+      "toNode": "55c8b8fb-af13-4abf-8f8f-33936d203fdc",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "979bd641-ee65-4b2a-aab8-bae1d131329e",
+      "fromNode": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "fromSide": "right",
+      "toNode": "37ca1ed0-8096-42a9-bc9e-25e0eb720245",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "8f07d743-9462-419d-9cae-9d7289067da1",
+      "fromNode": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "fromSide": "right",
+      "toNode": "a5caaef5-9ca0-4e53-9e74-24f570d568ca",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "cb36f853-f1cd-4aca-9909-7fa1f0b46b35",
+      "fromNode": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "fromSide": "right",
+      "toNode": "92ae6597-0495-4661-846e-397ad7464e4f",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "d68231a0-ab23-44a9-88db-3bca5bb7cb68",
+      "fromNode": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "fromSide": "right",
+      "toNode": "b4ceded4-ade0-4826-bcc9-59dcc0804e4e",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "05db7140-0b95-479a-ae0a-e58170f16c1c",
+      "fromNode": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "fromSide": "right",
+      "toNode": "83b0d516-bc13-43b9-a710-a0f84fee7dc3",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "78401585-8cb9-4cc6-b4cf-a97a5d6671dc",
+      "fromNode": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "fromSide": "right",
+      "toNode": "8a48607a-d1cd-4361-a002-ff4c8d8cf1af",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "374375eb-a990-4a37-8b38-23c5628aa89b",
+      "fromNode": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "fromSide": "right",
+      "toNode": "79a9619f-f18f-458f-aa21-0afa4fbebbda",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "098aab97-a8d5-42b3-b466-3ff8c194aff9",
+      "fromNode": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "fromSide": "right",
+      "toNode": "ed54ce94-011b-411a-85bb-5764bac208f3",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "b3979fec-9056-4211-b37f-d1948ca8da14",
+      "fromNode": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "fromSide": "right",
+      "toNode": "bd9d6143-46ff-4e99-9cd6-364d137956aa",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "8c69cdf2-79d3-4b75-88ce-88dc3dd289e2",
+      "fromNode": "01ed40ea-90a4-4a2d-9be7-e69e1bf0fc73",
+      "fromSide": "right",
+      "toNode": "86d36d71-e446-4fe7-a8e6-cf1fc8e0a730",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

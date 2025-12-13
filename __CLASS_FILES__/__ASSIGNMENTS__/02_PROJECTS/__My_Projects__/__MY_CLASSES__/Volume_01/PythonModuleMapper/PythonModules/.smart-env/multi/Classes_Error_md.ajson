@@ -1,0 +1,2 @@
+
+"smart_sources:Classes/Error.md": {"path":"Classes/Error.md","last_embed":{"hash":null},"embeddings":{},"last_read":{"hash":"1yl9j4z","at":1765337414503},"class_name":"SmartSource","last_import":{"mtime":1765337327035,"size":176,"at":1765337414503,"hash":"1yl9j4z"},"blocks":{"#---frontmatter---":[1,9],"#Class: Error":[11,17],"#Class: Error#Overview":[13,17],"#Class: Error#Overview#{1}":[15,17]},"outlinks":[{"title":"wave","target":"Modules/wave","line":15}],"metadata":{"type":"class","name":"Error","module":"wave","lineno":82,"tags":["#python","#class"]},"task_lines":[]},

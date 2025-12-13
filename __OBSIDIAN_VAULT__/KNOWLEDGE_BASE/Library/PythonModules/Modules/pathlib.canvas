@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {
+      "id": "cb13e48e-54a9-4ad1-939c-7a367dc7b85d",
+      "type": "file",
+      "file": "Modules/pathlib.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    }
+  ],
+  "edges": []
+}

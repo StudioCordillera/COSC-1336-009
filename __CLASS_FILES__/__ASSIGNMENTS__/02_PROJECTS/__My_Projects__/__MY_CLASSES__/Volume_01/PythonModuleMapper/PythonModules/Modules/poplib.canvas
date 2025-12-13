@@ -1,0 +1,70 @@
+{
+  "nodes": [
+    {
+      "id": "24d0aa12-6ca3-41a3-a2c0-0790219abe10",
+      "type": "file",
+      "file": "Modules/poplib.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "c7ff7d5b-795f-4e8f-b528-5dd84a4e9a41",
+      "type": "file",
+      "file": "Classes/error_proto.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "dbe51c4a-f651-4ec6-b05c-29bbd8ae28c8",
+      "type": "file",
+      "file": "Classes/POP3.md",
+      "x": -399,
+      "y": 692,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "fe6367d5-d531-4b36-b37b-6cffb597eaa0",
+      "type": "file",
+      "file": "Classes/POP3_SSL.md",
+      "x": -400,
+      "y": -692,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    }
+  ],
+  "edges": [
+    {
+      "id": "3b8fdc4a-1bfc-4faa-83e7-71eb9f0cfe1f",
+      "fromNode": "24d0aa12-6ca3-41a3-a2c0-0790219abe10",
+      "fromSide": "right",
+      "toNode": "c7ff7d5b-795f-4e8f-b528-5dd84a4e9a41",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "10b22b23-09d4-445f-893f-9586f7baff19",
+      "fromNode": "24d0aa12-6ca3-41a3-a2c0-0790219abe10",
+      "fromSide": "right",
+      "toNode": "dbe51c4a-f651-4ec6-b05c-29bbd8ae28c8",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "c399dcc6-41d6-468f-b22f-aa237e9332ac",
+      "fromNode": "24d0aa12-6ca3-41a3-a2c0-0790219abe10",
+      "fromSide": "right",
+      "toNode": "fe6367d5-d531-4b36-b37b-6cffb597eaa0",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

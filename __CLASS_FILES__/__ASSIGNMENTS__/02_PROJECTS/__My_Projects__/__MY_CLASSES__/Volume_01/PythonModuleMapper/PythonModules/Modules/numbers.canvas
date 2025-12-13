@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "id": "c6416522-7290-44af-987a-75662fb497ca",
+      "type": "file",
+      "file": "Modules/numbers.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "af4040de-2449-4a4d-9164-f5de4ecf07b7",
+      "type": "file",
+      "file": "Classes/Number.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "4c8662ce-f9a0-4051-926e-cdb71db3d4ab",
+      "type": "file",
+      "file": "Classes/Complex.md",
+      "x": 247,
+      "y": 760,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "2edf4c6f-9059-41a6-858c-5f0487c64224",
+      "type": "file",
+      "file": "Classes/Real.md",
+      "x": -647,
+      "y": 470,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "2630cb0e-252c-431f-9037-ecd6247a6efc",
+      "type": "file",
+      "file": "Classes/Rational.md",
+      "x": -647,
+      "y": -470,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "130d3257-8a3b-427c-8dc2-5bf695942934",
+      "type": "file",
+      "file": "Classes/Integral.md",
+      "x": 247,
+      "y": -760,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    }
+  ],
+  "edges": [
+    {
+      "id": "eca40526-a9dd-4f6a-bf3b-69cdebe22796",
+      "fromNode": "c6416522-7290-44af-987a-75662fb497ca",
+      "fromSide": "right",
+      "toNode": "af4040de-2449-4a4d-9164-f5de4ecf07b7",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "d688f298-7aa8-47e3-b490-6c4e31e40bdc",
+      "fromNode": "c6416522-7290-44af-987a-75662fb497ca",
+      "fromSide": "right",
+      "toNode": "4c8662ce-f9a0-4051-926e-cdb71db3d4ab",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "ea0bc79b-6fc5-4072-8b08-65a00e8cbd41",
+      "fromNode": "c6416522-7290-44af-987a-75662fb497ca",
+      "fromSide": "right",
+      "toNode": "2edf4c6f-9059-41a6-858c-5f0487c64224",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "888e16c1-4083-471e-aab7-393aaef6dde0",
+      "fromNode": "c6416522-7290-44af-987a-75662fb497ca",
+      "fromSide": "right",
+      "toNode": "2630cb0e-252c-431f-9037-ecd6247a6efc",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "ad9e5da1-8e54-478b-8610-4b352edae33b",
+      "fromNode": "c6416522-7290-44af-987a-75662fb497ca",
+      "fromSide": "right",
+      "toNode": "130d3257-8a3b-427c-8dc2-5bf695942934",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

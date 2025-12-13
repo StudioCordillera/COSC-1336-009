@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {
+      "id": "09b18b5e-24ae-4a39-ab60-6fd004c03cf4",
+      "type": "file",
+      "file": "Modules/site.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    }
+  ],
+  "edges": []
+}

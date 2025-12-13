@@ -1,0 +1,88 @@
+{
+  "nodes": [
+    {
+      "id": "62001055-3cc1-4842-9f1f-addaad0deb37",
+      "type": "file",
+      "file": "Modules/email.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "9f8cedd7-25ee-43b4-9cd8-7631f7cf2959",
+      "type": "file",
+      "file": "Functions/message_from_string_2941.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "8e0cb4fb-1591-45ab-a669-85918164b956",
+      "type": "file",
+      "file": "Functions/message_from_bytes_2942.md",
+      "x": 0,
+      "y": 1200,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "833bc681-32f2-4e8b-a92a-5afcc399560b",
+      "type": "file",
+      "file": "Functions/message_from_file_2943.md",
+      "x": -1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "5cfac6a8-211c-4c27-8301-be4a58d09ce8",
+      "type": "file",
+      "file": "Functions/message_from_binary_file_2944.md",
+      "x": 0,
+      "y": -1200,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "f1b87451-e5fe-46e7-baa5-dac6da309ac1",
+      "fromNode": "62001055-3cc1-4842-9f1f-addaad0deb37",
+      "fromSide": "right",
+      "toNode": "9f8cedd7-25ee-43b4-9cd8-7631f7cf2959",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "efbdaab6-2013-4d22-a1ae-b227b44eed34",
+      "fromNode": "62001055-3cc1-4842-9f1f-addaad0deb37",
+      "fromSide": "right",
+      "toNode": "8e0cb4fb-1591-45ab-a669-85918164b956",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "b9a281bf-2b1e-40e1-9f22-04abaff907b0",
+      "fromNode": "62001055-3cc1-4842-9f1f-addaad0deb37",
+      "fromSide": "right",
+      "toNode": "833bc681-32f2-4e8b-a92a-5afcc399560b",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "ebcfc817-8394-4223-805e-2fdd73401fdc",
+      "fromNode": "62001055-3cc1-4842-9f1f-addaad0deb37",
+      "fromSide": "right",
+      "toNode": "5cfac6a8-211c-4c27-8301-be4a58d09ce8",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

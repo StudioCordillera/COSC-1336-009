@@ -1,0 +1,142 @@
+{
+  "nodes": [
+    {
+      "id": "d66f81f0-f3e8-44af-928d-8b300b77c1ef",
+      "type": "file",
+      "file": "Modules/weakref.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "287b3834-956d-4f2f-a884-86561248fb0a",
+      "type": "file",
+      "file": "Classes/WeakSet.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "ec1528a3-85b8-4dcf-93e5-af0cb8420c59",
+      "type": "file",
+      "file": "Classes/_IterationGuard.md",
+      "x": 498,
+      "y": 625,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "b6360666-2a01-44aa-9992-fc2aa9b30fe8",
+      "type": "file",
+      "file": "Classes/WeakMethod.md",
+      "x": -178,
+      "y": 779,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "667146ae-0af2-467b-a5e4-af08fce77595",
+      "type": "file",
+      "file": "Classes/WeakValueDictionary.md",
+      "x": -720,
+      "y": 347,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "367e0314-7531-4c86-8262-3d698baedd74",
+      "type": "file",
+      "file": "Classes/KeyedRef.md",
+      "x": -720,
+      "y": -347,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "718ff2d2-0c3e-4e02-b396-47f2b59bcf77",
+      "type": "file",
+      "file": "Classes/WeakKeyDictionary.md",
+      "x": -178,
+      "y": -779,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "abaf0bb4-f628-45d0-8c1e-0db52f6d0ed9",
+      "type": "file",
+      "file": "Classes/finalize.md",
+      "x": 498,
+      "y": -625,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    }
+  ],
+  "edges": [
+    {
+      "id": "8820838c-dc5a-4d38-aadc-047ecb82549e",
+      "fromNode": "d66f81f0-f3e8-44af-928d-8b300b77c1ef",
+      "fromSide": "right",
+      "toNode": "287b3834-956d-4f2f-a884-86561248fb0a",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "febd9bd5-a2af-4d38-beb8-c5db786c46bd",
+      "fromNode": "d66f81f0-f3e8-44af-928d-8b300b77c1ef",
+      "fromSide": "right",
+      "toNode": "ec1528a3-85b8-4dcf-93e5-af0cb8420c59",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "52c6000f-d4ea-4a88-8049-e17ad13c48f3",
+      "fromNode": "d66f81f0-f3e8-44af-928d-8b300b77c1ef",
+      "fromSide": "right",
+      "toNode": "b6360666-2a01-44aa-9992-fc2aa9b30fe8",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "430fcab7-442c-4966-9a82-4681e8b5dacb",
+      "fromNode": "d66f81f0-f3e8-44af-928d-8b300b77c1ef",
+      "fromSide": "right",
+      "toNode": "667146ae-0af2-467b-a5e4-af08fce77595",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "1695d8b7-120a-4f8a-987b-962d297ef38b",
+      "fromNode": "d66f81f0-f3e8-44af-928d-8b300b77c1ef",
+      "fromSide": "right",
+      "toNode": "367e0314-7531-4c86-8262-3d698baedd74",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "1e997000-9466-488b-a016-f675b68d6695",
+      "fromNode": "d66f81f0-f3e8-44af-928d-8b300b77c1ef",
+      "fromSide": "right",
+      "toNode": "718ff2d2-0c3e-4e02-b396-47f2b59bcf77",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "2c00c1e2-105f-4f3e-a4df-9e3b3ad93986",
+      "fromNode": "d66f81f0-f3e8-44af-928d-8b300b77c1ef",
+      "fromSide": "right",
+      "toNode": "abaf0bb4-f628-45d0-8c1e-0db52f6d0ed9",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

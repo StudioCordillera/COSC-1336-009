@@ -1,95 +1,47 @@
-'''
-╔══════════════════════════════════════════════════════════════════════════════╗
-║                                  PROJECT 07                                  ║
-║                            EMPLOYEE INTAKE PROGRAM                           ║
-╚══════════════════════════════════════════════════════════════════════════════╝ 
-
-┌─── PROJECT 07 ─────────────────────────────┐   
-│  Matthew Ochoa          CLASS: COSC 1336   │   
-│ ┌────────────────────────────────────────┐ |   
-| │           DATE: Nov 30, 20             | |   
-│ │         STATUS: In-Progress            | |   
-| └────────────────────────────────────────┘ |   
-└────────────────────────────────────────────┘    
-
-┌─── PROCEDURE ───────────────────────────────────────────┐   
-│ ┌────────────────────────────── CORE: Requirements ───┐ |   
-| │  GET:          Input Variables          <(1)        | |   
-│ │  GENERATE:     Derived Variables        <(2)        | |   
-│ │  DISPLAY:      Entry Form               <(3)        | |  
-| └─────────────────────────────────────────────────────┘ |   
-└─────────────────────────────────────────────────────────┘          
-
-___────────────────────────────────────────────────────────────___
-___──────────────────── DOCUMENTATION ─────────────────────────___
-___────────────────────────────────────────────────────────────___
-
-| REQUIREMENTS | 
-
-    | INPUT - VARIABLES |
-
-        Prompt | Input Variables
-            last name
-            first name
-            SSN
-            dependents
-            wage
-            employee ID
-
-            
-    | DERIVED - VARIABLES |
-
-        Generate | Derived Variables
-
-            initials            | first[:1] + last[:1] + .upper
-            email               | first[:1] + last + @example.com
-            l4ssn               | ssn[-4:]
-            wage:float          | displayed as (f"${wage:.2f}")
-            dependents          | 0-10 (inclusive)
-            eID                 | (f"{last}.{l4ssn}")
-    
-    | REQUIRED - FUNCTIONS |
-
-        getStringData()
-            Validate non-empty
-            returns validated
-            
-        getFloatData()
-            Validate | wage > 0
-            return validated
-
-        getIntegerData()
-            Validate | dependents >= 0
-            return validated
-
-        displayResult(varList):
-            for key in list:
-                ...
-
-        validateSSN(ssn)
-            Validate | format xxx-xx-xxxx 
-            Validate | SSN is a 9-digit int
-
-            Returns TRUE if valid and FALSE if not.
-                - If TRUE, the last 4 digits of the SSN are extracted and displayed in main(). 
-                - If FALSE, the user is prompted to re-enter the SSN.
-
-        main() Orchestrates
-
-        menu() | provideMenuFlow
-            menu flow deliverable:
-                offer choice to customize email domain
-                    "Allow flexibility in formatting the email domain (optional input or preset constant)."
-    | DISPLAY |
-
-        Entry Title: Get a random job position from list
-            offer choice to customize
-
-        Domain: Get a random domain from list
-            offer choice to customize
-            
-________________________________________________________________________
-─────────────────────────────────────────────────────────────────────'''
+###############################################################
+##:::::|   Matthew Ochoa       |-----------------------|:::::##
+##:::::|   December 10, 2025   |   Status: COMPLETE    |:::::##
+##:::::|   Class: COSC 1336    |-----------------------|:::::##
+###############################################################
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+______________________________________________________________
+|                                                             |
+|   REQUIREMENTS                                              |
+|_____________________________________________________________|
+|                                                             |
+|  - Input Variables                                          |
+|        - Last Name                                          |
+|        - First Name                                         |
+|        - SSN                                                |
+|        - Dependents (0-10)                                  |
+|        - Wage (> 0)                                         |
+|                                                             |
+|  - Derived Variables                                        |
+|        - Initials (First + Last)                            |
+|        - Email (First Initial + Last + Domain)              |
+|        - Last 4 SSN                                         |
+|        - Employee ID (Last + Last 4 SSN)                    |
+|                                                             |
+|  - Display                                                  |
+|        - Entry Form                                         |
+|        - Summary Report                                     |
+|_____________________________________________________________|
+|                                                             |
+|   FUNCTIONS                                                 |
+|_____________________________________________________________|
+|                                                             |
+|    REQUIRED                                                 |
+|        - main()               | Orchestrates                |
+|        - menu()               | Collects Inputs             |
+|        - generateDerived()    | Calculates Values           |
+|        - displayResults()     | Prints Summary              |
+|        - validateSSN()        | Validates Format            |
+|        - getIntegerData()     | Validates Dependents        |
+|        - getFloatData()       | Validates Wage              |
+|        - getStringData()      | Validates Non-empty         |
+|                                                             |
+|_____________________________________________________________|
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 #########################################################################
 ##                         PROVIDED FUNCTIONS                          ##
 #──────────────────────────────────────────────────────────────────────##

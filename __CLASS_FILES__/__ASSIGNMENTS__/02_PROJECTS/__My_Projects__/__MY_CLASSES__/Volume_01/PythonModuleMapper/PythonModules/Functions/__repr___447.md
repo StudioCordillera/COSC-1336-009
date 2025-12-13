@@ -1,0 +1,36 @@
+---
+type: function
+name: __repr__
+module: weakref
+lineno: 202
+is_async: False
+is_method: True
+tags:
+  - python
+  - function
+categories:
+  - magic_method
+  - magic_method
+  - magic_method
+  - magic_method
+---
+
+# Function: __repr__()
+
+## Overview
+
+```python
+def __repr__()
+```
+
+**Module:** [[Modules/weakref|weakref]]
+**Class:** [[Classes/WeakSet|WeakSet]]
+**Type:** Method
+**Line:** 202
+
+## Categories
+
+- [[Taxonomy/magic_method|magic_method]]
+- [[Taxonomy/magic_method|magic_method]]
+- [[Taxonomy/magic_method|magic_method]]
+- [[Taxonomy/magic_method|magic_method]]

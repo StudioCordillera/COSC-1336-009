@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {
+      "id": "c05551ec-8374-43f1-9047-5ca23f586348",
+      "type": "file",
+      "file": "Modules/zlib.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    }
+  ],
+  "edges": []
+}

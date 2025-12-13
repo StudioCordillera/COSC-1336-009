@@ -1,0 +1,64 @@
+🔄 ITERATION PROTOCOL (Read Every Time):
+1. Read this ENTRYPOINT.txt first
+2. Read DASHBOARD.md for project mission and architecture
+3. Read tasks.csv to find next incomplete task
+4. Read ARCHITECTURE.md to understand patterns and dependencies
+5. Execute ONE task completely
+6. Update tasks.csv status column
+7. Update DASHBOARD.md with progress notes
+
+📋 PROJECT CORE:
+Automated Python module discovery → API queue → Database → Obsidian knowledge graph
+Goal: Query any construct (e.g., `__init__`) to find all modules, relationships, and taxonomy
+
+⚠️ CRITICAL REQUIREMENTS:
+- Use UNIFIED_PATTERNS directory as templates (61 behavioral, 28 creational)
+- Dependency injection everywhere—NO HARDCODING
+- All configs externalized via config.py ApplicationConfigBuilder
+- Follow existing pattern implementations in config.py, models.py, scanner.py
+
+✅ COMPLETED (Tasks 1-10):
+- config.py: Builder/Strategy patterns for configuration
+- models.py: Repository/UnitOfWork/Factory patterns for database
+- scanner.py: Command/Observer/Strategy/Iterator with API integration
+- api.py: Command/Observer/Strategy patterns for API handling
+- api_server.py: FastAPI REST wrapper with dependency injection
+- api_client.py: HTTP client with retry logic and batch support
+- workers.py: Async WorkerPool with Observer, relationships, taxonomy categorization
+- taxonomy.py: TaxonomyMapper with 6 categorization strategies
+- graph.py: RelationshipGraphBuilder for dependency/inheritance/taxonomy queries
+- query.py: QueryInterface with search methods + 3 formatters (JSON/text/markdown)
+- test_complete_flow.py: End-to-end integration tests
+- test_relationships.py: Relationship tracking validation tests
+- test_taxonomy_integration.py: Taxonomy categorization validation
+- test_graph.py: Graph traversal validation (4 test suites)
+- test_query_interface.py: Query interface comprehensive tests
+- obsidian_vault.py: Direct file-writing vault generator  
+- obsidian_mcp_vault.py: MCP-integrated vault builder
+- test_obsidian_vault.py: Vault generation tests (28 notes from 3 modules)
+- generate_vault.py: Full vault generation script
+- populate_db.py: Database population utility
+- canvas_builder.py: Obsidian Canvas generator
+- cli.py: Main CLI entry point
+- logger_config.py: Logging configuration
+- test_integration.py: End-to-end CLI workflow tests
+- USAGE.md: Detailed usage guide
+- examples.py: Updated programmatic examples
+- profile_performance.py: Performance benchmarking script
+
+📍 NEXT TASK:
+Task 19: Build web dashboard for visualization (Phase 3, Sprint 6)
+Optional web UI for exploration
+
+🗂️ KEY FILES:
+- tasks.csv: 19 tasks, 18 complete (update status after each task)
+- DASHBOARD.md: Mission, requirements, architecture overview
+- README.md: Main project documentation
+- api_server.py: Existing API server to extend
+
+🎯 NEXT TASK (Task 19): Build web dashboard for visualization
+1. Create a simple HTML/JS dashboard
+2. Add API endpoints for graph data (nodes/edges)
+3. Use a library like Cytoscape.js or D3.js for visualization
+4. Connect dashboard to existing API
+

@@ -1,0 +1,88 @@
+{
+  "nodes": [
+    {
+      "id": "cdcbe94d-a188-47cb-bde6-ea263f8f7381",
+      "type": "file",
+      "file": "Modules/bisect.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "40d09cee-8329-4d01-964f-285ce8a71d53",
+      "type": "file",
+      "file": "Functions/insort_right_413.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "612a5808-17db-4509-96c9-4521539aa0ba",
+      "type": "file",
+      "file": "Functions/bisect_right_414.md",
+      "x": 0,
+      "y": 1200,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "17b70e2f-ca00-4fde-bbd5-1553c18e433b",
+      "type": "file",
+      "file": "Functions/insort_left_415.md",
+      "x": -1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "c5c53811-215e-4890-a0e9-b7daa2726aa0",
+      "type": "file",
+      "file": "Functions/bisect_left_416.md",
+      "x": 0,
+      "y": -1200,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "fca95579-d229-4e69-a37b-d6793988823e",
+      "fromNode": "cdcbe94d-a188-47cb-bde6-ea263f8f7381",
+      "fromSide": "right",
+      "toNode": "40d09cee-8329-4d01-964f-285ce8a71d53",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "7015496c-fa20-4d87-88a2-0e026047ba4e",
+      "fromNode": "cdcbe94d-a188-47cb-bde6-ea263f8f7381",
+      "fromSide": "right",
+      "toNode": "612a5808-17db-4509-96c9-4521539aa0ba",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "4f5fca71-e88e-406a-b5bf-c9dfe2559b53",
+      "fromNode": "cdcbe94d-a188-47cb-bde6-ea263f8f7381",
+      "fromSide": "right",
+      "toNode": "17b70e2f-ca00-4fde-bbd5-1553c18e433b",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "3534e776-9160-4b89-aecd-9922ad625dbb",
+      "fromNode": "cdcbe94d-a188-47cb-bde6-ea263f8f7381",
+      "fromSide": "right",
+      "toNode": "c5c53811-215e-4890-a0e9-b7daa2726aa0",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

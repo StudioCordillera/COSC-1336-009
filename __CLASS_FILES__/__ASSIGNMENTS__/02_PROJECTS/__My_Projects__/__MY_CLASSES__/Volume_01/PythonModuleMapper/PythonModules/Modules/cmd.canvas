@@ -1,0 +1,34 @@
+{
+  "nodes": [
+    {
+      "id": "333193d3-f7e8-4980-aef9-dfa43c943c32",
+      "type": "file",
+      "file": "Modules/cmd.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "41373727-9ac7-47c4-b7fe-22e76c6a4c59",
+      "type": "file",
+      "file": "Classes/Cmd.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    }
+  ],
+  "edges": [
+    {
+      "id": "3e2f7e52-ded8-47c8-8bb5-563f8b1c9e9f",
+      "fromNode": "333193d3-f7e8-4980-aef9-dfa43c943c32",
+      "fromSide": "right",
+      "toNode": "41373727-9ac7-47c4-b7fe-22e76c6a4c59",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

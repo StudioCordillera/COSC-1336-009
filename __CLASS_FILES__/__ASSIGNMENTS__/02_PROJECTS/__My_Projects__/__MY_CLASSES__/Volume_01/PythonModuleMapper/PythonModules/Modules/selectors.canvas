@@ -1,0 +1,232 @@
+{
+  "nodes": [
+    {
+      "id": "c1175643-ce10-4b8a-aedb-cd269e5f3e66",
+      "type": "file",
+      "file": "Modules/selectors.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "c62acad5-1e8a-443f-b0d1-969396d8f362",
+      "type": "file",
+      "file": "Classes/_SelectorMapping.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "15bdbb79-81af-4b42-8d93-a097ce26f6c5",
+      "type": "file",
+      "file": "Classes/BaseSelector.md",
+      "x": 612,
+      "y": 514,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "2c8ced07-8306-4fc8-a0f3-6b10aa9816ea",
+      "type": "file",
+      "file": "Classes/_BaseSelectorImpl.md",
+      "x": 138,
+      "y": 787,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "1201252c-9a20-4309-8f0c-81b27c2324d2",
+      "type": "file",
+      "file": "Classes/SelectSelector.md",
+      "x": -399,
+      "y": 692,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "16c28dd1-d358-493b-8155-1af687c663f0",
+      "type": "file",
+      "file": "Classes/_PollLikeSelector.md",
+      "x": -751,
+      "y": 273,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "5bdcf064-4c2b-4b02-a5cf-50e07a345c2b",
+      "type": "file",
+      "file": "Classes/PollSelector.md",
+      "x": -751,
+      "y": -273,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "d80fbbf8-0efc-484e-82d7-120fb729b1f8",
+      "type": "file",
+      "file": "Classes/EpollSelector.md",
+      "x": -400,
+      "y": -692,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "1a50279d-fd1b-497d-ab51-582a7455ee7e",
+      "type": "file",
+      "file": "Classes/DevpollSelector.md",
+      "x": 138,
+      "y": -787,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "453f99a0-91cb-4fdd-8b1c-8fce852e01f7",
+      "type": "file",
+      "file": "Classes/KqueueSelector.md",
+      "x": 612,
+      "y": -514,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "79f84d2e-567d-4539-b8d4-e33329d89dcb",
+      "type": "file",
+      "file": "Functions/namedtuple_2887.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "89d73264-b258-446f-9460-aa55938d6bba",
+      "type": "file",
+      "file": "Functions/_fileobj_to_fd_2888.md",
+      "x": -599,
+      "y": 1039,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    },
+    {
+      "id": "20ad5cd2-a7c4-488f-a9b9-988194bbff96",
+      "type": "file",
+      "file": "Functions/_can_use_2931.md",
+      "x": -600,
+      "y": -1039,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "b6991aa1-aa4a-4633-ae23-c4c18457623e",
+      "fromNode": "c1175643-ce10-4b8a-aedb-cd269e5f3e66",
+      "fromSide": "right",
+      "toNode": "c62acad5-1e8a-443f-b0d1-969396d8f362",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "5a017c32-5a9d-4c18-b4ce-5767318752dd",
+      "fromNode": "c1175643-ce10-4b8a-aedb-cd269e5f3e66",
+      "fromSide": "right",
+      "toNode": "15bdbb79-81af-4b42-8d93-a097ce26f6c5",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "3f4a58a2-46eb-49ef-8c43-f0a8908015b8",
+      "fromNode": "c1175643-ce10-4b8a-aedb-cd269e5f3e66",
+      "fromSide": "right",
+      "toNode": "2c8ced07-8306-4fc8-a0f3-6b10aa9816ea",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "fca4a6c3-bb9f-42f7-8114-b404ffb8c26c",
+      "fromNode": "c1175643-ce10-4b8a-aedb-cd269e5f3e66",
+      "fromSide": "right",
+      "toNode": "1201252c-9a20-4309-8f0c-81b27c2324d2",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "dac98860-a7ea-43ac-b06d-420e452ad64d",
+      "fromNode": "c1175643-ce10-4b8a-aedb-cd269e5f3e66",
+      "fromSide": "right",
+      "toNode": "16c28dd1-d358-493b-8155-1af687c663f0",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "c5e65e3d-bcfc-487b-8350-b1f6acc30503",
+      "fromNode": "c1175643-ce10-4b8a-aedb-cd269e5f3e66",
+      "fromSide": "right",
+      "toNode": "5bdcf064-4c2b-4b02-a5cf-50e07a345c2b",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "5cb4a4db-fb85-43f0-ad61-80333b0ac111",
+      "fromNode": "c1175643-ce10-4b8a-aedb-cd269e5f3e66",
+      "fromSide": "right",
+      "toNode": "d80fbbf8-0efc-484e-82d7-120fb729b1f8",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "8f92da02-8ffb-4077-82df-4d6047a30243",
+      "fromNode": "c1175643-ce10-4b8a-aedb-cd269e5f3e66",
+      "fromSide": "right",
+      "toNode": "1a50279d-fd1b-497d-ab51-582a7455ee7e",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "c40aabc7-f17a-4e43-9bca-8e9cee45c7c1",
+      "fromNode": "c1175643-ce10-4b8a-aedb-cd269e5f3e66",
+      "fromSide": "right",
+      "toNode": "453f99a0-91cb-4fdd-8b1c-8fce852e01f7",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "c1f03b51-f380-428e-baf6-ae82f4af66b4",
+      "fromNode": "c1175643-ce10-4b8a-aedb-cd269e5f3e66",
+      "fromSide": "right",
+      "toNode": "79f84d2e-567d-4539-b8d4-e33329d89dcb",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "14a52a9b-afea-439b-8dcf-827472ad61fb",
+      "fromNode": "c1175643-ce10-4b8a-aedb-cd269e5f3e66",
+      "fromSide": "right",
+      "toNode": "89d73264-b258-446f-9460-aa55938d6bba",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "d01c4c23-b223-4fdf-9cee-5fd4a5709aa3",
+      "fromNode": "c1175643-ce10-4b8a-aedb-cd269e5f3e66",
+      "fromSide": "right",
+      "toNode": "20ad5cd2-a7c4-488f-a9b9-988194bbff96",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}

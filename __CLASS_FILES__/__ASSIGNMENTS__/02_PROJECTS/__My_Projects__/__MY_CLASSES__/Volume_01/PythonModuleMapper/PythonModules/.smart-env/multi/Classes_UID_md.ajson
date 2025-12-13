@@ -1,0 +1,2 @@
+
+"smart_sources:Classes/UID.md": {"path":"Classes/UID.md","last_embed":{"hash":null},"embeddings":{},"last_read":{"hash":"1hptpfh","at":1765337414515},"class_name":"SmartSource","last_import":{"mtime":1765337326906,"size":184,"at":1765337414515,"hash":"1hptpfh"},"blocks":{"#---frontmatter---":[1,9],"#Class: UID":[11,17],"#Class: UID#Overview":[13,17],"#Class: UID#Overview#{1}":[15,17]},"outlinks":[{"title":"plistlib","target":"Modules/plistlib","line":15}],"metadata":{"type":"class","name":"UID","module":"plistlib","lineno":77,"tags":["#python","#class"]},"task_lines":[]},

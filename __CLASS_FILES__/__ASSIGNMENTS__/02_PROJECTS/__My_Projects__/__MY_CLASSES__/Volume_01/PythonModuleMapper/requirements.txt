@@ -1,0 +1,19 @@
+# Module Discovery System - Requirements
+
+# Core dependencies
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.5.0
+requests>=2.31.0
+
+# Database
+sqlalchemy>=2.0.0
+
+# Optional: Redis queue backend (for production)
+# redis>=5.0.0
+# celery>=5.3.0
+
+# Development
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+httpx>=0.25.0  # For testing FastAPI

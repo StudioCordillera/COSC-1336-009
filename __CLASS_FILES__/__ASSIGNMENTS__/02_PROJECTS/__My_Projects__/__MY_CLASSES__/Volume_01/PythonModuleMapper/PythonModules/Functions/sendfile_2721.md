@@ -1,0 +1,47 @@
+---
+type: function
+name: sendfile
+module: socket
+lineno: 468
+is_async: False
+is_method: True
+tags:
+  - python
+  - function
+categories:
+  - public_method
+---
+
+# Function: sendfile()
+
+## Overview
+
+sendfile(file[, offset[, count]]) -> sent
+
+Send a file until EOF is reached by using high-performance
+os.sendfile() and return the total number of bytes which
+were sent.
+*file* must be a regular file object opened in binary mode.
+If os.sendfile() is not available (e.g. Windows) or file is
+not a regular file socket.send() will be used instead.
+*offset* tells from where to start reading the file.
+If specified, *count* is the total number of bytes to transmit
+as opposed to sending the file until EOF is reached.
+File position is updated on return or also in case of error in
+which case file.tell() can be used to figure out the number of
+bytes which were sent.
+The socket must be of SOCK_STREAM type.
+Non-blocking sockets are not supported.
+
+```python
+def sendfile(self, file, offset, count)
+```
+
+**Module:** [[Modules/socket|socket]]
+**Class:** [[Classes/socket|socket]]
+**Type:** Method
+**Line:** 468
+
+## Categories
+
+- [[Taxonomy/public_method|public_method]]

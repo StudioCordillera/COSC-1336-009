@@ -1,0 +1,88 @@
+{
+  "nodes": [
+    {
+      "id": "c0f77c04-ac30-4e08-af7d-41e3800f51c5",
+      "type": "file",
+      "file": "Modules/string.md",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "#2c3e50"
+    },
+    {
+      "id": "f099ed69-c306-4f9d-874e-47552e8fb3e8",
+      "type": "file",
+      "file": "Classes/_ChainMap.md",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "6b941e5e-7885-4f5c-b988-ac671e0e3291",
+      "type": "file",
+      "file": "Classes/Template.md",
+      "x": -399,
+      "y": 692,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "db3ef29c-19c4-4585-b12d-02358857e697",
+      "type": "file",
+      "file": "Classes/Formatter.md",
+      "x": -400,
+      "y": -692,
+      "width": 400,
+      "height": 300,
+      "color": "#e67e22"
+    },
+    {
+      "id": "a57e9a20-50b5-4f60-b465-8aadcdf55e06",
+      "type": "file",
+      "file": "Functions/capwords_1.md",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 200,
+      "color": "#27ae60"
+    }
+  ],
+  "edges": [
+    {
+      "id": "8044cdca-26a3-4489-9cb9-5db4928bf940",
+      "fromNode": "c0f77c04-ac30-4e08-af7d-41e3800f51c5",
+      "fromSide": "right",
+      "toNode": "f099ed69-c306-4f9d-874e-47552e8fb3e8",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "865d5530-b140-432b-8c7f-aa452c3fa216",
+      "fromNode": "c0f77c04-ac30-4e08-af7d-41e3800f51c5",
+      "fromSide": "right",
+      "toNode": "6b941e5e-7885-4f5c-b988-ac671e0e3291",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "97757c9f-03d3-40f2-9506-d318104a6ad7",
+      "fromNode": "c0f77c04-ac30-4e08-af7d-41e3800f51c5",
+      "fromSide": "right",
+      "toNode": "db3ef29c-19c4-4585-b12d-02358857e697",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "655fdb29-63e0-4c40-bc8c-3906b4b266e3",
+      "fromNode": "c0f77c04-ac30-4e08-af7d-41e3800f51c5",
+      "fromSide": "right",
+      "toNode": "a57e9a20-50b5-4f60-b465-8aadcdf55e06",
+      "toSide": "left",
+      "label": "defines"
+    }
+  ]
+}
